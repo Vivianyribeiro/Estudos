@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa box level</title>
+    <style>
+        h1 { /*box level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: rgb(27, 47, 47); PODEMOS SUBSTUTUIR OS 3 ACIMA POR:*/
+            border: 10px solid darkslategray;
+
+            /*padding e da borda para dentro*/
+            /*padding-top: 15px;
+            padding-right: 10px;
+            padding-bottom: 15px;
+            padding-left: 10px; PODEMOS SUBSTUTUIR OS 4 ACIMA na ordem do relogio(cima direita baixo esqrda) POR:*/
+            padding: 15px 10px;/*se coloco so 2, primeiro vale por cima e baixo e o outro p/ lados*/
+
+
+            /*margin e da borda para fora*/
+            /*margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;PODEMOS SUBSTUTUIR OS 4 ACIMA POR:*/
+            margin: 10px; /*se os 4 sao iguais 1 basta*//*20px auto 10px auto; tbm da*/
+            /*margin: auto; /*isto centraliza a box*/
+            /*outline esta dentro da margen mas fora da borda*/
+           /* outline-width: 5px;
+            outline-style: dashed;
+            outline-color: aquamarine;PODEMOS SUBSTUTUIR OS 3 ACIMA POR:*/
+            outline: 5px dashed aquamarine;
+        }
+        a { /*inline*/
+            border-width: 10px;
+            border-style: groove;
+            border-color: rgb(146, 189, 189);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos tambem sao exemplos de box level, mas os <a href="#">links sao exemplos de inline level.</a> Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

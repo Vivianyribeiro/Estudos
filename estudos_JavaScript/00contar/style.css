@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: rgba(119, 119, 251, 0.676) ;
+    --cor2: rgb(127, 127, 252);
+    --cor3: rgba(100, 100, 197, 0.257);
+
+}
+
+body {
+    background-color: var(--cor1);
+    font: normal 15pt Arial;
+}
+header {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+}
+p#especial {
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    background-color: var(--cor2);
+    margin: 0;
+}
+
+#res {
+    background-color: var(--cor3);
+    border-radius: 0px 0px 10px 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+p#especial > input {
+    border: none;
+    background-color: var(--cor2);
+    color: white;
+    padding: 5px;
+    font-size: 1.4em;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav > input{
+            padding: 20px;
+        }
+        article#res{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Boas-Vindas</h1>
+    </header>
+    <nav>
+        <input type="button" value="Inicie o desafio" onclick="clic()">
+    </nav>
+    <main>
+        <article id="res">
+            
+        </article>
+    </main>
+    <script>
+        function clic(){
+            let nome = window.prompt("Qual é o seu nome?")
+            res.innerHTML = `Seja Bem Vindo ${nome}!!`
+            let idade = window.prompt(`Olá ${nome}.Qual é a sua idade?`)
+            res.innerHTML = `Seja Bem Vindo ${nome}!!`
+            res.innerHTML = `prazer ${nome}`
+            window.alert(`Acabei de conhecer ${nome} que tem ${idade} de idade. Foi um prazer!!`)
+        }
+    </script>
+</body>
+</html>

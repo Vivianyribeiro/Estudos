@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        body {
+            background-color: rgba(6, 6, 234, 0.338);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+       Iniciando Estudos com DOM -  Modelo de Objeto para Documento
+    </h1>
+    <P>
+        Aqui vai o resultado
+    </P>
+    <p>
+        Aprendendo usar o <strong>DOM</strong> em javascript.
+    </p>
+    <div id="msg">
+        Clique em mim
+    </div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'blue'
+        window.document.write(p1.innerHTML)  /*escolhi o paragrafo 1 alterei cor e mandei escrever oq esta escrito nele abaixo do doc*/
+        var corpo = window.document.body
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou Aguardando...'
+    </script>
+</body>
+</html>

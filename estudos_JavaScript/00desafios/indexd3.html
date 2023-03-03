@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article > input {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Antes e depois
+        </h1>
+    </header>
+    <main>
+        <article>
+            <input type="button" value="Antecessor e Sucessor" onclick="calculando()">
+            <p id="res">aqui</p>
+        </article>
+        <article id="res">
+
+        </article>
+    </main>
+    <script>
+        function calculando() {
+    let n = parseInt(window.prompt('Digite um numero inteiro qualquer:'))
+    let res = document.querySelector('article#res')
+    if(n == 0) {
+        window.alert('É necessario digitar um numero')
+    } else {
+        let antecessor = n - 1
+        let sucessor = n + 1
+        /*res.innerHTML = `Antes de ${n}, temos o numero ${antecessor}.<br> Depois de ${n} temos o numero ${sucessor}.`*/
+        window.alert(`Antes de ${n}, temos o numero ${antecessor}.\nDepois de ${n} temos o numero ${sucessor}.`)
+    }
+}
+    </script>
+</body>
+</html>

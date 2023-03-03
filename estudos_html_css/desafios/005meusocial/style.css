@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+:root {
+    --cor1:rgba(9, 65, 113, 0.716);
+    --cor2:aliceblue;
+}
+body {
+    background-color: var(--cor1);
+    color: white;
+    
+}
+header {
+    text-align: center;
+}

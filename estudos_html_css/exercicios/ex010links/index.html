@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode acessar o link <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external" >no repositorio publico no GitHub</a></p> <!--sem o target para links externos ele sobrepoen o seu site, coloque o target p/ abrir outra aba--><!--rel relativo a external = este link e de fora-->
+    <p>Voce também pode acessar o canal <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external" >canal gratuito no YouTube</a></p>
+    <h1>Usando links Internos</h1> <!-- antes de criar link interno, tem que criar a pagina aq ele ira fazer referencia-->
+    <p>Esta é minha primeira pagina do site. Se quiser ir para a segunda pagina <a href="./pag002.html"rel="next">clique aqui</a></p> <!--rel de proxima pag // para funcionarassim a pag2 tem q estar na mesma pasta da index -->
+    <p>Voce tambem pode acessar a nossa pagina de Noticias <a href="./noticias/pag003.html" target="self" >aqui</a></p> <!---->
+
+    <h1>Links para Downloads</h1>
+    <ul>
+        <li><a href="livro/2021_2-Aulas45_46DeduçãoLP.pdf" download="2021_2-Aulas45_46DeduçãoLP.pdf" type="application/pdf">Baixar livro em PDF</a></li>
+        <li><a href="livro/2021_2-Aulas45_46DeduçãoLP.zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+</body>
+</html>

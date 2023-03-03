@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 90px;
+            font-size: 1em;
+        }
+        input:hover{
+            background-color: rgba(128, 128, 128, 0.728);
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Trabalhando com dados
+        </h1>
+    </header>
+    <div id="res">
+        <p>
+            <input type="button" value="Click aqui para começar" onclick="clic()">
+        </p>
+        <p id="acao">
+            Aqui vc vera o resultao!!
+        </p>
+    </div>
+    <script>
+        let a = document.getElementById('acao')
+        function clic() {
+        let nome = window.prompt('Qual é o seu nome?')
+        a.innerHTML = `Olá ${nome}, Seja muito Bem vindo!!`
+        }
+    </script>
+</body>
+</html>

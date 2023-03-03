@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-rb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-elementos
+        >  = childrem (filho)
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none; /*tirei o sublinhado do link*/
+            font-weight: bold;
+        }
+        a:visited { /*pseudoclasse visited*/
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline; 
+        }
+        a:active { /*qndo e clicado (ativado)*/
+            color: yellowgreen;
+        }
+        a::before {
+            content: ''; /*antes do link*/
+        }
+        a::after {
+            content: '<=';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial {
+            background-color: rgb(203, 189, 189);
+        }
+        .especial::after {
+            content: '<importante>';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a class="especial" href="https://github.com/Vivianyribeiro" target="_blank">
+            Repositorio do GitHub
+        </a></li>
+        <li><a href="https://www.youtube.com/@vivianyribeirobatista8600/">
+            Canal do YouTube
+        </a></li>
+        <li><a href="https://www.instagram.com/vivianyribeirobatista/">
+            Instagran
+        </a></li>
+    </ul>
+</body>
+</html>

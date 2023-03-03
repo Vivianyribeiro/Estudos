@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coverte Temperaturas</title>
+    <style>
+        nav > input {
+            padding: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Conversor de Temperaturas
+        </h1>
+        <nav>
+            <input type="button" value="Converter" onclick="converte()">
+        </nav>
+    </header>
+    <main>
+        <article id="res">
+            <p id="ini">Clique no botão acima para iniciar.</p>
+        </article>
+    </main>
+    <script>
+        function converte() {
+            let ini = document.querySelector('p#ini') 
+            let res = document.querySelector('article#res')
+            let c = parseFloat(window.prompt('Digite uma temperatura em graus Celsius:'))
+            if (c.length == 0){
+                window.alert('Dados nao inseridos')
+            } else {
+                
+                let k = c + 273.15
+                let f = c * 1.8 + 32
+                res.innerHTML = `<p><strong>A temperatura de ${c.toFixed(2)}, corresponde a...</strong></p>`
+                res.innerHTML += `<br>${k.toFixed(2)} K (kelvin)`
+                res.innerHTML += `<br>${f.toFixed(2)} F (Fahrenheit)`
+            }
+             
+                
+            
+            
+        }
+        
+    </script>
+</body>
+</html>

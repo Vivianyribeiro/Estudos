@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div {
+            display: inline-block; /*como vai se dispor, no caso em bloco na linha*/
+            background-color: lightgrey;
+            border: solid black;
+            text-align: center;
+            height: 200px;/*altura*/
+            width: 200px; /*largura*/
+        }
+        /* (:)pseudo classe sao relacionadas ao estaddo de determinado elemento= se ta ativo, marcado , habilitado etc*/
+        div:hover { /*hover quando eu passaro mouse em cima*/ /*dois pontos para pseudoclasse(:)*/
+           background-color: aquamarine; 
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

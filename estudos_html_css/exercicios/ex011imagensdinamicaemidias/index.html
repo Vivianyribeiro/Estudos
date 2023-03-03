@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        
+        <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1150px)" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="Imagem Flexivel"> <!--a base foi esta imagem/ a imagem padrao que quero carregar, depois adapto para outros tamanhos acrescentando source:media:type ACIMA da tag img na ordem= tipo a base foi de grande, a proxima foi de media e a de cima a p-->
+    </picture>
+
+    <H1>Reproduzindo Audios</H1>
+    <p>Vamos aprender a reproduzir audios em html5</p>
+    <audio src="midia/Shake - Anno Domini Beats.mp3" controls autoplay ></audio> <!--tem q por esta parada em verde (controls autoplay se nao nao rola, se quiser loop coloca loop apos o autoplay) esta foi a primeira maneira, veja outras maneiras abaixo-->
+    <audio preload="metadata"controls autoplay>
+        <source src="midia/Shake - Anno Domini Beats.mp3" type="audio/mpeg "> <!-- pra mp3-->
+        <source src="midia/Shake - Anno Domini Beats.mp3" type="audio/ogg"> <!--opensource-->
+        <source src="midia/Shake - Anno Domini Beats.mp3" type="audio/wav"> <!--outro ai mas wav e muito pesado, melhor nao usar assim, no caso vai ser tentado rodar pelo primeiro, se nao der vai tentar o segundo, se nao ...-->
+        <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/Shake - Anno Domini Beats.mp3">clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu servidor.</p>
+
+    <video width="560" poster="imagem/dna.jpg" controls autoplay> <!--poster pro video e configuracoes para os videos, vai ter 500px e controls-->
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="" type="video/webm">
+        <source src="" type="video/ogg">
+        <p>O navegador nao consegue processar o video, tente fazer o <a href="midia/video.mp4">download</a></p>
+    </video>
+
+    <h1>Inserindo videos Externos do youtube</h1> <!--tu pega oq tu quer no youtube indo em compartilhar e incorporar <aq> ai copia o iframe (usando videos assim nao consome o servico de hospedagem do seu site -)-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OS01vX8Lzw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

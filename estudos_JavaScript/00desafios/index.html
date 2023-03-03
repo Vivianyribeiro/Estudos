@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <style>
+        input {
+            border: none;
+            padding: 50px;
+        }
+        input:hover{
+            padding: 60px;
+            background-color: rgba(128, 128, 128, 0.362);
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Desafio das Mensagens
+        </h1>
+    </header>
+    <div id="res">
+        <p><input class="clic" name="clic" type="button" value="Botão 1" onclick=" clica1()">
+        <input type="button" value="Botão 2" onclick=" clica2()">
+        <input type="button" value="Botão 3" onclick=" clica3()">
+        </p>
+    </div>
+    <script>
+        let res=document.getElementsByClassName('clic')[0]
+        function clica1() {
+            window.alert('Voce clicou no 1* botao')
+            res.style.background = 'red'
+        }
+        function clica2(){
+            window.alert('Voce clicou no 2* botão')
+        }
+        function clica3(){
+            window.alert('Voce clicou no botao 3.')
+        }
+    </script>
+</body>
+</html>

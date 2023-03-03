@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatacoes</title>
+</head>
+<body>
+    <h1>Outras Formatacoes</h1>
+    <h2>Codigo-Fonte</h2>
+    <p>O comando <code>document-getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <pre> <!--identar o codigo-->
+        <code> <!--fonte pra codigo fonte-->
+            num = int(input('Digite um numero:'))
+            if num % 2 == 0:
+                print(f'O numero {num} e PAR')
+            else:
+                print(f'O número {num} é IMPAR')
+            print("Fim do programa")
+        </code>
+    </pre>
+    <h2>Citacoes</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!-- tag 'q' para citacoes-->
+    <h2>Citacões Completas</h2>
+    <p>Segundo Mauricio samy, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML5_2%C2%AA_Edi%C3%A7%C3%A3o/f7JVBQAAQBAJ?hl=pt-BR&gbpv=0" >
+        HTML5 é a linguagem de marcação que amplia de forma surpreendente as funcionalidades da HTML, alterando de maneira significativa como você desenvolve para a web. Trata-se da mais extensa especificação para a HTML focada em criar funcionalidades para desenvolvimento não só de sites, mas também de aplicações de internet rica (RIA).
+    </blockquote> <!-- cria um bloco da citacao e tu pode por o cite se quiser, nele tem o endereço do livro referente-->
+    <h2>Abreviações</h2>
+    
+    <p>Estou estudando <abbr title="HyperText Marketup Language">HTML</abbr> e <abbr title="Cascading Style sheets">CSS</abbr>, estou adorando!</p> <!--envelopei o html para dizer oq a sigla significa com a tag abbr, quando passar o mouse em cima mostra oq significa na pag-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo HTML</bdo></p> <!--TEXTO AO CONTRARIO-->
+</body>
+</html>

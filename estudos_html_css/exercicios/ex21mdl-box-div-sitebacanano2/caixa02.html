@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 10px;
+        }
+        section#assunto {
+            text-align: center;
+            background-color: rgba(22, 22, 236, 0.194);
+            padding: 10px;
+            margin: 10px;
+
+        }
+        section#assunto > a {
+            display: block;
+            text-decoration: none;
+            background-color: rgba(22, 22, 236, 0.413);
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        article {
+            background-color: lightblue;
+            padding: 5px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(76, 82, 82);
+            padding: 10px;
+            margin: 10px;
+            text-align: left;
+            box-shadow:inset 1PX 1px 1px 1px rgba(0, 0, 0, 0.548); /*horizontal, vertical esplahamento e cor*/
+        }
+        nav > a {
+            text-decoration: none; /*tirou sublinhado do link*/
+            color: white;
+            font-weight: bold;
+            padding: 10px; /*Deu espacamento entre os links*/
+        }
+        h1 {
+            padding: 5px;
+            margin: 10px;
+            text-align: left;
+        }
+        
+        footer {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--cabeçalho-->
+        <h1>Meu site</h1>
+        <nav><!--para menu-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main><!--conteudo principal-->
+        <section id="assunto">
+            <h2>Assuntos</h2>
+            
+                <a href="#">Esporte</a>
+                <a href="#">Cultura</a>
+                <a href="#">Tecnologia</a>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia expedita voluptate beatae quaerat, dolorum sed laborum odit nobis dolores vitae vel excepturi! Amet explicabo molestias et enim quasi nam cum?</p>
+                <aside>
+                    <p>Artigo escrito por Jose da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer><!--rodape-->
+        <p>&copy viviRB</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

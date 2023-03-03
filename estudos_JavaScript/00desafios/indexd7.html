@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converso de moedas</title>
+    <style>
+        body {
+            line-height: 1.5em;
+        }
+        nav > input{
+
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Conversor de Moedas R$  / US$
+        </h1>
+        <nav>
+            <input type="button" value="Converter" onclick="converte()">
+        </nav>
+    </header>
+    <main>
+        <article id="res">
+            <P>Clique no botão acima para iniciar.</P>
+        </article>
+    </main>
+    <script>
+        function converte() {
+            let res = document.querySelector('article#res')
+            let cdolar = parseFloat(window.prompt("Antes de mais nada, quanto esta a cotação do dolar agora?"))
+            let valorBolso = parseFloat(window.prompt('Quantos R$ vc tem na carteira?'))
+            if (cdolar.length == 0 || valorBolso.length == 0) {
+                window.alert('Falta dados!')
+            } else {
+                let valor = valorBolso / cdolar
+                res.innerHTML = `Com R$ ${valorBolso.toFixed(2)}, voce pode comprar US$ ${valor.toFixed(2)}.`
+            }
+        }
+
+    </script>
+</body>
+</html>

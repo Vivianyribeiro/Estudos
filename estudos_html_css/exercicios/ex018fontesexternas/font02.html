@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title> 
+    <style>
+    @font-face {
+        font-family: 'Lovely';
+        src: url('fontes/Lovely\ font\ demo.otf') format('opentype'), url('fontes/Lovely\ font\ demo.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /*
+    extensao no ggogle pra saber qual a fonte um site usa: chroe web store -> fonte ninja
+    */
+    /*fontes do site: https://www.dafont.com/pt/ e baixa o arquivo da fonte*/
+    /*
+        Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        -truetype-aat (Apple Advanced typegraphy)
+        -svg
+    */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, p {
+            font-family: 'Lovely', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus fuga nihil ullam unde consequatur assumenda nobis expedita dolores. Adipisci eum unde iste tenetur voluptatem expedita, repellendus aspernatur quia nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error, iusto, laboriosam assumenda possimus dolore non quibusdam earum perferendis eos sit doloribus qui? Ad iure sequi non doloribus reiciendis distinctio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus illo accusantium architecto voluptatum explicabo error officiis. Corrupti consequatur vitae ducimus, provident perspiciatis ipsum excepturi fuga tenetur asperiores maiores non nobis?</p>
+</body>
+</html>
