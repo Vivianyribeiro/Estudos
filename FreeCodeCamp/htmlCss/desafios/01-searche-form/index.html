@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css"></style>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey form</h1>
+      <p id="description">Career and areas of interest</p>
+    </header>
+    <main>
+      <form id="survey-form" method="post" action="#">
+        <fieldset>
+          <label for="name" id="name-label">Name <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+          <label for="email" id= "email-label">E-mail <input id="email" name="email" type="email" placeholder="Enter your Email" required></label>
+          <label for="number" id="number-label"> Idade (opcional) <input id='number' name="age" type="number" min="18" max="120" placeholder="Age" ></label>
+          <label for="dropdown">Which option best describes your current role?
+            <select id="dropdown">
+              <option value="">Select current role</option>
+              <option value="1">Academic</option>
+              <option value="2">Artistic</option>
+              <option value="3">Entrepreneural</option>
+              <option value="4">Legal</option>
+              <option value="5">Medical</option>
+              <option value="6">Political</option> 
+              <option value="7">Sales</option>
+              <option value="8">Student</option>
+              <option value="9">Technological</option>
+              <option value="10">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset class="radio-buttons">
+          
+          <legend>Inform your gender </legend>
+          <label class="inline" for="woman"><input id="woman" value="w" name="sex" type="radio"> Woman</label>
+          <label class="inline" for="man"><input id="man" value="m" name="sex" type="radio"> Man</label>
+          <label class="inline" for="other"><input id="other" value="o" name="sex" type="radio"> Other</label>
+        </fieldset>
+        <fieldset class="checkbox-buttons">
+          <legend>Select below the lectures in which you would be interested in attending:</legend>
+          <label for="theme1"><input class="inline" type="checkbox" id="theme1" value="theme" name="theme1"> How artificial intelligence is changing medicine</label>
+          <label for="theme2"><input class="inline" type="checkbox" id="theme2" value="theme" name="theme2"> The power of stories in communication</label>
+          <label for="theme3"><input class="inline" type="checkbox" id="theme3" value="theme" name="theme3"> Challenges and opportunities in sustainable agriculture</label>
+          <label for="theme"><input class="inline" type="checkbox" id="theme4" value="theme" name="theme4"> The psychology behind decision making</label>
+          <label for="theme5"><input class="inline" type="checkbox" id="theme5" value="theme5" name="theme5"> Changes in the labor market in the 21st century</label>
+        </fieldset>
+        <fieldset>
+          <legend>Would you like to share any other suggestions?</legend>
+          <textarea id="msg" name="msg" rows="3" colns="50">
+            Enter your suggestion here...
+          </textarea>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </main>
+  </body>
+</html>

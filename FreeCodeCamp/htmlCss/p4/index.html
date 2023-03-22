@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+        
+    </header>
+    <main>
+        <p>Please fill out this form with the required information</p>
+        <form action="#">
+            <section>
+            
+                <div class="enter">
+                    <p>Enter Your First Name:</p>
+                    <p>
+                        <input type="text">
+                    </p>
+                    <p>Enter Your Last Name:</p>
+                    <p>
+                        <input type="text">
+                    </p>
+                    <p>Enter your Email:</p>
+                    <p>
+                        <input type="email" name="log" id="log">
+                    </p>
+                    <p> Create a New Password:</p>
+                    <p>
+                        <input type="password" name="pass" id="pass">
+                    </p>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <p>
+                    <input type="radio" name="tipoConta" id="personal" value="personal ">
+                    <label for="personal">Personal Account</label>
+                </p>
+                <p>
+                    <input type="radio" name="tipoConta" id="business" value="business">
+                    <label for="business">Business Account</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="terms" id="terms" value="terms">
+                    <label for="terms">I accept the <a href="#">terms and conditions</a></label>
+                </p>
+            </section>
+            <hr>
+            <section>
+                <div>
+                    <p>Upload a profile picture:</p>
+                    <input type="file" name="file" id="file">
+                </div>
+                <div>
+                    <p>Input your age (years):</p>
+                    <input type="number">
+                </div>
+                <div>
+                    <p>How did you hear about us?</p>
+                    <input type="text" name="look" id="look">
+                </div>
+                <div>
+                    <p>Provide a bio:</p>
+                    <input type="select" name="" id="">
+                </div>
+                <br>
+                <div class="button">
+                    <input type="button" value="Submit">
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

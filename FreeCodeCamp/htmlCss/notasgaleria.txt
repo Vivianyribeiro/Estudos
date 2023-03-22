@@ -1,0 +1,84 @@
+As cores e formas da pintura são muito precisas para fingir que ela é uma pintura de Rothko.
+
+Use a propriedade filter para dar um desfoque com blur na pintura de 2px no elemento .canvas.
+
+Aqui está um exemplo de uma regra que adiciona um desfoque (blur) de 3px:
+
+p {
+  filter: blur(3px);
+}
+
+Gire todos os retângulos para dar a eles mais um visual imperfeito, como se fosse pintado à mão.
+
+Use a propriedade transform no seletor .one com o valor rotate para girar o elemento no anti-horário em 0,6 graus.
+
+transform: rotate(-0.6deg);
+
+p6:
+box-sizing: border-box; tamanho dfe caixa
+As imagens são muito grandes. Crie um seletor .gallery img para localizar suas imagens. Dê a elas uma width de 100% e uma max-width de 350px para que encolham conforme necessário, mas não fiquem muito grandes.
+
+Também defina a propriedade height para 300px para manter suas imagens com um tamanho uniforme.
+
+Alinhe o texto de .header no centro. Torne o texto maiúsculo usando a propriedade text-transform com uppercase como valor.
+
+Dê a ele um espaçamento de 32px em todos os lados. Defina os valores de cor do fundo como #0a0a23 e do texto como #fff.
+
+Adicione uma border-bottom com o valor de 4px solid #fdb347.
+*
+Flexbox é um layout de CSS unidimensional que pode controlar a forma como os itens são espaçados e alinhados dentro de um contêiner.
+
+Para usá-lo, dê a um elemento uma propriedade display de flex. Isto fará do elemento um contêiner flex. Todos os filhos direto de um contêiner flex são chamados de itens flex.
+
+Crie um seletor .gallery e torne-o um contêiner flex.
+*
+O Flexbox tem um eixo principal e um eixo cruzado. O eixo principal é definido pela propriedade flex-direction, que tem quatro valores possíveis:
+
+row (padrão): eixo horizontal com os itens flex items da esquerda para a direita
+row-reverse: eixo horizontal com os itens flex da direita para a esquerda
+column: eixo vertical com os itens flex de cima para baixo
+column-reverse: eixo vertical com os itens flex de baixo para cima
+Observação: os eixos e direções serão diferentes, dependendo da direção do texto. Os valores mostrados são para uma direção de texto da esquerda para a direita.
+
+Experimente os diferentes valores para ver como eles afetam o layout.
+
+Quando estiver pronto, defina explicitamente uma flex-direction de row no elemento .gallery.
+*
+A propriedade flex-wrap determina como os itens flex se comportam quando o contêiner flex for muito pequeno. Defini-la como wrap permitirá que os itens sejam associados à próxima linha ou coluna. nowrap (padrão) impedirá que os itens sejam associados ou que encolham, se necessário.
+
+Faça com que seus itens flex sejam associados à próxima linha quando eles ficarem sem espaço.
+*
+A propriedade justify-content determina como os itens dentro de um contêiner flex são posicionados no eixo principal, afetando a posição e o espaço ao seu redor.
+
+Dê ao seletor .gallery a propriedade justify-content com o valor de center.
+*A propriedade align-items posiciona o conteúdo do flex ao longo do eixo transversal. Neste caso, com flex-direction definido como row, o eixo cruzado seria vertical.
+
+Para centralizar as imagens na vertical, dê ao seletor .gallery uma propriedade align-items definida como center.
+**
+Observe como algumas de suas imagens ficaram distorcidas. Isto ocorre porque as imagens têm proporções diferentes. Em vez de definir cada proporção individualmente, você pode usar a propriedade object-fit para determinar como as imagens devem se comportar.
+
+Dê ao seletor .gallery img a propriedade object-fit com o valor cover. Isto informará a imagem que ela deve preencher o contêiner img enquanto mantém a proporção, resultando em um corte para o ajuste.
+*
+Suas imagens precisam de espaço entre elas.
+
+A propriedade abreviada gap do CSS define as lacunas (gaps), também conhecidas como calhas, entre as linhas e as colunas. A propriedade gap e suas subpropriedades row-gap e column-gap fornecem essa funcionalidade para layouts flex, grid e multicolunas. Você aplica a propriedade ao elemento contêiner.
+
+Dê ao seu contêiner flex .gallery uma propriedade gap com o valor 16px.
+* 
+da um border -radius nas imagens da .gallery
+*
+O pseudoelemento ::after cria um elemento que é o último filho do elemento selecionado. Você pode usá-lo para adicionar um elemento vazio após a última imagem. Se você der a esse elemento a mesma width das imagens, ele empurrará a última imagem para a esquerda quando a galeria estiver em um layout de duas colunas. Neste momento, ele está no centro porque você definiu justify-content: center no contêiner flex.
+
+Exemplo:
+
+.container::after {
+  content: "";
+  width: 860px;
+}
+Crie um novo seletor usando um pseudoelemento ::after no elemento .gallery. Adicione uma propriedade content definida como uma string vazia "" e defina 350px como o valor da propriedade width.
+*
+
+
+
+
+
