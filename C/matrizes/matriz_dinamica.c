@@ -28,9 +28,12 @@ int main(){
         }
         puts("");
     }
-    free (m);
-    free (*m);
-    m = NULL;
+    // DESALOCAR A MATRIZ DINAMICA
+    for(int i = 0; i < nrows; i++){
+        free(m[i]); //qndo i vale 0 desaloca as colunas da linha 0, qndo e 1 desaloca as colunas da linha 1
+    }
+    free(m);// aqui desaloca as linhas 0 e 1
+    m = NULL; //BOA PRATICA DA PROGRAMACAO M VAI APONTAR PARA NADA
     
     return 0;
 }

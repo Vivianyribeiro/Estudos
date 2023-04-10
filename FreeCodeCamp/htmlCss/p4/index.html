@@ -17,63 +17,51 @@
         <form action="#">
             <section>
             
-                <div class="enter">
-                    <p>Enter Your First Name:</p>
-                    <p>
-                        <input type="text">
-                    </p>
-                    <p>Enter Your Last Name:</p>
-                    <p>
-                        <input type="text">
-                    </p>
-                    <p>Enter your Email:</p>
-                    <p>
-                        <input type="email" name="log" id="log">
-                    </p>
-                    <p> Create a New Password:</p>
-                    <p>
-                        <input type="password" name="pass" id="pass">
-                    </p>
-                </div>
+                <fieldset class="enter">
+                    <legend>Data personal</legend>
+                    <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                    <label>Enter Your Last Name: <input type="text" required></label>
+                    
+                    <label>Enter your Email: <input type="email" name="log" id="log" required></label>
+                    
+                    <label> Create a New Password: <input type="password" name="pass" id="pass" required></label>
+                    
+                </fieldset>
             </section>
-            <hr>
-            <section>
-                <p>
-                    <input type="radio" name="tipoConta" id="personal" value="personal ">
-                    <label for="personal">Personal Account</label>
-                </p>
-                <p>
-                    <input type="radio" name="tipoConta" id="business" value="business">
-                    <label for="business">Business Account</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="terms" id="terms" value="terms">
-                    <label for="terms">I accept the <a href="#">terms and conditions</a></label>
-                </p>
-            </section>
-            <hr>
-            <section>
-                <div>
-                    <p>Upload a profile picture:</p>
-                    <input type="file" name="file" id="file">
-                </div>
-                <div>
-                    <p>Input your age (years):</p>
-                    <input type="number">
-                </div>
-                <div>
-                    <p>How did you hear about us?</p>
-                    <input type="text" name="look" id="look">
-                </div>
-                <div>
-                    <p>Provide a bio:</p>
-                    <input type="select" name="" id="">
-                </div>
-                <br>
-                <div class="button">
-                    <input type="button" value="Submit">
-                </div>
-            </section>
+            
+            <fieldset>
+                <legend>Type Account</legend>
+                    <label for="personal"><input class="inline" type="radio" name="tipoConta" id="personal" value="personal "> Personal Account</label>
+                    
+                    <label for="business"> <input class="inline" type="radio" name="tipoConta" id="business" value="business"> Business Account</label>
+
+                    <label for="terms"><input class="inline"  type="checkbox" name="terms" id="terms" value="terms" required> I accept the <a href="#">terms and conditions</a></label>
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>Others</legend>
+                <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" id="file"></label>
+                    
+                <label for="age">Input your age (years): <input id="age " name="age" min="13" max="120" type="number" required></label>
+
+                <label>How did you hear about us? 
+                    <select id="referrer" name="referrer">
+                        <option value="">(select one)</option>
+                        <option value="1">freeCodeCamp News</option>
+                        <option value="2">freeCodeCamp YouTube</option>
+                        <option value="3">freeCodeCamp Forum</option>
+                        <option value="4">Other</option>
+                    <select>
+                </label>
+
+                <label for="bio">Provide a bio: <textarea type="select" name="" id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea></label>
+    
+            </fieldset>
+            <br>
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </main>
 </body>

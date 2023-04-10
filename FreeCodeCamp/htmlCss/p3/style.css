@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.marker {
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.capa{
+    width: 60px;
+    height: 25px;
+}
+
+.tampa{
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255,255,255, 0.5);
+    border-right: 10px double rgba(0, 0, 0, 0.8);
+}
+
+.capa, .tampa {
+    display: inline-block;
+}
+
+.red {
+    background: linear-gradient(rgb(122,74,14), rgb(245,62,113), rgb(162,27,27));
+    box-shadow: 0 0 20px 0 rgba(83,14,14,0.8);
+}
+
+.green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3b7e29cc;
+}
+
+.blue {
+    background: linear-gradient(hsl(240,50%,20%), hsl(240, 80%, 55%), hsl(230,40%,20%));
+    box-shadow: 0 0 20px 0 rgba(80, 80, 254, 0.778);
+}
+

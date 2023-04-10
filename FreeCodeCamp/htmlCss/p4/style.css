@@ -15,24 +15,61 @@ body{
     color: white;
     font-family: sans-serif;
 }
-main {
-    width: 400px;
-    margin: auto;
-    padding: 10px;
-    text-align: left;
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left
 }
-.enter > input {
-   background-color: var(--cor2);
-}
-hr { 
-    margin: 70px 0px;
+form > p {
+    text-align:;
 }
 
-a {
+fieldset{
+    border: none;
+    padding: 2rem;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+legend{
+    padding: 20px 0 0 0;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+input, textarea, select{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input, textarea {
+    background-color:  #0a0a23;
+    border: 1px solid #0a0a23;
     color: white;
 }
-.button {
-    text-align: center;
-    background-color: blue;
-    width: 10px;
+.inline {
+    width: unset; /* cancela os anteriores*/
+    margin: 0 0.5rem 0 0;
+    vertical-align: middle;
+}
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1em;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+a {
+    color: white;
 }
