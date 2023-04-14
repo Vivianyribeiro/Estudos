@@ -1,5 +1,7 @@
 /*
-Crie uma struct para representar um aluno, com nome, matrícula, nota da primeira prova e nota da segunda prova. Faça um programa que leia do usuário quantos alunos ele deseja cadastrar, crie um vetor dinâmico de alunos e preencha as informações de cada um. Em seguida, exiba na tela a média de cada aluno e a média da turma.*/
+Crie uma struct para representar um aluno, com nome, matrícula, nota da primeira prova e nota da segunda prova. 
+Faça um programa que leia do usuário quantos alunos ele deseja cadastrar, crie um vetor dinâmico de alunos e
+preencha as informações de cada um. Em seguida, exiba na tela a média de cada aluno e a média da turma.*/
 
 #include <stdio.h>
 #include <stdlib.h>
