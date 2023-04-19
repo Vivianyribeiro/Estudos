@@ -1,0 +1,39 @@
+	Pontos-chave para incluir no ensaio:
+
+- Defina o que são sistemas inteligentes de apoio à decisão e como eles funcionam.
+- Explique os benefícios dos sistemas inteligentes de apoio à decisão, como a capacidade de processar grandes quantidades de dados em tempo real e a capacidade de melhorar a eficiência e a precisão da tomada de decisão.
+- Apresente possíveis desvantagens dos sistemas inteligentes de apoio à decisão, como a dependência excessiva de tecnologia, a falta de transparência e o risco de erros ou vieses nos resultados.
+- Apresente exemplos de organizações que utilizam sistemas inteligentes de apoio à decisão e como isso tem afetado seus resultados.
+- Conclua seu ensaio com uma reflexão sobre se os benefícios dos sistemas inteligentes de apoio à decisão superam as desvantagens ou se as organizações devem ser cautelosas ao adotá-los.
+
+
+
+ Os sistemas inteligentes de apoio a decisao, sao ferramentas criadas para dar apoio a tomada de decisoes , elas geram possiveis direcoes a se seguir depois de analisar dados, informaçoes, resultados anteriors, utlizando ias e observando padroes que se repetem.
+
+ Enfim, com o apoios dessas ferramentas a decisao vai ser baseada em informaçoes que foram avaliadas minuciosamente oque esperamos que resulte na melhor decisao possivel, pois a capacidade de processar grandes quantidade de dados em tempo real e a capacidade de melhorar a eficiencia e a precisão da tomada de decisão é uma vantagem desta ferramenta.
+
+ Como desvantagem podemos destacar a dependencia excessiva de tecnologia, o alto valor para manter, e ha risco também se levarmos em conta que é possível que a ferramenta possa interpretar algo de uma forma nao esperada, com vieses(crencas/manias, forma que aprendeu e interpreta algo) e gerar erros ou resultados indesejados.
+
+ Podemos ter como exemplo a Amazon, ela utiliza um SIAD que analisa dados para fazer recomendaçoes, ajudando clientes a encontrar produtos relevantes pra si, com base em historicos de compras e navegacao da web, oque teve como resultado um aumento significativo nas vendas da empresa.
+
+ O Google também é um otimo exemplo, ela utiliza um SIAD que analisa dados para mehorar a precisao de seus resultados de pesquisa e exibir anuncios relevantes ao ususario, oque levou a um aumento na receita de publicidade do google (os anunciantes sentem mais confiaveis a comprar anuncios sabendo que serao direcionados a publicos alvos relevantes).
+
+ Para concluir, ao olhar de forma geral esta feramenta é de muita ajuda para o crescimento e desenviolvimento da empresa, ela pode ser desenvolvidas para diferentes fins, isso permite que tu trasse um objetivo para ela e ela ira ajudar com base em tecnicas a tomar o melhor caminho, claro que nao e algo preciso 100% mas os resultados sao imprecionantes e baseado em fatos e as empresas devem apostar nisto para crescer no mercado atual onde a evolucao tecnologica é crescente.
+
+">>
+
+Os sistemas inteligentes de apoio à decisão são ferramentas de software que ajudam os usuários a tomar decisões informadas, baseadas em dados. Essas ferramentas usam algoritmos de inteligência artificial (IA) para analisar dados e fornecer insights úteis que podem ajudar a orientar a tomada de decisões.
+
+Uma das principais vantagens dos sistemas inteligentes de apoio à decisão é que eles são capazes de lidar com grandes volumes de dados e processá-los rapidamente. Isso significa que eles podem ajudar a identificar tendências, padrões e correlações em dados que seriam difíceis ou impossíveis de detectar manualmente.
+
+Outra vantagem é que os sistemas inteligentes de apoio à decisão são capazes de fornecer insights baseados em dados, em vez de opiniões ou suposições pessoais. Isso pode ajudar a reduzir a influência de vieses pessoais e permitir que as decisões sejam tomadas com base em fatos.
+
+No entanto, há também desvantagens no uso de sistemas inteligentes de apoio à decisão. Um problema é que eles podem ser caros de desenvolver e manter, o que pode torná-los inacessíveis para empresas menores ou organizações com orçamentos limitados.
+
+Além disso, os sistemas inteligentes de apoio à decisão podem ser vulneráveis a erros ou vieses nos dados de entrada ou no próprio algoritmo. Isso pode levar a decisões equivocadas ou resultados indesejados. É importante que os usuários dessas ferramentas sejam críticos e cautelosos em relação aos resultados fornecidos pelos sistemas inteligentes de apoio à decisão.
+
+Um exemplo de uso de sistemas inteligentes de apoio à decisão é o sistema de recomendação da Netflix, que sugere programas de TV e filmes para seus usuários com base em seus históricos de visualização e preferências. Isso ajuda a reter os clientes e a aumentar a receita da empresa.
+
+Em conclusão, os sistemas inteligentes de apoio à decisão têm o potencial de ajudar as empresas a tomar decisões mais informadas e eficazes com base em dados e insights úteis. No entanto, é importante considerar as desvantagens e desafios associados ao uso dessas ferramentas, bem como os riscos potenciais de erros ou vieses nos resultados.
+
+"<<
