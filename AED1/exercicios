@@ -1,1 +1,25 @@
+Exercicios AED1
 
+1 - Saidas do código:
+
+#include <stdio.h>
+int main(void)
+{
+    int x, *px, *py;
+    x = 9;
+    px = &x;
+    py = px;
+    printf("x= %d\n", x);
+    printf("&x= %p\n", &x);
+    printf("px= %p\n", px);
+    printf("*px= %d\n", *px);
+    printf("*py= %d\n", *py);
+}
+
+saida:
+
+x = 9;
+&x = endereço da variavel x (gfgfgfgx)
+px = endereço do px (iioioio8)
+*px = 9 (o valor do local que px aponta)
+*py = 9 (pois ele aponta para o mesmo local que o px aponta)
