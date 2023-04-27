@@ -1,0 +1,73 @@
+Diferenca entre sistemico e sistematico:
+
+O raciocínio sistemático e o raciocínio sistêmico são abordagens diferentes para entender e resolver problemas complexos.
+
+O raciocínio SISTEMÁTICO é uma abordagem linear e sequencial para resolver problemas, em que um problema é dividido em partes menores e cada parte é resolvida em sequência, de modo que a solução final seja alcançada pela combinação das soluções de cada parte. É uma abordagem que segue uma lógica de causa e efeito e é frequentemente utilizada em problemas que são relativamente simples e bem definidos.
+
+Por outro lado, o raciocínio SISTÊMICO é uma abordagem não-linear e holística para entender e resolver problemas complexos, em que o problema é considerado como um sistema composto de partes inter-relacionadas que afetam umas às outras. Em vez de dividir o problema em partes menores, o raciocínio sistêmico busca entender a relação entre as partes e como elas contribuem para o funcionamento do sistema como um todo. É uma abordagem que considera múltiplas perspectivas e interdependências, e é frequentemente utilizada em problemas que são dinâmicos, complexos e mal definidos.
+
+Em resumo, o raciocínio sistemático é uma abordagem analítica, sequencial e linear, enquanto o raciocínio sistêmico é uma abordagem integrativa, holística e não-linear.
+
+
+********************* MECANICISTA E SISTEMICO *************************
+
+O PARADIGMA MECANICISTA é uma abordagem reducionista, que vê o mundo como uma máquina composta de partes isoladas e independentes. Segundo esse paradigma, o conhecimento pode ser adquirido através da análise das partes e do estudo da relação entre elas. Esse paradigma surgiu na época da Revolução Industrial e influenciou a ciência moderna, a engenharia e a medicina.
+
+Por outro lado, o PARADIGMA SISTÊMICO é uma abordagem holística, que vê o mundo como um sistema interconectado e interdependente de partes. Segundo esse paradigma, o conhecimento pode ser adquirido através da compreensão do todo e das interações entre as partes. Esse paradigma surgiu como uma crítica ao mecanicismo e influenciou áreas como a ecologia, a biologia, a psicologia e a administração.
+
+Enquanto o paradigma mecanicista busca entender o mundo através da análise das partes, o paradigma sistêmico busca entender o mundo através da compreensão do todo e das interações entre as partes. O paradigma sistêmico reconhece que as partes estão interconectadas e que uma mudança em uma parte pode afetar o todo. Além disso, o paradigma sistêmico enfatiza a importância do contexto e da perspectiva, enquanto o paradigma mecanicista tende a enfatizar a objetividade e a neutralidade.
+
+Em resumo, o paradigma mecanicista e o paradigma sistêmico são abordagens filosóficas diferentes que influenciam a forma como vemos e entendemos o mundo ao nosso redor. Enquanto o mecanicismo enfatiza a análise das partes, o sistemicismo enfatiza a compreensão do todo e das interações entre as partes.
+
+*******************************************PRESSUPOSTOS*****************************
+
+O pensamento sistêmico vem da revolução científica, de filósofos como Descartes, Bacon e Newton. Este pensamento é uma maneira de mostrar a realidade, é o pensamento de interdisciplinaridade.
+O pensamento é a psicologia analítica da Carl Gustan Jung.Muitas críticas á teoria junguiana coincidem com a dificuldade em aceitar a psicologia como ciência, devido aos pressupostos apresentado. O pensamento sistêmico propõe, em contraposição, os paradigmas da complexidade, da instabilidade e da intersubjetividade, que se interagem incrivelmente com a psicologia analítica.
+
+>> O pressuposto da simplicidade é quando existe “algo“ em que pode ser dividido em partes e analisado por partes, como por exemplo o conhecimento que é dividido em partes e formando diferentes disciplinas e cada qual o seu especialista.
+
+>> O pressuposto da estabilidade é a crença que falo; que o “mundo já é“, ou seja, a natureza ou a física, possuem uma lei a seguir, que faz com que se siga em frente da maneira que ela é, sem ser discutida, diferente da física quântica, que andou mudando esse paradigma ( o que dizem ser, mas não é ), como o fenômeno da previsibilidade, o que não é previsto com segurança é associado a um conhecimento imperfeito. Já o fenômeno da controlabilidade diz que o comportamento do sistema será determinado pelas instruções que ele receberá do ambiente, portanto, poderá ser controlado e previsível.
+
+>> O pressuposto da objetividade é a crença que fala que o mundo é real e o que acontece nele também é real, essa certeza decorre das diversas observações, que são confiáveis por causa das afirmações.
+
+>> O pressuposto da complexidade mostra que é difícil ver, lidar e compreender a complexidade do mundo em todos os seus níveis.
+O pressuposto da instabilidade reconhece que o mundo ainda está se transformando, está se tornando “algo”, por isso ele é instavel.
+
+>> O pressuposto da intersubjetividade diz que não existe uma realidade e sim a junção de várias versões dela com diferentes explicações
+
+********************* ERA CLASSICA E ERA MODERNA DO MECANICISMO *********************
+>> CLASSICA
+A era clássica do paradigma mecanicista refere-se a um período da história em que a ciência, a tecnologia e a filosofia foram profundamente influenciadas pela visão mecanicista do mundo. Esse período estendeu-se do século XVII ao início do século XX e foi caracterizado pela crença de que o mundo poderia ser entendido como uma máquina composta de partes separadas e independentes.
+
+Durante a era clássica do paradigma mecanicista, surgiram importantes cientistas e filósofos, como Isaac Newton, Galileu Galilei, Descartes e Bacon. Esses pensadores desenvolveram teorias e métodos que enfatizavam a análise das partes e a busca por leis universais que pudessem explicar o funcionamento do mundo.
+
+A ciência clássica mecanicista baseou-se na ideia de que o conhecimento poderia ser adquirido através da observação e da experimentação, e que a realidade poderia ser descrita de forma objetiva e precisa. Esse modelo de ciência foi aplicado em diversas áreas, como a física, a química, a biologia e a psicologia, e influenciou também a engenharia, a medicina e a tecnologia.
+
+Embora a era clássica do paradigma mecanicista tenha sido responsável por importantes avanços científicos e tecnológicos, essa abordagem reducionista foi criticada por limitar a compreensão da realidade e por ignorar as interações e interdependências entre as partes. O paradigma sistêmico surgiu como uma crítica a essa visão mecanicista do mundo, propondo uma abordagem mais holística e integrada para entender e resolver problemas complexos.
+
+>> MODERNA
+A era moderna do paradigma mecanicista refere-se ao período que se seguiu à era clássica, a partir do início do século XX. Nesse período, a visão mecanicista do mundo continuou a influenciar a ciência, a tecnologia e a filosofia, mas surgiram também críticas e novas abordagens que buscavam superar as limitações desse paradigma.
+
+Uma das principais críticas ao paradigma mecanicista surgiu na física quântica, que questionou a ideia de que a realidade poderia ser descrita de forma objetiva e precisa, mostrando que as partículas subatômicas se comportam de forma imprevisível e que a observação pode afetar o resultado da medição. Essa descoberta foi um marco importante na história da ciência, e influenciou diversas áreas do conhecimento, como a biologia, a psicologia e a filosofia.
+
+Além disso, surgiram também novas abordagens filosóficas que buscavam superar as limitações do mecanicismo, como o pragmatismo, o fenomenologia e o existencialismo, que enfatizavam a importância da experiência subjetiva e da interpretação na compreensão da realidade.
+
+Apesar dessas críticas e novas abordagens, o paradigma mecanicista continuou a influenciar a ciência e a tecnologia até os dias de hoje, especialmente em áreas como a engenharia e a medicina. No entanto, muitos pesquisadores e pensadores têm buscado adotar uma abordagem mais integrada e holística para entender e resolver problemas complexos, o que tem levado a um ressurgimento do paradigma sistêmico.
+
+/***************** OBSERVAÇÕES ********************
+
+O paradigma mecanicista surgiu no início da era moderna, no século XVII, com o desenvolvimento da física newtoniana e da filosofia cartesiana. A visão mecanicista do mundo foi fortemente influenciada pela ideia de que o mundo poderia ser entendido como uma máquina composta de partes separadas e independentes, e que poderia ser descrito de forma objetiva e precisa.
+
+Por outro lado, o paradigma sistêmico surgiu como uma crítica ao mecanicismo, a partir do século XX. O pensamento sistêmico enfatiza a importância das relações e interações entre as partes de um sistema, e busca uma compreensão mais integrada e holística dos fenômenos complexos. A abordagem sistêmica é aplicada em diversas áreas do conhecimento, como a biologia, a ecologia, a psicologia, a administração e a engenharia de sistemas.
+
+Portanto, podemos dizer que o paradigma mecanicista surgiu primeiro, no século XVII, e que o paradigma sistêmico surgiu posteriormente, como uma crítica e alternativa à visão mecanicista do mundo.
+
+>> HOLISTICA É :::
+
+Holistica é um termo que se refere à abordagem que busca entender os fenômenos de forma integral, considerando as interações entre as partes e o todo, e enfatizando a importância do contexto em que os fenômenos ocorrem. A palavra "holístico" vem do grego holos, que significa "todo".
+
+A abordagem holística é utilizada em diversas áreas do conhecimento, como a medicina, a psicologia, a ecologia, a filosofia e a educação, entre outras. Essa abordagem considera que os fenômenos são complexos e multifacetados, e que sua compreensão requer uma visão mais ampla e integrada.
+
+Por exemplo, na medicina holística, o paciente é visto como um todo, considerando não apenas os sintomas físicos, mas também os aspectos psicológicos, sociais e ambientais que podem influenciar sua saúde. Na educação holística, o aluno é visto como um ser integral, que deve ser desenvolvido em suas dimensões físicas, intelectuais, emocionais e espirituais.
+
+Em resumo, a abordagem holística busca superar a visão fragmentada e reducionista dos fenômenos, buscando uma compreensão mais integrada e profunda.
