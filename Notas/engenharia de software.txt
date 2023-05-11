@@ -74,11 +74,11 @@ Processo de Desenvolvimento -> analise de requisitos - desenho - implementacao -
 
 *** MODELOS DE PROCESSOS
 
-- Modelos sequenciais 
+- Modelos sequenciais - modelo cascata - termina um estagio faz o outro estagio
 
-- Modelos incrementais 
+- Modelos incrementais - divide o projeto e partes incrementais ou iteracoes q sao ebtregas em etapas sucessivas
 
-- Modelos iterativos 
+- Modelos iterativos - modelo Espiral - o o o planejamento -> analise dos riscos - engenharia - avaliacao do cliente / modelo espiral RUP - ESPECIFICACAO DE REQUISISTOS - ANALISE - PROJETO - IMPLEMENTACAO - TESTES - ENTREGA E IMPLANTACAO 0 0 0 aplica as atividades em ciclo - nao da pra estimar custo e tempo
 
 - Modelos hibridos 
 
