@@ -67,7 +67,7 @@ int main() {
         soma += matriz[c_anterior][c_posterior];
 
     }
-    printf("\n A distancia total eh %d", soma);
+    printf("\n%d", soma);
 
     return 0;
 }

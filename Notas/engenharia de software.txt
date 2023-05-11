@@ -1,0 +1,85 @@
+software -> conjunto de instrucoes/programas/procedimentos que governam/gerenciam as acoes de uma maquina programavel
+
+produto de software -> é um componente de um sistema de software que tem documentacao e pode ser execultado, testado, modificado e estendido por qualquer pessoa (pacote)
+
+sistema de software -> é um software que - envolve varios programas interagindo entre si - programs  projetos para funcionarem integrada e cooperativamente
+
+**** categorias de software
+
+SOFTWARE APLICATIVO -> realiza processamento de informacoes para usuarios finais
+	software aplicativo para propositos especificos -> programas que aopiam aplicacoes especificas dos usuarios (sigaa)
+ 			/ 
+	software aplicativo para propositos geral -> prgms q realizam trabalho de processamento para usuarios finais (processamento de texto, planilhas)
+
+SOFTWARE DE SISTEMAS -> Gerencia e suporta as operacoes dos sistemas computacionais e redes
+	software para GERENCIAMENTO de sistemas (ex- windows, linux)
+			 /
+	software oara DESENVOLVIMENTO de sistemas (EX - ide, vscode, eclipse, pycharm)
+
+***** softwares sao licenciados - nao da pra comprar um software, se compra uma licensa para usar ele
+
+caracteristicas de software : 
+
+• é especificado e não construído
+• é uma entidade lógica (conceitual)
+• é intangível
+• não se desgasta
+• não pode ser visualizado
+• é inerentemente complexo
+• precisa ser compatível
+• sempre sofre modificações
+
+******* ENGENHARIA DE SOFTWARE -> aplicação pratica de conceitos de disciplinas de ti em todads as atividades tecnicas e gerenciais que compoe o desenvolvimento de sistemas de software com o objetivo de garantir a qualidade dos processos e dos produtos obtidos
+APLICACAO SISTEMATICA DE METODOS, FERRAMENTAS E TECNICAS PARA ATENDER OS REQUISITOS E ALCANÇAR OS OBJETIVOS DE UM SISTEMA DE SOFTWARE
+
+***
+
+ENGENHARIA DE REQUISITOS -> DESIGN DE SOFTWARE -> CONSTRUCAO DE SOFTWARE -> TESTE DE SOFTWARE -> IMPLANTACAO DE SOFTWARE -> MANUTENCAO E EVOLUCAO DE SOFTWARE
+
+**** CAMADAS ES
+Tecnicas e ferramentas
+metodos
+processos
+foco na qualidade
+8*******
+
+DIFICULDADES ESSENCIAIS : complexidade, conformidade (padroes desenvolvidos por pessoas diferentes), alterabilidade (mudancas constantes), invisibilidade
+
+DIFICULADAE ACIDENTAIS: AS QUE SE TEM DURANTE A PRODUCAO DO SOFTWARE
+
+>>>> swebok -> uma sistese e uma referencia ao materias disponivel em diversas publicaç~eos. organiza o conhecimento
+----------------------------------------------------------------------
+
+ciclo de vida do software: fase ou etapas que o software passa
+
+-concepcao -> desenvolvimento -> implantacao -> manutencao -> interrupcao de uso.
+
+concepcao -> identificacao de um problema a ser resolvido por um sistema de software (requisitos escopo ccomplexidade)
+
+desenvolviemnto -> elaboracao de uma solucao computacional que vai satisfazer os requisitos do sistemas de software (analise desenho da solucao, implementacao e teste)
+
+implantação -> colocação do sistema em utilizacao 
+
+manutencao -> aplicação de esforcos pra manter o sistema em operação (manutencao corretiva, adaptativa, preventiva, evolutiva)
+
+interrupcao de uso -> deixa de ser usado quando a relacao entre o custo de sua manutencaoe o beneficio do seu uso se torna desfavoravel, por obsolencia tecnologica e mudancas extremas de ambiente de negocios tbm.
+
+*** 
+iso/12207 
+	processo de software -> conjunto de atividades relacionadas (passo a passo) que permitem alcancar um objetivo associado a um produto de software 
+ 	CADA ETAPA DO CILCO DE VIDA DO SOFTWARE TEM SEU PROCESSO (PASSOS)
+
+
+Processo de Desenvolvimento -> analise de requisitos - desenho - implementacao - teste - implantacao
+
+*** MODELOS DE PROCESSOS
+
+- Modelos sequenciais 
+
+- Modelos incrementais 
+
+- Modelos iterativos 
+
+- Modelos hibridos 
+
+- Modelos 
