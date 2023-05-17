@@ -4,7 +4,7 @@
 int rotas_viaveis(char matriz[max][max], int n, int l, int c){
     
     
-    if (matriz[l][c] == 'V' || matriz[l][c] == 'v' && l + 1 >= n) {
+    if (matriz[l][c] == 'V' && l + 1 >= n) {
         return 0; /*baixo fora*/
     } else
 
@@ -21,7 +21,7 @@ int rotas_viaveis(char matriz[max][max], int n, int l, int c){
     }
 
     int celulas = 1; 
-    if (matriz[l][c] == 'v' || matriz[l][c] == 'V') {
+    if (matriz[l][c] == 'V') {
         celulas += rotas_viaveis (matriz, n, l + 1, c);
     } else
     if (matriz[l][c] == '>') {
@@ -39,19 +39,19 @@ int rotas_viaveis(char matriz[max][max], int n, int l, int c){
 }
 
 int main () {
-    int n, viaveis = 0;
+    int n, viaveis = 0, i, j;
     char matriz[max][max];
 
     scanf("%d", &n);
 
-    for(int i=0; i< n; i++){
-        for(int j = 0; j < n; j++){
+    for(i=0; i< n; i++){
+        for(j = 0; j < n; j++){
             scanf(" %c", &matriz[i][j]);
         }
     }
 
-    for(int i=0; i< n; i++){
-        for(int j = 0; j < n; j++){
+    for(i=0; i< n; i++){
+        for(j = 0; j < n; j++){
             viaveis += rotas_viaveis(matriz, n, i, j);
         }
     }
