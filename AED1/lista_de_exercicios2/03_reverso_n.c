@@ -26,9 +26,9 @@ int main(){
     int n;
     int n_reverso = 0;
     scanf ("%d", &n);
-    
-    n_reverso = reverso (n, n_reverso);
-    printf("%d", n_reverso);
-
+    if ( n >= 1 && n <= 10000000) {
+        n_reverso = reverso (n, n_reverso);
+        printf("%d\n", n_reverso);
+    }
     return 0;
 }

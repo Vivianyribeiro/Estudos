@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int fatorial_duplo (int n) {
-    if (n == 1){
+    
+    if (n <= 1){
         return 1;
     } else {
         if (n%2 != 0){
@@ -16,8 +17,11 @@ int main(){
     int n;
 
     scanf("%d", &n);
-    if (n <= 100){
+    if (n <= 100 ){
         printf("%d", fatorial_duplo(n));
+    } else
+    {
+        return -1;
     }
 
     return 0;
