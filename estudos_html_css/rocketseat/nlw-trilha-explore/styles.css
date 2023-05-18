@@ -1,60 +1,99 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /*respeitar a bordar das caixas*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*respeitar a bordar das caixas*/
 }
 
 body {
-  background-color: #121215;
-  color: #eaeaea;
-  font-family: "Roboto", sans-serif;
+    background-color: #121215;
+    color: #eaeaea;
+    font-family: "Roboto", sans-serif;
 
-  display: grid;
-  drid-template-areas: "profile timeline"; //uma coluna profile e uma timeline
-  grid-template-columns: 1fr 1fr; // deixando o tamnaho flexivel com metade igual
-  grid-template-rows: 100vh;
+    display: grid;
+    grid-template-areas: "profile timeline"; /*uma coluna profile e uma timeline*/
+    grid-template-columns: 1fr 1fr; /*deixando o tamnaho flexivel com metade igual*/
+    grid-template-rows: 100vh;
 }
 
 nav {
-  padding: 64px;
-  grid-area: timeline; //to dizendo que a area dela no grid e a time line
-  background-color: blue;
+    padding: 64px;
+    grid-area: timeline; /*to dizendo que a area dela no grid e a time line*/
+    
+    overflow-y: scroll;/*quando o conteudo nao caber na vertical (y) habilite a barra scroll*/
 }
 
 .memory {
-  /*elemento pai : qm ta dentro de min deve ter:...*/
-  display: flex; /* elementos flexivel, so q fica um do lado do outro*/
-  flex-direction: column; /* mando ficar um de baixo do outro*/
-  gap: 16px; /* espaçamento entre elementos*/
+    /*elemento pai : qm ta dentro de min deve ter:...*/
+    display: flex;
+    /* elementos flexivel, so q fica um do lado do outro*/
+    flex-direction: column;
+    /* mando ficar um de baixo do outro*/
+    gap: 16px;
+    /* espaçamento entre elementos*/
 
-  text-decoration: none;
-  margin-bottom: 12px;
+    text-decoration: none;
+    margin-bottom: 12px;
 }
 
 .memory small {
-  color: #bebebf;
-  font-size: 12px;
+    color: #bebebf;
+    font-size: 12px;
 }
 
 .memory h1 {
-  color: #bebebf;
-  font-size: 32px;
+    color: #bebebf;
+    font-size: 32px;
 }
 
 .memory img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover; /*nao esticar mantendo tipo uma capa*/
-  border-radius: 8px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    /*nao esticar mantendo tipo uma capa*/
+    border-radius: 8px;
 }
 
 .memory p {
-  font-size: 18px;
-  color: #bebebf;
-  line-height: 28px; /*espacamento da linha*/
+    font-size: 18px;
+    color: #bebebf;
+    line-height: 28px;
+    /*espacamento da linha*/
 }
 
 aside {
-  grid-area: profile; //separei timeline em nav e profile em aside
-  background-color: red;
+    grid-area: profile; /*separei timeline em nav e profile em aside*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    border-right: 1px solid;
+    border-image: linear-gradient(#727275, #2c2c31) 1;/*opacidae de 1*/
+    background-image: url("assets/background.svg");
+    background-position: top right; /*faz imagem grudar no topo direito*/
+    background-repeat: no-repeat;/*nao repetear imagem*/
+    background-size: auto 100%;/*se ajusta ao tamanho do pai*/
+}
+
+aside img:nth-child(2) {
+    width: 160px;
+    height: 160px;
+    
+    border-radius: 50%; /*deixa redondinha*/
+
+    border: 4px solid transparent; /*pra fazer ela ficar colorida depois*/ 
+    background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box,
+      linear-gradient(260deg, #d39e33, #ed5636, #633bbc) border-box;
+}
+
+asid p {
+    font-size: 32px;
+    text-align: center;
+}
+
+aside spam {
+    font-size: 12px;
+    color: #9e9ea0;
 }
