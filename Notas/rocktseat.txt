@@ -34,3 +34,16 @@ https://excalidraw.com/
 ----
 classe para reaproveitar o visual
 id: visual unico
+
+****************
+npm init -y = cria um projeto javascript = todo arquivo js tem um package.json com inf principais do projeto e todas as dependencias
+dependencias sao todas as bibliotecas de terceiros que temos no projeto
+
+typescript e uma ferramenta que permite adicionar tipagem estatica(definir o formato o tipo de variavel no momento q declaro ela)
+
+npm install typescript -D
+o -D quer dizer q so vai ser usado para projetos em desenvolvimento
+@types/node = para javascript entender que ele ta dentro de um projeto node e emtender algumas coisas globais do node
+com npx tsc --init cria arquivo tsconfig.json
+
+npm install tsx -D = o tsx ajuda no fato de que o node nao entend o javascript ele faz entender
