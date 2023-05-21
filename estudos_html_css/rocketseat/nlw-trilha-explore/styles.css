@@ -5,6 +5,38 @@
     /*respeitar a bordar das caixas*/
 }
 
+:root {
+  font-size: 16px;  /*definindo como padrao ai se em uma da font size quero 12px faço 12/16 que resulta em 0.75rem*/
+}
+
+::-webKit-scrollbar { /*WEKIT PERMITE renderizar e modificar os elementos do navegador*/
+  width: 8px; /*da 8 px de largura pra barra*/
+}
+
+::-webKit-scrollbar-track {
+  background-color: #2c2c31; /*da uma corzinha para a coluna da barra*/
+}
+
+::-webKit-scrollbar-thumb {
+  background-color: #9e9ea0; /*da uma corzinha um pouco mais clara que a de fundo para a barra que rola*/
+}
+
+@keyframes entering { /*keyframes : recurso do CSS que permite criar animações personalizadas, definindo diferentes estágios e estilos para os elementos ao longo da animação*/
+  
+  /*0% { background-color: #ffaaaa;}
+  30% { background-color: #aaffaa;}
+  78% { opacity: 0;}
+  100% { opacity: 1;} ou assim:*/
+  from { 
+    opacity: 0;
+    transform: translateY(-200px);/* ele deslizando verticalmente*/
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0px);/* ele parando */
+  }
+}
+
 body {
     background-color: #121215;
     color: #eaeaea;
@@ -21,6 +53,7 @@ nav {
     grid-area: timeline; /*to dizendo que a area dela no grid e a time line*/
     
     overflow-y: scroll;/*quando o conteudo nao caber na vertical (y) habilite a barra scroll*/
+    animation: entering 1.4s ease-in-out; /*isto para o @frames funcionar anmado e o numero e o tempo fazendo o processo*/
 }
 
 .memory {
@@ -38,24 +71,39 @@ nav {
 
 .memory small {
     color: #bebebf;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .memory h1 {
     color: #bebebf;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .memory img {
     width: 100%;
     height: 280px;
-    object-fit: cover;
-    /*nao esticar mantendo tipo uma capa*/
+    object-fit: cover; /*nao esticar mantendo tipo uma capa*/
     border-radius: 8px;
+
+    transition: transform 0.3s ease-in-out; /*suavizacao*/
+}
+
+.memory div {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 8px;
+
+}
+
+
+.memory:hover img{
+  transform: scale(1.1);
+
 }
 
 .memory p {
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #bebebf;
     line-height: 28px;
     /*espacamento da linha*/
@@ -77,23 +125,54 @@ aside {
     background-size: auto 100%;/*se ajusta ao tamanho do pai*/
 }
 
+aside *{
+  animation: entering 1.4s ease-in-out; /*todos elsementos dentro do aside pega a mesma animacao do frame*/
+}
+
 aside img:nth-child(2) {
     width: 160px;
     height: 160px;
-    
+  
     border-radius: 50%; /*deixa redondinha*/
 
     border: 4px solid transparent; /*pra fazer ela ficar colorida depois*/ 
     background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box,
       linear-gradient(260deg, #d39e33, #ed5636, #633bbc) border-box;
+    object-fit: cover;
+    
 }
 
 asid p {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
 }
 
 aside spam {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #9e9ea0;
 }
+
+/*Responsividade*/
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px; /*quando a tela e menor mudei o tamanho de referencia as fontes*/
+  }
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-areas:
+    "profile"
+    "timeline";
+  }
+
+  aside {
+    border-right: none;
+    padding: 32px 12px;
+  }
+
+  nav {
+    overflow-y: visible;/*quando a tela e péquena deixa o scroll rolar em tudo*/
+    padding: 22px;
+  }
+}
+

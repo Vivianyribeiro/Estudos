@@ -1,5 +1,6 @@
-palavras : showmethecode, buildthefuture
+palavras : showmethecode, buildthefuture, , NEXTLEVELWEEK
  
+** branding - sua marca - se alguem puxar pelo teu nome vai achar algo referente a vc e suas habilidades?
 ---
 3 pilares Rockteseat
 
@@ -34,6 +35,108 @@ https://excalidraw.com/
 ----
 classe para reaproveitar o visual
 id: visual unico
+
+--
+frames
+keyframes: controla as etapas em uma sequencia de animação CSS, definindo os estilos para quadros chaves
+
+********************* TERMINAL
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (main)   
+$ git init
+Initialized empty Git repository in C:/Users/mathi/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore/.git/
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master) 
+$ git add .
+warning: in the working copy of 'assets/background.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/logo.svg', LF will be replaced by CRLF the next time Git touches it
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master) 
+$ git commit -m "commit initial"
+[master (root-commit) bb20800] commit initial
+ 10 files changed, 404 insertions(+)
+ create mode 100644 .vscode/extensions.json
+ create mode 100644 .vscode/settings.json
+ create mode 100644 assets/background.svg
+ create mode 100644 assets/eu.jpg
+ create mode 100644 assets/favicon.png
+ create mode 100644 assets/jornada.png
+ create mode 100644 assets/logo.svg
+ create mode 100644 assets/vivi.jpg
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master) 
+$ git remote add origin https://github.com/Vivianyribeiro/nlw-spacetime-explore.git
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master) 
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Vivianyribeiro/nlw-spacetime-explore.git'
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master) 
+$ git push -u origin master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (14/14), 1.11 MiB | 272.00 KiB/s, done.Total 14 (delta 0), reused 0 (delta 0), pack-reused 0        
+To https://github.com/Vivianyribeiro/nlw-spacetime-explore.git   
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master)
+$ git add .
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master)
+$ git comit -m "add readme with project preview"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master)
+$ git commit -m "add readme with project preview"
+[master 3daa5a1] add readme with project preview
+ 3 files changed, 3 insertions(+)
+ create mode 100644 .github/preview.png
+ create mode 100644 README.md
+ create mode 100644 assets/Thumbnail.png
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master)
+$ git add .
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master)
+$ git log
+commit 3daa5a152565e71c5483a99b41868af69179770b (HEAD -> master)
+Author: vivianyribeiro <vivianyribeiro10.vr@gmail.com>
+Date:   Sat May 20 17:09:02 2023 -0300
+
+    add readme with project preview
+
+commit bb208002eb98139fdef4de3e8e4990c45f092954 (origin/master)  
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.45 MiB | 229.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Vivianyribeiro/nlw-spacetime-explore.git
+   bb20800..3daa5a1  master -> master
+
+mathi@DESKTOP-O6EFEQT MINGW64 ~/Documents/GitHub-Projetos/Estudos/estudos_html_css/rocketseat/nlw-trilha-explore (master)
+$ git log
+commit 3daa5a152565e71c5483a99b41868af69179770b (HEAD -> master, 
+origin/master)
+Author: vivianyribeiro <vivianyribeiro10.vr@gmail.com>
+Date:   Sat May 20 17:09:02 2023 -0300
+
+    add readme with project preview
+
 
 ****************
 npm init -y = cria um projeto javascript = todo arquivo js tem um package.json com inf principais do projeto e todas as dependencias
