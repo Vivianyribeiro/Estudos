@@ -10,10 +10,9 @@
 typedef struct cilindro{
     float raio;
     float altura;
-    bool visibilidade;
 }Cilindro;
 
-Cilindro* criarCilindro(float raio, float altura, bool vis);
+Cilindro* criarCilindro(float raio, float altura);
 
 void deletarCilindro(Cilindro* c);
 
@@ -34,7 +33,7 @@ float volumeCilindro(Cilindro* c);
 //
 //Cria um Cilindro  
 //
-Cilindro* criarCilindro(float raio, float altura, bool vis){
+Cilindro* criarCilindro(float raio, float altura){
     Cilindro* c = (Cilindro*)calloc(1,sizeof(Cilindro));
     if(c != NULL){
         c->raio = raio;
@@ -49,14 +48,6 @@ Cilindro* criarCilindro(float raio, float altura, bool vis){
 void deletarCilindro(Cilindro* c){
     if(c != NULL){
         free(c);
-    }
-}
-//
-//imprime um cilindro
-//
-void mostraCilindro(Cilindro* c){
-    if(c != NULL){
-        c-> visibilidade = true;
     }
 }
 //
@@ -101,21 +92,31 @@ float volumeCilindro(Cilindro* c){
 
 int main () {
     float h, r;
+    int casos;
     Cilindro *c1 = 0;
-
-    printf ("Digite o raio e a altura do cilindro: ");
+    scanf("%d", &casos);
+    while (casos --) {
+        scanf("%f %f", &h, &r);
+        c1 = criarCilindro(r, h);
+        printf ("%.2f", alturaCilindro(c1));
+        printf (" %.2f", raioCilindro(c1));
+        printf(" %.2f", areaCilindro(c1));
+        printf(" %.2f\n", volumeCilindro(c1));
+        deletarCilindro(c1);
+    }
+    /*printf ("Digite o raio e a altura do cilindro: ");
     scanf("%f %f", &r, &h);
-    c1 = criarCilindro(r, h, true);
+    c1 = criarCilindro(r, h);
 
     if (c1 != NULL) {
-        mostraCilindro(c1);
+        
         printf ("Altura: %.2f\n", alturaCilindro(c1));
         printf ("Raio: %.2f\n", raioCilindro(c1));
         printf ("Area: %.2f\n", areaCilindro(c1));
         printf ("Volume: %.2f cm3\n", volumeCilindro(c1));
     }
 
-    deletarCilindro(c1); 
+    deletarCilindro(c1); */
 
     return 0;
 }
