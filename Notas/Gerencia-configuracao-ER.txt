@@ -1,0 +1,302 @@
+1) Explique o conceito de projeto definido no PMBOK. 
+	No PMBOK encontramos conteudo metodos e ferrmentas para utlizarmos e entendermos os conceitos
+	
+2) Explique as características que definem projetos e os diferenciam de operações 
+permanentes dentro das organizações.
+
+	Um projeto consiste em um conjunto de atividades com um pproposito, um objetivo, e é considerado temporario, tem data de inicio e de termino mas isto nao quer dizer que é de curta duração e muita das vezes nem todos da equipe vao ate o final mas o projeto termina quando as metas estabelecidas sao compridas. Utiliza recursos, elaboração progressova, possui stakeholders, envolve incertezas e tem alinhamento estratégico
+
+3) Explique os perfis caraterísticos de interessados em projetos. 
+
+ cliente que solicitou, a empresa corporaçao enviolvida patrocinadora, os stackholedares (emteresssados no projeto), a equipe responsavel, o gerente do prjeto
+
+4) Explique o que é ciclo de vida de projeto. 
+
+ esta relcionado ao tempo em que ele é concebido, passa pleo planejamento, pela execução e o controle de mudancas e chega ao encerramento, ou seja, sao as fases que ele passa
+
+5) Explique as responsabilidades principais do gerente de projetos. 
+
+	gerencias o projeto, cuidar da qualidae, monitorar constantemente todos as etapas, oque inclui sobre custo qualidade prazo moral da equipe requisições, cronograma , disponibilidades de recursos
+
+6) Explique os diferentes tipos de conhecimento que um bom gerente de projetos 
+deve possuir. 
+	COMPETENCIAS TÉCNICAS = que sao as tecnicas e metodos e ferramentas a serem usadas
+	COMPetencia de negociacao = habilidades tecnicas e experiencia para realizar com sucesso suas atividades e atigir os objetivos
+	COMpetencia  gerencial = habilidades de gerir com responsabilidades cada fase do projeto
+	
+
+7) Explique as habilidades que um bom gerente de projeto deve possuir. 
+
+	deve ter conhecimento em liderança para que possa direcionar a equipe, comuinicação é essencial para tudo correr bem e deve ser bem gerenciada, deve saber negociação para que possa controlar as negociacoes com os usuarios, saber tomada de deciões em tempo para que ocorra bem, influencia na empresa em que trabalha ajuda muito com tudo isso
+
+8) Explique o conceito de grupos de processos no PMBOK. 
+	São referente aos processo envolvidos no projeto, fala-se em griupo pelo fato de eles trabalharem em conjunto sendo a saida de um processo a entrada de outro des de a iniciacaço, planejamneto monitoramento e controle, execução e encerramneto
+
+	
+9) Explique o conceito de áreas de gerência no PMBOK.. 
+
+	Creio que se refere as areas da gerencia de projeto que são gerencia de itegracao, gerencia de escopo, gerencia de qualidade, gerencia de custo e gerencia de tempo, de rh , comunicação, de riscos, de aquisiçaõ e das partes enteressadas. e essas areas se referem aos diferentes aspectos do gerenciamneto de projetos que devem ser consideradas para garantir o sucesso do projeto
+
+10) Explique as principais causas de projetos mal sucedidos. 
+	Sao mal sucessedidos devido a escopo mal definido, falta de pplanejamento, gerenciamento adequado, recursos e prazos nao pensados, má gestao de riscos ...
+	
+
+11) Explique o que são requisitos de software. 
+
+ Requisitos dizem respeitos ao que queremos que o software faça, quais sao os objetivos que queremos alcaçar e qualis limitações e restriçoes devem ter. as funcionalidades e nao funcionalidades, caracteristicas  e necessidades...
+
+12) Explique o que são restrições dentro de um projeto de desenvolvimento de 
+software. 
+
+AS restriçoes se referem a condições  que afetam a forma que o sistema sera desenvolvido e implantado (tecnologias a serem utilizadas, padroes, regulação...)
+
+13) Explique a classificação de requisitos em requisitos funcionais e não funcionais. 
+
+Os req funcionais se referem aos que caracterizam a funcionalidade e funções do software, pois eles é mais focado no problema
+os nao funcionais se referem aos que diz respeito ao desempenho, confiabilidades, usabilidades, segurança  escalabilidade, sendo mais focado na solução computacional, 
+
+14) Explique a classificação de requisitos em requisitos de sistema e requisitos de 
+software. 
+
+ req de sistemas sao as descrições de alto nivel das funcionalidades, abordam aspectos mais amplos e abrangentes do sistemas
+ os req de software sao mais especificos e focados no software como componente principal. e descreve os requisitos de uma visao tecnica e datalhada mais voltada pra desenvolvedores e equipe tecnica
+
+15) Explique a classificação de requisitos em requisitos de usuário e requisitos de 
+software. 
+ de usuarios sao as necessidades e perspectivas do usuario numa linguagem mais comum
+ de software sao referente aos especificos do ssoftware, as descrições tecnicas das funcionalidaes e as restrições q devem ter com uma linguagem mais tecnica e detalhada
+	
+16) Explique o que é Engenharia de Requisitos e as diferenças entre a Engenharia de 
+Requisitos e a Análise Tradicional de Sistemas. 
+
+ area que aplica métodos e tecnicas de genrenciamento nos processos que a compoe como aquisião de requisitos (elicitação), analise , documentaca o e validação
+
+as duas sao praticamnete as mesmas funcoes, porem a engenharia é mais preucupada com os processos que compoe o gerenciamento dos requisitos 
+
+17) Explique as entradas e saídas típicas do processo da Engenharia de Requisitos. 
+	creio que diz respeito ao a entrada de requisitos, a elaboração dop escopo a analise o planejamento e geram saidas como o documento de requisitos , prototipos e relatorios
+
+
+18) Explique os subprocessos que compõem o processo da Engenharia de Requisitos. 
+
+	licitação - a parte responsavel por 'pegar os requisitos' atraves de entrevistas e outros metordos 
+	analise - analisa os requisitos
+	DOCUMENTACAO - responsável por gerar o documento oficial de requisitos
+	validação - parte em que é responsavvel por encopntrar possiveis problemas e geralmente faz um ciclo a a parte de documentação para que o doc so seja concluido apos todos possiveos probleams encontrados e tendos tudop validado
+
+19) Explique os diferentes perfis de atores que participam do processo da Engenharia 
+de Requisitos. 
+
+	especialista do dominio - referente a o cara que esta ciente do problema ao qual o software sera a solução
+	usuario final - referente aos usuarios que utilizaram o software
+	engenheir ode requiasitos - rcara que gerencia os req
+	engenheiri de software - cara que desenvolve e implementa o software
+	gerente de projeto - cara responsavel pela gerencia de todo projeto
+	gerente usuario - cara responsavel por averiguar se o software corresponde ao que foi pedido
+	orgao de regulamentacao - orgao que regula a parada referente ao software
+ 
+20) Explique a relação que existe entre os processos da Engenharia de Requisitos e os 
+processos de Desenho e Implementação de Software.
+
+	a ER trabalhas com processos referenstes aos identificações de requisitos e funcionalidades 
+	a design refere a desenho, criação e implementação das soluções com base nos requistos da ER. 
+
+##############
+
+Projeto e gerencia de projeto:  
+PROJETO == é um PROCESSO UNICO que consiste em um grupo de atividades coordenadas e controLadas com datas para inicio e término empreendido pára alcançar algum objetivo conforme os requisitos específicos, incluindo limitações de tempo, custo e recurso.
+Um empreendimento temporario, com objetivo de criar um produto, serviço ou resultado unico.
+
+OPERACOES PERMANETES VS PROJETOS == as operacoes sao continuas e repetitivas, os projetos são temporarios e com propositos bem definidos
+GESTAO ESTRATÉGICA - DEFININDO UM FUTURO PARA A EMPRESA
+GESTAO DE PROJETOS - TRANSFORMANDO IDÉIAS EM
+REALIDADE
+
+
+* 4 Ps
+PESSOAL - as pessoas envolvidas sao as mais importantes no sucesso do projeto
+PRODUTO - a configuracao de softwarea ser desenvolvida, modificada ou alterada
+PROCESSO - definição detalhada do conjunto ordenado de tarefas necessárias para realizar o produto (processa entradas e gera saidas)
+PROJETO - o contexto onde o produto pe realizado pelo pessoal utilizando o prcesso
+
+* stakeholders - individuos grupos ou organmizações que podem influencias de alguma maneira o projeto e possuem responsabilidades e autoridades definidas
+
+	- O CLIENTE
+	- a empresa executora
+	- O PATROCINADOR
+	- O TIME
+	- O GERENTE DE PROJETOS
+
+** CICLO DE VIDA DE UM PROJETO 
+
+ & concepcao -> planejamento -> execução -> conclusão.
+
+** GERENCIA DE PROJETOS - aplicação de conhecimentos e habilidades , ferramentas e tecnicas nas atividades do projeto com o objetivo de atender os requisitos do projeto. COMPETEENCIA TECNICA(praticas e conheciemntos gerealmente aceitos em gerencia de projetos), CONPETENCIA GEREnciAL (praticas e conhecimentos de gerencia geral) CONPETENCIA DE NEGOCIO (praticas e conhecimentos em areas de aplicação)
+	ENVOLVE : areas nucleo:
+		  gerencia do ESCOPO - É uma definição clara do que será realizado e inclui 				  todos os trabalhos/atividades que devem ser executados para atingir os resultados desejado
+		  gerencia do TEMPO - tempo definido
+		  gerencia do CUSTO  - custo estimado
+		  gerencia de QUALIDADE  - garantir a qualidade
+
+	DIFERENTES INTERESSES , NECESSIDADES E ESPECTATIVAS
+	REQUERIMENTOS IDENTIFIVCADOS E NAO IDENTIFICADOS
+
+** PREUCUPAÇÕES DE UM GERENTE DE PROJETOS
+	- qualidade do produto
+	- avaliacao de riscos
+	- medição
+	- estimativa de custo 
+	- definição de cornograma
+	 - comunicação com o cliente 
+	- formação da equipe
+	- disponibilidade de recursos 
+	- monitoramento do projeto
+
+** HABILIDADES DE UM GERENTE DE PROJETOS: 
+	- comunicação
+	- liderança 
+	- tomada de decisões 
+	- influencia na empresa
+	- negociação
+
+** MARCOS E PONTOS DE CONTROLE
+	- marco final de uma fase
+ 	- ponto de controle verificação e validaçaõ de resultados e pordutos
+	- pontos de controle visam garantir que o marco sera concluido no prazo esperado
+
+** CICLO DE VIDA DE PROJETO x PRODUTO
+	PROJETO - fases do inicio ao fim do projto 
+	produtos - fases de inicio a o fim do produto
+dificilmente coincidem 
+em software o projeto e associado ao desenvolvimento 
+
+** PROCESSOS DO PROJETO : 
+	- gerencia de projetos - descrição e organuzação do trabalho do projeto
+	- orienttados a produt0 (processso de software) - relacionan com a especificação, projeto e implemnetação, validação e evolulção do software
+
+** PMBOK - corpo do conhecimentp de gerencia do proetos - explica conteurdo metodos e ferramentas para utilizar
+
+** GRUPOS DE PROCESSO - a saidA DE um processo é a entrada de outro pricesso
+
+circulo=>	- p de iniciação -> p de planejamento -> p de execução -> p de manutenção e cobtrole -> p de encerramento
+
+-PROJETO DE INICIAÇÃO - termo de abertura, interessados, escopo inicial definido , recursos financeiros iniciais , designa gerente do projeto partes interessadas e autorizaçoes formais
+
+-PROJETO DE PLANEJAMENTO - plano de gerenciamneto do pjto planeja qualidades plano de recursos, planeja comunicacão, gerenciamento de riscos e aquisições
+
+-PROJETO DE EXECUÇÃO - orienta gerencia a execução, mobiliza deristribui info e aquisições
+
+-PROJETO DE MANUTENÇÃO E CONTROLE - asseguram que os obejtovos do projeto estao sendp atingidos, monitoria e controle do pjeto, controle integrado de mudancas, monitoramento de riscos, qualidade, compras, aquisição, custo ,coronograma, escopo 
+
+-PROJETO DE  ENCERRAMENTO -  formalização do aceite do projeto e encerramento 
+
+** AREAS DA GERENCIA DE PROJETOS 
+	- integração = assegura que os varios elementos do pjto estaop sendo coordenados (TODOS PROCESSOS) 
+	- escopo = assegura q o pjto inclui todo o trabalho necessario para o scesso(PLANEJAMENTO E CONTROLE)
+	- tempo = que sera concluido no prazo estimado (PLANEJAMENTO E CONTROLE)
+	 - custo = dentro do orçamento (PLANEJAMENTO E CONTROLE)
+	- qualidade = se atende aos requisitos de qualidade (PLANEJAMENOT EXECUÇÃO E CONTROLE)
+	- recursos humanos - assegura o uso efetivo dos recursos humanos do pjto (PLANEJAMNEOT E EXECUÇÃO)
+	- comunicação = assegura a geração, coleta e disseminacao e armazenamento da info a tempo e de maneira apropriada (TODOS MENOS O ENCERRAMENTO)
+	- risco = assegura a identificação, analise, planejamenti, monitopramento e controle de riscos (PLANEJAMENTO E CONTROLE)
+	- aquissição = adquirir bens e serviços externos a organização executante do pjto (TODOS MENOS O INICIAÇÃO)
+
+
+** FATORES CRITICOS PARA O SUCESSO
+	- definir corretamente o escopo 
+	- negociar com todos os envolvidos
+	- manter a motivação inicial
+	- acompanhar o progresso
+	- tomar decisões adequadas e em tempo
+	- guardar historico do projeto
+
+** os W5HH
+Por que (Why) o projeto deve ser desenvolvido?
+• O que (What) vai ser feito?
+• Quando (When) vai ser feito?
+• Quem (Who) é responsável por uma dada 
+tarefa?
+• Onde (Where) os envolvidos estão localizados 
+na organização?
+• Como (How) o trabalho será conduzido técnica 
+e gerencialmente?
+• Quanto (How much) é necessário de cada 
+recurso
+
+
+** PORQUE PROJETOS FALAHAM?
+	- prazos nao realistas
+	- mudançãs de requisitos
+	- esforço subestimado
+	- riscos nao contigenciados (previsiveis ou nao)
+	- dificuldades tecnicas
+	- falhas na comunicação
+	- falta de gerencia no pjto
+
+################################
+
+REQUISITOS E ENFGENHARIA DE REQUISITOS
+
+** REQUISITOS = refletem os objetovos, necessidados ds interessadops e caracteristicas de qualidades a ser atendidas
+	REQUISITOS DE SOFTWARE
+- GERAIS = que é comum para aquele tipo
+- funcionais  = definem parte das funcionalidads (foca no problema)
+-IMPLEMENTAÇÃO = restringem a forma como o sistemas deve ser implementado
+-DE DESEMPEMNHO = especificam o nivel minimo de desenpenho aceitavel
+-DE USABILIDADE = especidficam oq o grupo de usuarios pode ver
+
+** TIPOS DE REQUISITOS:
+	- FUNCIONAIS = em gereal define o escopo do sistema, relacionado com as funçoes basicas do sistema(focam no problema)
+	- nao funcionais = relacionados com a caracteristicas que qualificam uma solução para o problema(focam na solucao)
+	- restrições = são limitações que devem ser consideradas
+outros : de sistema , de usuarios vs requisitos de software
+
+** ENGENHARIA DE REQUISITOS 
+	conjunto de processos envolvidos com a descobverta (levantameno, coleta), documentaçã e manutençãodos reqisitos. o termo 'engenharia ' implica o uso sistematico e repetido de tecnicas para assegurar que os requisitos estejam completos , consistentes e relevantes
+
+** ENGENHARIA DE REQUISITOS VS ANALISE DE SISTEMAS
+ executam as mesmas tarefas porem a engenharia se preucupa mais em relação aos processos adotados, a documentação de requisitos e ao gerenciamento dos requisitos
+
+**PROCESSO DE ENGENHARIA DE REQUISITOS
+	
+	Conunto estruturado de atividades que permitem deriva, validar e manter os requisitos de um sistema e inclui = elicitação de requisitos, analise de requisitos, negociação de requisitos e validação de requisitos, e gerencia de requisitos
+
+** ATIVIDADES DO PROCESSO DE ENGENHARIA DE REQUISITOS
+GERENCIAMENTO DE REQUISITOS ENVOLVE: 
+	- ELICITAÇÃO DE REQUISITOS - identifica reqsits  (necessidades de usuarios, informaçoes d dominiio, normas reguladoras padroes)
+	- ANALISE E NEGOCIAÇÃO = req analisados e os representantes de cada grupo de usuarios devem negocialos de forma a chegarem em um consenso. Divergencias sao inevitaveis pois a limitações de orçamento prazo imconmpatibiidade e conflitos e perspecticvas diferentes entre usuarios. Checklist para organizar bababa
+
+	- DOCUMENTAÇÃO DE REQUISITOS = É UMA DECLARAÇÃO OFICIAL dos requisitos p/ todos enteressados, sao documentados e formalizados em um doc de requisitos, cujo entendiemnto devera ser comum a todos os envolvidos e o processo de ER nao estara completos enquanto este dipcumento nao estiver sido completado = TEM O PROPOSIOT DE prover meios de comunicação entre clientes usuarios engenheiros de sw e demais para suportar a fase de testes de sistema, para contriolar a evolução do sistema - é importante identificar todos os interessados para que tem todos os requisitos necessarios
+	- VALIDAÇÃO D REQUISITOS = identificar possiveis problemas nos requisitos antes que o docuneto de requisistos produzdo seja utilizado para desenvolvimento do sistema - FORMA UM CIRCULO COM A DOCUMENTAÇÃO ATE ESTA COMPLETA sem problemas
+
+gerenciamento de requisitpos tm envolve mudanças controle de modificações analise de impacto etc.
+
+** CAUSAS DE MUDANÇAS - erros nos requisitos, omissoes e novos req identificados
+	- sao inevitaveis a medida que usarios desenviolvem uma melhor compreencao de suas necessidades
+	- o ambiente tecnico, politico e organizacional pode sofrer mudancas
+
+** ATORES NO PROCESS de ER
+
+	- especialista no dominio do problema
+	- usuario final
+	- engenheiro de requisitos
+	- engenheiro de software
+	- gerente de projeto
+	- gerente de usuários - garante q o soft seja entregue de acordo com o solicitado
+	- orgão fiscalizadores	-  
+
+** MATURIDADE DO PROCESS avaliação do documeto de requisitos
+
+	& nivel inicial = nao é bem definido, problemas intensos e alto indice de retrabalho
+
+	& intermediario = existem padroes bem definidos para o doc de req, e para descriçoes desses requisitps, sao introduzidas politicas e procedimentos para o gerenciamneto de requisitos
+
+	& MADURO = process muito bem definido e aplicavel para as atividaes de requisitos, alem de haver um program de MELHORIA CONTINUA do proces de ER em andamento
+
+** RELAÇÃO ENTRE REQUISITOS E DESIGNE DE SOFTWARE
+	REQuisitos = definem oq o sistema deve fazer
+	DESIGN = define como os requisitos vao ser atendidos
+	
+	
+
+	
