@@ -1,0 +1,734 @@
+------------------------- COM programacao c descomoplicada ------------
+
+ ah 3 claasses de problemas:
+
+1 - problema de decisao
+ 	SIM se é possivel ou se existe e NAO se nao existe ou nao e possivel
+
+2- problema de localização
+	investigar qual solucao atende a determinada necessidade
+
+3- problema de otimização
+	dar a melhor solucao de acordo com os criterios estabelecidos
+
+------ EFICACIA(resolve o prob corretamente) E EFICIENCIA(da melhor forma possivel)
+
+
+algoritmos + estrutura de dados = programas (é um livro tbm - algorithms + data structures = programs)
+
+
+	TIPOS DE DADOS ---------
+
+primitivos (
+char - unsigned, signed 
+int - insigned, signed | short, long, long long
+float - double, long double
+void
+)
+user-defined(
+enum
+typedef
+)
+
+derivador -Construidos - sao tps obtidos a partir da combnacao de tps prmitivs ou d outrs construidos (
+vetores e matrizes
+registros (ou record,)
+unioes
+vetores e registros
+registros de matrizes
+
+)
+
+
+*******************************************************************************
+			Funcoes da biblioteca STRING.H
+----------------
+strcpy: Copia uma string para outra.
+Sintaxe: char *strcpy(char *dest, const char *src);
+
+strcat: Concatena duas strings.
+Sintaxe: char *strcat(char *dest, const char *src);
+
+strlen: Retorna o tamanho de uma string.
+Sintaxe: size_t strlen(const char *str);
+
+strcmp: Compara duas strings.
+Sintaxe: int strcmp(const char *s1, const char *s2);
+
+strncmp: Compara duas strings, mas apenas os primeiros n caracteres.
+Sintaxe: int strncmp(const char *s1, const char *s2, size_t n);
+
+strchr: Procura a primeira ocorrência de um caractere em uma string.
+Sintaxe: char *strchr(const char *str, int c);
+
+strrchr: Procura a última ocorrência de um caractere em uma string.
+Sintaxe: char *strrchr(const char *str, int c);
+
+strstr: Procura a primeira ocorrência de uma substring em uma string.
+Sintaxe: char *strstr(const char *haystack, const char *needle);
+
+strtok: Divide uma string em substrings.
+Sintaxe: char *strtok(char *str, const char *delim);
+
+strdup: Faz uma cópia de uma string.
+Sintaxe: char *strdup(const char *str);
+
+strtok_r: Uma variação de strtok que é thread-safe.
+Sintaxe: char *strtok_r(char *str, const char *delim, char **saveptr);
+
+strncpy: Copia uma string para outra, mas apenas os primeiros n caracteres.
+Sintaxe: char *strncpy(char *dest, const char *src, size_t n);
+
+strncat: Concatena duas strings, mas apenas os primeiros n caracteres da segunda string.
+Sintaxe: char *strncat(char *dest, const char *src, size_t n);
+
+strchrnul: Uma variação de strchr que retorna um ponteiro para o caractere nulo se o caractere não for encontrado.
+Sintaxe: char *strchrnul(const char *str, int c);
+
+strcspn: Retorna o comprimento do segmento inicial de uma string que não contém nenhum dos caracteres de outra string.
+Sintaxe: size_t strcspn(const char *str, const char *reject);
+
+strpbrk: Retorna um ponteiro para a primeira ocorrência de qualquer caractere de uma string em outra string.
+Sintaxe: char *strpbrk(const char *str, const char *accept);
+
+strsep: Uma variação de strtok que é mais segura.
+Sintaxe: char *strsep(char **stringp, const char *delim);
+
+strspn: Retorna o comprimento do segmento inicial de uma string que contém apenas caracteres de outra string.
+Sintaxe: `size_t strsp
+
+			Funcoes da biblioteca STRING.H
+*******************************************************************************
+			
+
+
+-----------       com XAVECODING ---------
+	lembrando ponteiros
+toda variavel em c esta associada a: um nome, um tipo, um valor e um endereço
+
+int main() {
+    int a = 10;
+    int b, c;
+
+    printf("&a = %p a= %d\n", &a, a); // %p pra emprimir endereço de memoria
+    printf("&b = %p b= %d\n", &b, b);
+    printf("&c = %p c= %d\n\n", &c, c);
+
+    b =20;
+    c = a + b;
+
+    printf("&a = %p a= %d\n", &a, a); // %p pra emprimir endereço de memoria  // para compilar
+    printf("&b = %p b= %d\n", &b, b);
+    printf("&c = %p c= %d\n\n", &c, c);printf("&a = %p a= %d\n", &a, a); // %p pra emprimir endereço de memoria
+    printf("&b = %p b= %d\n", &b, b);
+    printf("&c = %p c= %d\n\n", &c, c);
+
+    return 0 ;
+}
+exemplo no terminal: gcc variaveis-e-memoria.c -o variaveis-e-memoria
+PS C:\Users\mathi\Documents\GitHub-Projetos\Projetos-rascunho\Curso_em_video\Estudos\C> cd variaveis-e-memoria
+PS C:\Users\mathi\Documents\GitHub-Projetos\Projetos-rascunho\Curso_em_video\Estudos\C\variaveis-e-memoria> ./variaveis-e-memoria /*para executar o execultavel*/
+&a = 0061FF1C a= 10
+&b = 0061FF18 b= 2097152
+&c = 0061FF14 c= 0
+
+&a = 0061FF1C a= 10
+&b = 0061FF18 b= 20
+&c = 0061FF14 c= 30
+
+&a = 0061FF1C a= 10
+&b = 0061FF18 b= 20
+&c = 0061FF14 c= 30
+
+
+Ponteiro guarda um endereço de memoria  -- aula 2 estrutura de dados 1 xavecoding
+
+* = conteudo de um endereço (dememoria)
+*(jaiminho) = *(avenida do messi) = messi = 10
+
+int main () {
+    int a = 10;
+    int *p1 = NULL;
+    int *p2;
+
+    printf("Endereço da variavel a: %p, valor de a = %d\n", &a, a);
+    printf("Endereço do ponteiro p1: %p, valor de p1 = %p\n", &p1, p1);
+    printf("Endereço da variavel p2: %p, valor de p2 = %p\n\n", &p2, p2);
+
+    p1 = &a;
+    p2 = p1;
+    *p2 = 4;
+
+    printf("Endereço da variavel a: %p, valor de a = %d\n", &a, a);
+    printf("Endereço do ponteiro p1: %p, valor de p1 = %p, conteudo apontado = %d\n", &p1, p1, *p1);
+    printf("Endereço da variavel p2: %p, valor de p2 = %p , conteudo apontado = %d \n\n", &p2, p2, *p2);
+    return 0;
+}
+terminal:
+
+Estudos\C\ponteiros> gcc ponterios-01.c -o ponteirosx-01
+PS C:\Users\mathi\Documents\GitHub-Projetos\Projetos-rascunho\Curso_em_video\Estudos\C\ponteiros> ./ponteirosx-01
+Endereço da variavel a: 0061FF1C, valor de a = 10
+Endereço do ponteiro p1: 0061FF18, valor de p1 = 00000000
+Endereço da variavel p2: 0061FF14, valor de p2 = 00000000
+
+Endereço da variavel a: 0061FF1C, valor de a = 4
+Endereço do ponteiro p1: 0061FF18, valor de p1 = 0061FF1C, conteudo apontado = 4       
+Endereço da variavel p2: 0061FF14, valor de p2 = 0061FF1C , conteudo apontado = 4   
+
+
+obs: p1 = &p2 isto nao da certo porq o p1 e ponterio q guarda enderecoes de inteiro, e o p2 é um ponteiro para intero, o p1 so guarda de inteiros e nao de ponteiro para inteiro
+
+
+-------------
+
+PS C:\Users\mathi\Documents\GitHub-Projetos\Projetos-rascunho\Curso_em_video\Estudos\> ./tamanho-dados
+sizeof(a) = 4 bytes /*tipo int*/
+sizeof(int) = 4 bytes
+sizeof(short) = 2 bytes
+sizeof(long) = 4 bytes
+sizeof(float) = 4 bytes
+sizeof(double) = 8 bytes
+sizeof(void *) = 4 bytes
+sizeof(int *) = 4 bytes
+sizeof(int **) = 4 bytes
+sizeof(int ***) = 4 bytes
+sizeof(float *) = 4 bytes
+----------------------------
+int main() {
+    int a = 10;
+    int *p1 = &a;
+    int **p2 = &p1;
+
+    printf("&a = %p, a = %d\n", &a, a);
+    printf("&p1 = %p, *p1 = %d\n", &p1, *p1);
+    printf("&p2 = %p,p2 = %p, *p2 = %p, **p2=%d\n\n", &p2, p2, *p2, **p2);
+
+    **p2 = 99;
+
+    printf("&a = %p, a = %d\n", &a, a);
+    printf("&p1 = %p, *p1 = %d\n", &p1, *p1);
+    printf("&p2 = %p,p2 = %p, *p2 = %p, **p2=%d\n\n", &p2, p2, *p2, **p2);
+
+PS C:\Users\mathi\Documents\GitHub-Projetos\Projetos-rascunho\Curso_em_video\Estudos\C\ponteiros> ./pontero-de-ponteiro
+&a = 0061FF1C, a = 10
+&p1 = 0061FF18, *p1 = 10
+&p2 = 0061FF14,p2 = 0061FF18, *p2 = 0061FF1C, **p2=10
+
+&a = 0061FF1C, a = 99
+&p1 = 0061FF18, *p1 = 99
+&p2 = 0061FF14, p2 = 0061FF18, *p2 = 0061FF1C, **p2=99
+
+---------------------------FUNÇOES ----------------
+
+EM LINGUAGEM C NAO PODEMOS DECLARAR UMA FUNÇAO DENTRO DE OUTRA FUNÇÃO (CRIAR UMA FUNÇÃO DENTRO DE OUTRA)
+Não permite fazer sobrecarga de função(funções com o mesmo nome) já em outras linguagens da certo
+
+--- PASSAGEM DE PARAMETROS:
+-PASSAGEM POR VALOR:  os parametros que eu to passando, é feito uma copia desses valores pra ser usado na função em outra regiao de memoria e se forem alterados nao alltera oq ta fora. depois que a função e realizada o sistema operacional libera a regiao de memoria q reservou para a função para ser usado na proxima vez
+	int soma(int x, int y){
+	int z = x +y;
+	return z;
+}
+--  OU
+
+int soma(int x, int y){
+	
+	return x +y;
+}
+############
+
+int a = 20;
+int b = 10;
+int c;
+
+c = soma(a, b)
+
+#### no terminal> dentro da pasta que contem o arquivo com nome soma.c:
+ gcc soma.c -o soma
+se compilar sem problema ou seja se so aparecer o caminho dnovo tu da um ./soma que vai rodar #####
+
+-PASSAGEM POR REFERENCIA:  é passado referencia (endereço de memoria) de uma variavel (ponteiro) para a função, possibilitando alterar uma variavel que e externa a uma função;
+
+	void soma (int x, int y, int *z){
+		*z= x + y; //como o z é ponteiro de c, significa q o z altera o valor dentro do c fora da função, ai nao precisa fazer o returno de z porq ele ja altera o valor la fora.
+	} 
+na main
+int a = 10;
+int b = 20;
+int c;
+
+soma (a , b, &c) to passando uma copia de endereço ce memoria para um paramentro
+
+e tu pode fazer assim tbm:
+
+int soma-e-sub(int x, int y, int *sub){
+	int soma = x + y;
+	*sub = x - y;
+	return soma
+}
+
+na main 
+
+c = soma-e-sub(a, b, &d)
+
+ou ate:
+
+void soma-e-sub( int x, int y, int *soma, int *sub){
+	*soma = x + y;
+	*sub = x - y; // ai isto alterar o valor do cara q tu mandou o endereço para os parametros.
+}
+
+-------------------============= VETORES -----------------=========================
+
+-forma mais simples de estruturarmos uma 'lista de elementos' e por meio de vetores/arrays.
+reserva espaço de memoria continuo. se for int entao e de 4 em 4.etc
+-o acesso a cada elemento e feito atraves de indices começando no numero 0 ate n-1 onde n é o numero total de elemntos.
+-se colocar indice no qual tu nao reservou para o vetor o acesso entrega valores errados
+- ARITMETICA DE PONTEIROS:
+-apontar para uma variavel x significa possui/armazenar o endereço da variavel x
+ se tenho v[5]
+&v = v = v[0] // so o v da como se fosse o indice 0
+se colocar (v+1) se for do tipo int seria a posição do v + 4 q seria o endeço dp próximo indice 
+
+v[3] = *(v+3) = * (endereço) = valor no endereço 
+
+###
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+    int i;
+    int v[5] = {10, 5 , 4 ,16,1};
+
+    printf("&v = %p, v = %p\n\n", &v, v);
+
+    for (i = 0; i < 5; i++){
+        printf("&v[%d]= %p, v[%d] = %d\n", i, &v[i], i, v[i]);
+        printf("(v + %d) = %p, *(v + %d) = %d\n\n", i, (v + i), *(v + i));
+        
+    }
+    return 0;
+}
+
+### terminal :
+PS C:\Users\mathi\Documents\GitHub-Projetos\Projetos-rascunho\aed1\c> gcc vetores.c -o vetores
+
+PS C:\Users\mathi\Documents\GitHub-Projetos\Projetos-rascunho\aed1\c> ./vetores
+&v = 0061FF08, v = 0061FF08
+
+&v[0]= 0061FF08, v[0] = 10
+(v + 0) = 0061FF08, *(v + 10) = 10
+
+&v[1]= 0061FF0C, v[1] = 5
+(v + 1) = 0061FF0C, *(v + 5) = 5
+
+&v[2]= 0061FF10, v[2] = 4
+(v + 2) = 0061FF10, *(v + 4) = 4
+
+&v[3]= 0061FF14, v[3] = 16
+(v + 3) = 0061FF14, *(v + 16) = 16
+
+&v[4]= 0061FF18, v[4] = 1
+(v + 4) = 0061FF18, *(v + 1) = 1
+
+
+************###################
+
+em funcao em que o parametro a ser recebido é um vetor vc pode ao inves de fazer :
+
+void soma_vetor_com_escalar( int v[], int n, int escalar){
+    for(int i = 0; i< n; i++){
+        v[i] += escalar;
+    }
+} 
+
+tu so coloca assim:
+
+void print_vetor(int *v, int n ){
+    for(int i = 0; i< n; i++){
+        printf("&v[%d] = %p, v[%d] = %d\n", i, &v[i], i, v[i]);
+    }
+    puts("");
+}
+ que isso é oq o computer interpeta quando tu coloca o de cima, ele entende que é um ponteiro com indero base de v, opu seja v[0]. ai tu nao precisa usar o primeiro , mas eles sao a mesma coisa.
+Ai na hora de passar o parametro na main vc so usa o nome do vetor q no caso e:
+
+int main() {
+    //alocação de um vetor estatico (stack)
+    puts("### Vetor estatico");
+    int vs[5] = {0, 10, 20, 30, 40};
+
+    print_vetor(vs, 5);
+    soma_vetor_com_escalar(vs, 5, 9);
+    print_vetor(vs, 5);
+
+    return 0;
+}
+
+exemplo do codigo inteiro com a parte de vetores dinamicos tbm:
+
+#include <stdio.h>
+#include <stdlib.h> // contem o NULL, calloc, malloc e free.
+
+void soma_vetor_com_escalar( int v[], int n, int escalar){
+    for(int i = 0; i< n; i++){
+        v[i] += escalar;
+    }
+}
+
+void print_vetor(const int *v, int n ){
+    for(int i = 0; i< n; i++){
+        printf("&v[%d] = %p, v[%d] = %d\n", i, &v[i], i, v[i]);
+    }
+    puts("");
+}
+
+int main() {
+    //alocação de um vetor estatico (stack)
+    puts("### Vetor estatico");
+    int vs[5] = {0, 10, 20, 30, 40};
+
+    print_vetor(vs, 5);
+    soma_vetor_com_escalar(vs, 5, 9);
+    print_vetor(vs, 5);
+
+    puts("### VETOR DINAMICO COM ESCALAR");
+
+    int *vh = (int *)calloc(5, sizeof(int));
+    for (int i = 0; i < 5; i++){
+        vh[i] = i * 100;
+    }
+
+    print_vetor(vh, 5);
+    soma_vetor_com_escalar(vh, 5, 9);
+    print_vetor(vh, 5);
+
+    //desalocando o vetor dinâmico
+    free(vh);
+    vh = NULL;
+
+    return 0;
+}
+# IMPRESSAO:
+### Vetor estatico
+&v[0] = 0061FF04, v[0] = 0 
+&v[1] = 0061FF08, v[1] = 10
+&v[2] = 0061FF0C, v[2] = 20
+&v[3] = 0061FF10, v[3] = 30
+&v[4] = 0061FF14, v[4] = 40
+
+&v[0] = 0061FF04, v[0] = 9 
+&v[1] = 0061FF08, v[1] = 19
+&v[2] = 0061FF0C, v[2] = 29
+&v[3] = 0061FF10, v[3] = 39
+&v[4] = 0061FF14, v[4] = 49
+
+### VETOR DINAMICO COM ESCALAR
+&v[0] = 00B918B0, v[0] = 0
+&v[1] = 00B918B4, v[1] = 100
+&v[2] = 00B918B8, v[2] = 200
+&v[3] = 00B918BC, v[3] = 300
+&v[4] = 00B918C0, v[4] = 400
+
+&v[0] = 00B918B0, v[0] = 9
+&v[1] = 00B918B4, v[1] = 109
+&v[2] = 00B918B8, v[2] = 209
+&v[3] = 00B918BC, v[3] = 309
+&v[4] = 00B918C0, v[4] = 409
+
+-------------------------------------
+OBS: boas praticas de programação:
+- quando tiver usando alocacao dinamica calloc e malloc uso o free para limpar la e tbm o NULL assim:   
+free(vh);
+vh = NULL;
+
+MAS PRECISAMENTE QUANDO É UM PONTEIRO E PRECISAMOS DESALOCAR O PONTEIRO USDANDO UMA FUNCAO, O PARAMETRO DEVE RECEBER O ENDEREÇO DO PONTEIRO E PARA ELE RECEBER O ENDEREÇO DE UM PONTEIRO ELE TEM QUE SER UM PONTEIRO DE PONTEIRO:
+
+void desaloca_vetor(int **v) {
+    free(*v);//acessa o conteudo de v, e v esta apontando p vh(q guarda o endereço base 	     //na heap) o v pega o endereço q vh quarda q e o indice base na heap, com              //isso faz free da heap.
+    *v = NULL; // faz o conteudo de vh virar NULL, tipo agora agora vh nao guarda mais                //endereço.
+}
+	NA MAIN:
+	desaloca_vetor(&vh);
+
+- quando vc estiver usando ponteiro ou vetores e vc passa isso para uma funcao como somente leitura é bom que tu coloque o const pra nao deixar q permite uma alteracao nesta impressao. como neste exemplo, a funcao so tem q imprimir, se alguem fizer um v[i] + 1 ai altera ops resultados, e quando vc nao que issso aconteça coloca o const.
+
+void print_vetor(const int *v, int n ){
+    for(int i = 0; i< n; i++){
+        printf("&v[%d] = %p, v[%d] = %d\n", i, &v[i], i, v[i]);
+    }
+    puts("");
+}
+---------------------------------------------
+--------------------------------- MATRIZES ESTATICAS -----------
+
+#include <stdio.h>
+#define n_rows 2
+#define n_column 3
+
+int main (){
+
+    int m[n_rows][n_column] = {{0, 1, 2},{3, 4, 5}};
+
+    for (int i = 0; i < n_rows; i++){
+        for(int j = 0; j < n_column; j++){
+            printf("[%d][%d] = %p, [%d][%d] = %d\n", i, j, &m[i][j], i, j, m[i][j]);
+        }
+        puts("");
+    }
+    return 0;
+}
+
+---------------------------------------------
+--------------------------------- MATRIZES DINAMICAS -----------
+vetor de vetores / array de arrays   	array bidimencional
+
+vamos precisar q a variavel seja um ponteiro de ponteiro **m:
+#define nrows 2
+#define ncolumn 3
+
+
+int main(){
+    	
+	int **m = NULL; //ponteiro de ponteiro m nao aponta para lugar nenhum
+   	//int **m = (int**) calloc(nrows, sizeof(int*)); //tu pode ir direto
+    	m = (int**) calloc(nrows, sizeof(int*));
+    	//para cada linha da matriz alocamos as colunas
+    	for(int i = 0; i < nrows; i++){
+        m[i] = (int*) calloc(ncolumn, sizeof(int));
+    }
+
+    return 0;
+}
+
+tem q fazer a alocação separada ou seja oq ta acontecendo por dentro é q é criado um ponteiro m na stack que irar apontar para outro ponterio criado na heap m[0] o m ta apontando para o endereço base ou seja m[0], mas como neste exemplo sao dua linhas: 0 e 1, este ponteiro m[0] e m[1] na heap é referente a linhas e este ponteiros na heap irao apontar para a quantidade de colunas em outro bloco de endereços da heap, o m[0] aponta para a base m[0][0] e tem os outros m[0][1] m[0][2], e é a mesma coisa com o ponteiro m[1] na heap: ,[1][0],m[1][1] m[1][2].
+
+*DESALOCAR: DESALOCA PRIMEIRO AS COLUNAS POR ORDEM EM UM FOR DEPOIS AS LINHAS
+ // DESALOCAR A MATRIZ DINAMICA
+    for(int i = 0; i < n_rows; i++){
+        free(m[i]); //qndo i vale 0 desaloca as colunas da linha 0, qndo e 1 desaloca as colunas da linha 1
+    }
+    free(m);// aqui desaloca as linhas 0 e 1
+    m = NULL; //BOA PRATICA DA PROGRAMACAO M VAI APONTAR PARA NADA
+
+
+================ MATRIZ TRIDIMENCIONAL ==========]
+
+#include <stdlib.h>
+#include <stdio.h>
+#define n_slices 2
+#define n_rows 2
+#define n_cols 3
+
+int main () {
+    // 2 fatias(profundidade) , 2 linhas , 2 colunas
+    int m[n_slices][n_rows][n_cols] = {
+        {    //fatia [0]
+            {0, 1, 2}, //linha [0]
+            {4, 25, 5} // linha [1]
+        },
+        // fatia [1]
+        {
+            {6, 7, 8}, // linha [0]
+            {9, 10, 12} // linha [1]
+        }        
+    };
+
+    printf("&m = %p, m = %p\n\n", &m, m);
+
+    //para cada fatia
+    for(int k = 0; k < n_slices; k++){
+        //para cada linha
+        for(int i = 0; i < n_rows; i++){
+            //para cada coluna
+            for(int j = 0; j < n_cols; j++){
+                printf("&m[%d][%d][%d] = %p, m[%d][%d][%d] = %d\n\n",
+                k, i, j, &m[k][i][j],
+                k, i, j, m[k][i][j]);
+            }
+        }
+    }
+
+    return 0;
+}
+
+PARA DESALOCAR : DESALOCA AS COLUNAS DEPOIS AS LINHAS DEPOIS A FATIA mas asssim:
+
+1ª m[0][0][0,1,2] 2ª m[0][1][0,1,2] 3ª m[0][0,1] 4ª m[1][0][0,1,2] 5ª[1][1][0,1,2]
+6ª m[1][0,1] e por ultimo o m[0,1]
+
+no 1ª apaguei as colunas da linha 0 da linha inicial 0
+no 2ª apaguei as colunas da linha 1 da linha inicial 0
+no 3ª apaguei as linhas (0 e 1) da linha inicial 0
+no 4ª apaguei as colunas da linha 0 da linha inicial 1
+no 5ª apaguei as colunas da linha 1 da linha inicial 1
+no 6ª apaguei as linhas (0 e 1) da linha inicial 0
+no 7 apaguei as linhas iniciais 0 e 1
+*** isso acima foi dentro for, tem exemplo na pasta de codigos aed1
+ // DESALOCAR A MATRIZ DINAMICA 3D
+
+    //para cada fatia
+    for(int k = 0; k < n_slices; k++){
+        //para cada linha
+        for(int i = 0; i < n_rows; i++){
+        free(m[k][i]); //qndo i vale 0 desaloca as colunas da linha 0, qndo e 1 desaloca as colunas da linha 1
+        }
+        free(m[k]);
+    }
+    free(m);// aqui desaloca as linhas 0 e 1
+    m = NULL; //BOA PRATICA DA PROGRAMACAO M VAI APONTAR PARA NADA
+
+
+****
+ EXEMPLO DE USO DE MATRIZ TRIDIMENCIONAL: IMAGEM RAIO X 3D,  IMAGEM COLORIDA
+CAMADA RED, CAMADA GREEN E CAMADA BLUE.
+
+MAT(50,100) = R,G,B
+
+***
+--------------------* LAYOUT DE DADOS: row-and column-major Order --------
+
+porq vamos na seguencia linha depois colunas?
+ha razao pra isso tem a ver com performance de dados, desempenho...
+LAYOUT DE DADOS: row-and column-major Order
+sao estrategias p/ armaxenar arrays multidimencionais de forma linear na ram - layout de dados.
+
+é impórtante saber o layout dos dados usados p/ passar corretamentearrays entre programas escritos em deferentes linguagens de progmac.
+
+
+--------------------------- STRUCT -----------------
+
+- ESQUELETO
+typedef struct nome_da_struct {
+   tipo_de_dado1 variavel1;
+   tipo_de_dado2 variavel2;
+   tipo_de_dado3 variavel3;
+   // ...
+}Apelido da struct;
+
+- DEFININDO STRUCT
+typedef struct pessoa {
+   char nome[50];
+   int idade;
+   char endereco[100];
+}Pessoa;
+
+- ATRIBUINDO
+Pessoa fulano;
+strcpy(fulano.nome, "Fulano de Tal");
+fulano.idade = 30;
+strcpy(fulano.endereco, "123 Rua Principal");  //**usamos o operador ponto quando temos q accessar uma variável que contém a própria estrutura, e usamos o operador seta quando temos um ponteiro que aponta para a estrutura.
+
+EXEMPLO:
+typedef struct {
+    char titulo[100];
+    int paginas;
+    float preco;
+} Livro;
+Podemos acessar os membros dessa estrutura usando o operador ponto quando temos uma variável livro que contém a própria estrutura, assim:
+
+Copy code
+Livro livro;
+livro.paginas = 100;
+Aqui, usamos o operador ponto para acessar o membro paginas da estrutura livro.
+
+Por outro lado, se tivermos um ponteiro ptrLivro para a estrutura Livro, usamos o operador seta para acessar seus membros, assim:
+
+c
+Copy code
+Livro *ptrLivro;
+ptrLivro = malloc(sizeof(Livro));
+ptrLivro->preco = 10.50;
+Aqui, usamos o operador seta para acessar o membro preco da estrutura Livro através do ponteiro ptrLivro.
+
+
+--------------
+
+O código abaixo define duas estruturas: "Livro" e "Aluno". "Livro" contém informações sobre um livro, incluindo o título, número de páginas e preço, enquanto "Aluno" contém informações sobre um aluno, incluindo o nome, idade e um ponteiro para seu livro favorito.
+
+A função "copy_livro" é uma função auxiliar que cria uma cópia de um livro. É uma boa prática criar uma cópia para cada livro favorito de um aluno, para que quando o livro favorito de um aluno for destruído, o livro original ainda exista.
+
+Aqui está uma breve descrição de cada linha do código:
+
+arduino
+Copy code
+typedef struct _livro {
+    char titulo[100];
+    unsigned int paginas;
+    float preco;
+}Livro;
+Nesta linha, definimos a estrutura "Livro", que contém o título do livro, número de páginas e preço.
+
+arduino
+Copy code
+typedef struct _aluno {
+    char nome[100];
+    int idade;
+    Livro *livro_favorito;
+}Aluno;
+Nesta linha, definimos a estrutura "Aluno", que contém o nome do aluno, idade e um ponteiro para o livro favorito do aluno.
+
+rust
+Copy code
+Livro *copy_livro(const Livro *livro){
+    return create_livro(livro->titulo, livro->paginas, livro->preco);
+}
+Aqui, temos a definição da função "copy_livro". Essa função recebe um ponteiro para um livro como parâmetro e retorna uma cópia do livro. Isso é feito usando outra função chamada "create_livro", que não está presente no código que você compartilhou. Presumivelmente, essa função cria um novo livro com as mesmas informações que o livro original e retorna um ponteiro para ele.
+
+Espero que isso ajude a esclarecer o código que você compartilhou! Se você tiver alguma dúvida adicional, não hesite em perguntar.
+
+
+
+
+vivianyribeiro10.vr@gmail.com
+porque esta funcao copy_livro tem q ser um ponteiro?
+
+A função copy_livro retorna um ponteiro porque ela cria uma cópia do livro passado como parâmetro e retorna um novo ponteiro para a cópia criada. É necessário retornar um ponteiro para a cópia porque a cópia criada precisa ser acessada por outras funções ou partes do programa.
+
+Se a função copy_livro não retornasse um ponteiro, ela simplesmente retornaria uma cópia do livro, mas essa cópia não poderia ser acessada por outras partes do programa. Ao retornar um ponteiro, outras funções podem acessar a cópia criada e manipulá-la conforme necessário. Além disso, como a cópia foi alocada dinamicamente na memória usando a função create_livro, ela precisa ser desalocada quando não for mais necessária, e a única maneira de liberar a memória alocada é através do ponteiro retornado pela função copy_livro.
+
+Portanto, a função copy_livro precisa ser um ponteiro para garantir que a cópia criada possa ser acessada e liberada corretamente pela outras partes do programa.
+
+---------
+void destroy_aluno(Aluno **aluno_ref){
+    Aluno *aluno = *aluno_ref;
+
+    destroy_livro(&aluno->livro_favorito);
+    free(aluno);
+    *aluno_ref= NULL;
+}
+//porq usamos como parametro **?
+
+O parâmetro Aluno **aluno_ref é um ponteiro para um ponteiro de uma estrutura Aluno. O uso de um ponteiro duplo é comum quando você precisa modificar um ponteiro passado como argumento em uma função e manter a modificação após a função retornar.
+
+Neste caso, aluno_ref é um ponteiro para um ponteiro de Aluno porque a função destroy_aluno precisa modificar o ponteiro que é passado para ela. A primeira linha da função Aluno *aluno = *aluno_ref; é usada para obter o ponteiro para a estrutura Aluno que é apontado pelo ponteiro duplo aluno_ref.
+
+Em seguida, a função usa esse ponteiro para chamar destroy_livro e free para liberar a memória alocada para o campo livro_favorito e a estrutura Aluno, respectivamente. Por fim, a função destroy_aluno define *aluno_ref como NULL para indicar que o ponteiro não aponta mais para uma estrutura válida.
+
+Em resumo, o uso de um ponteiro duplo permite que a função destroy_aluno modifique o ponteiro original que é passado para ela, o que é necessário para liberar corretamente a memória alocada para a estrutura Aluno.
+
+-NA HORA DE CHAMAR ESTA FUNCAO NA MAIN usamos & e nao ponteiro prq:
+
+Ao passar um ponteiro simples para a função destroy_aluno, a função não seria capaz de modificar o ponteiro original que foi passado como argumento, pois a função trabalharia com uma cópia do ponteiro. Para que a função seja capaz de modificar o ponteiro original, ela precisa receber um ponteiro para o ponteiro de Aluno.
+
+Ao passar o endereço do ponteiro de Aluno, a função destroy_aluno recebe um ponteiro para o ponteiro de Aluno. Dessa forma, a função pode modificar o ponteiro original, apontando-o para NULL após liberar a memória alocada para a estrutura Aluno.
+
+Além disso, quando usamos um ponteiro duplo, podemos modificar o valor do ponteiro que é passado para a função, como no caso em que *aluno_ref = NULL é usado para definir o ponteiro original como NULL. Essa modificação do ponteiro original só é possível usando um ponteiro duplo.
+
+
+*******************FLUXOS DE ENTRADAS PADRAO : ************************
+
+stdin é um dos três fluxos padrão em C (os outros dois são stdout e stderr), que representa a entrada padrão, ou seja, o fluxo de entrada de dados para um programa. Em outras palavras, é o que permite que o programa leia dados que o usuário digita no terminal.
+
+Por exemplo, quando você utiliza a função scanf para ler um valor digitado pelo usuário, o programa está lendo a entrada padrão (stdin) para armazenar o valor digitado.
+
+***************************************LISTA ENCADEADA *********************
+Uma lista encadeada, em programação, é uma estrutura de dados dinâmica que consiste em um conjunto de elementos (ou nós), onde cada elemento contém um valor e um ponteiro que aponta para o próximo elemento da lista. Essa estrutura permite a criação de listas com tamanhos variáveis e a inserção e remoção de elementos de forma eficiente. Cada nó da lista pode ser alocado de forma independente, permitindo que a lista cresça ou encolha conforme necessário. O acesso aos elementos da lista é feito por meio de um ponteiro que aponta para o início da lista. A lista encadeada é frequentemente utilizada em algoritmos de ordenação, pilhas, filas, entre outros.
+
+
+
+
+
+  
