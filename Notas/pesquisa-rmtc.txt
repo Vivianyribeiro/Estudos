@@ -1,0 +1,26 @@
+Pesquisa em cenário de empresa de ônibus coletivo "RMTC goiania".
+
+Monitoramento e otimização de rotas: Investigar como o sistema de informações da empresa de ônibus é utilizado para monitorar as rotas dos ônibus, identificar atrasos, congestionamentos e otimizar o planejamento das rotas para melhorar a eficiência do transporte público.
+
+Sistema de bilhetagem eletrônica: Avaliar a eficácia do sistema de bilhetagem eletrônica utilizado pela empresa, analisando a experiência do usuário, a segurança das transações, a integração com outros sistemas de informação e os desafios enfrentados durante a implantação e operação do sistema.
+
+Aplicativo móvel para informações e compra de passagens: Investigar a usabilidade e a eficácia do aplicativo móvel utilizado pela empresa de ônibus, avaliando a disponibilidade de informações em tempo real, a facilidade de uso, a integração com outros sistemas e as funcionalidades oferecidas para a compra de passagens.
+
+Gestão de frota e manutenção: Estudar como o sistema de informações da empresa de ônibus é utilizado para realizar o controle e a gestão da frota, incluindo informações sobre manutenção, reparos, programação de revisões e gerenciamento de peças de reposição.
+
+Atendimento ao cliente: Investigar como o sistema de informações é utilizado para melhorar o atendimento ao cliente, como o registro e o gerenciamento de reclamações, o acompanhamento de sugestões e a disponibilização de informações atualizadas sobre horários, itinerários e paradas de ônibus.
+
+#
+
+Pesquisa Científica:
+Título: "Análise da Efetividade do Sistema de Informações na Melhoria da Eficiência Operacional da RMTC Goiânia"
+Descrição: Nessa pesquisa científica, você pode investigar como o sistema de informações da RMTC Goiânia contribui para melhorar a eficiência operacional da empresa. Você pode analisar indicadores de desempenho, como pontualidade dos ônibus, tempo médio de espera, tempo de viagem e taxa de ocupação, e investigar como o sistema de informações é utilizado para monitorar e gerenciar esses indicadores. Além disso, você pode explorar os benefícios e as limitações do sistema de informações atual e propor possíveis melhorias.
+
+Pesquisa Ação:
+Título: "Implementação de Medidas de Melhoria Baseadas em Dados para Aumentar a Eficiência e a Satisfação dos Usuários na RMTC Goiânia"
+Descrição: Nessa pesquisa-ação, você pode trabalhar em colaboração com a RMTC Goiânia para identificar problemas específicos relacionados ao sistema de informações e propor medidas de melhoria. Por exemplo, você pode analisar os gargalos do sistema de bilhetagem eletrônica, as dificuldades de comunicação entre os operadores de ônibus e a central de controle, ou os desafios enfrentados pelos usuários na obtenção de informações precisas sobre horários e itinerários. Com base nessa análise, você pode implementar ações práticas e avaliar seu impacto na eficiência operacional e na satisfação dos usuários.
+
+Pesquisa Etnográfica:
+Título: "Explorando as Práticas de Uso e Impacto do Sistema de Informações da RMTC Goiânia na Experiência dos Usuários de Transporte Público"
+
+Descrição: Nesta pesquisa etnográfica, o objetivo é investigar as práticas de uso e o impacto do sistema de informações da RMTC Goiânia na experiência dos usuários de transporte público. Através da imersão no ambiente dos usuários, observando seus comportamentos, interações e percepções, pretende-se compreender como os usuários utilizam o sistema de informações disponível, como se informam sobre horários, itinerários e paradas de ônibus, como interagem com outros usuários e como essas interações afetam sua experiência no transporte público. A pesquisa buscará identificar desafios, oportunidades de melhoria e possíveis soluções para aprimorar o sistema de informações e proporcionar uma experiência mais satisfatória aos usuários da RMTC Goiânia.
