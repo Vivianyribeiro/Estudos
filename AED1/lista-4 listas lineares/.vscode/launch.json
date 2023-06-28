@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/mathi/Documents/GitHub-Projetos/Estudos/AED1/lista-lineares",
-      "program": "c:/Users/mathi/Documents/GitHub-Projetos/Estudos/AED1/lista-lineares/build/Debug/outDebug",
+      "cwd": "c:/Users/mathi/Documents/GitHub-Projetos/Estudos/AED1/lista-4 listas lineares",
+      "program": "c:/Users/mathi/Documents/GitHub-Projetos/Estudos/AED1/lista-4 listas lineares/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
