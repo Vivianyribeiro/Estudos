@@ -1,0 +1,18 @@
+A partir de dois conjuntos rotulados, explique dois problemas de regressão (uma linear e a outra, logística). Apresente estas tarefas de ML a partir da escolha de um algoritmo; comente também outros algoritmos que poderiam ser usados para realizar as mesmas tarefas. Como é possível avaliar os resultados? Explique/exemplifique.
+
+REGRESSÃO LINEAR - é um algoritmo de aprendizado de maquina supervisionado (quando vc entrega dados historicos para o algoritmo e ele a partir dai fara calculos para encontar valores aproximados)
+- avalia a relação estatisticas entre uma ou mais variaveis
+- onde uso : prever valor de fechamento de ação, produtividade de colaboradores em uma empresa, previsão de faturamento, limite de emprestimo baseado no salario
+ 
+Na regressão linear, o objetivo é encontrar uma relação linear entre as variáveis de entrada (características) e uma variável de saída contínua. Suponha que você tenha um conjunto de dados com duas variáveis, X e Y, e deseja encontrar a relação linear entre elas. Um exemplo seria prever o preço de uma casa com base em sua área.
+
+analise de regressao - método onde estabelecemos uma relacao entre variavel dependente() e variavel independente - (se quero estimar a altura de alguem de acordo com o peso, o peso é independente e altura seia dependente do peso)
+
+ex: estimar nota(y - variavel dependente) do aluno dado a quantidade de horas (x - variavel independente) de estudo 
+
+
+
+Regressão Logística:
+A regressão logística é usada quando a variável de saída é discreta ou categórica (de classificação), mas também pode ser vista como uma regressão de probabilidade. 
+Por exemplo: você pode querer prever se um aluno será aprovado ou reprovado em um exame com base em seu tempo de estudo, ou se vai chover ou nao 
+(tipo resultados opostos "sim" - "nao")
