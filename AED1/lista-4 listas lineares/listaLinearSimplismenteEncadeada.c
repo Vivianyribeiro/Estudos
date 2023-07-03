@@ -126,35 +126,46 @@ int InsOrdem (ApontadorCelula * p, Celula celula) {
      if ((*p) == NULL) {
         return (InsInicio (p, celula));
      }
-     else {
-           if ((*p) -> prox == NULL) {
-              if (celula.chave < (*p)->chave) { 
+     else 
+     {
+           if ((*p) -> prox == NULL) 
+           {
+              if (celula.chave < (*p)->chave) 
+              { 
                   return (InsInicio (p, celula)); 
               }
-              else { 
+              else 
+              { 
                   return (InsFinal (p, celula)); 
               }
            }
-           else {
-                 if (celula.chave < (*p) -> chave) { 
+           else 
+           {
+                 if (celula.chave < (*p) -> chave) 
+                 { 
                      return (InsInicio (p, celula)); 
                  }
-                 else {
+                 else 
+                 {
                         q = (ApontadorCelula) malloc( sizeof (Celula) );
-                        if (q == NULL) { 
+                        if (q == NULL) 
+                        { 
                            return (FALHA); 
                         }
                         q->chave = celula.chave;
                         r =  (*p);
-                        while (((r->chave) < celula.chave) && ((r->prox) != NULL)) {
+                        while (((r->chave) < celula.chave) && ((r->prox) != NULL)) 
+                        {
                            s = r; 
                            r = r->prox;
                         }
-                        if (r->chave < celula.chave) { 
+                        if (r->chave < celula.chave) 
+                        { 
                            q->prox = (ApontadorCelula) NULL; 
                            r->prox = q;
                         }
-                        else {
+                        else
+                        {
                            q->prox = r;
                            s->prox = q;
                         }
