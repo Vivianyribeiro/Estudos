@@ -1,0 +1,137 @@
+Particionamento de requisitos por Cenários - > identificação de requisitos a partir de diferentes cenários de interaçoes entre usuario e sistema. -> PE  feita uma simulação de interações do usuáriocom o sistema na execução de uma tarefa do negócio e os usuarios explicam para o engenheiro de requisitos oque eles fazem e como o sistema poderia ajudálos a execultar esta tarefa.
+
+-> cenarios pode ser entendidos como estórias que explicam como o sistema poderia ser usado. E PODEM SER IDENTIFICADOS a partir de aplicações técnicas tradicionais de elicitação de requisitos como ENTREVISTAS, QUESTIONÁRIOS ou ANALISE ETNOGRÁFICA
+
+-> cenários expoe o conjunto de interações entre os atores e o sistema e revela as facilidades que são requeridas do sistema. 
+
+-> CENARIOS podem ser escritos usando diferentes formas e padrões mas suas descrições devem conter as seguintes informaçoes:
+	- uma descrição do estado do sistema antes de entrar no cenário (eventos que ativam o cenário e PRÉ-CONDIÇÕES)
+	- O fluxo normal de eventos do cena´rio
+	- o fluxo de exceções e e fluxos alternativos
+	- Uma descrição do estado do sistema após a finalizaçõa do cenário (PÓS-CONDIÇÕES) 
+
+APLICAÇÃO/ UTILIDADE
+
+- Util para facilitar a descoberta de requisitos;
+- Util para detalhar requisitos ja identificados
+- Util para entender os processos de negóvio e como os sistema deverá ser utilizado para suporta-los
+- Util para descobrir as diferentes situações (cenarios) em que o sistema deverá atuar;
+- Util para orientar as fases seguintes do desenvolvimento do sistema no caso de adoção de estratégias de desenvolvimento incrementais
+
+Caso de Uso - DEFINIÇÃO -> é uma descrição narrativa de uma seguência de eventos que ocorre quando um ator usa um ssitema para realizar uma tarefa. -> uma unidade coerente de funcionalidade provida por um sistema, manisfesta por uma seguencia de mensagens trocadas entre o sistema e um ou mais usuários externos , junto com as ações execultadas pelo sistema
+
+Caso de Uso - OBJETIVO -> descrever a funcionalidades do sistema (requisitos funcionais)
+-> mapear o escopo do sistema, onde explicita a fronteira do sistema
+-> facilitar a comunicação com o usuário do sistema
+-> gerenciar o projeto
+->  o RUP o utiliza para guiar todo processo de desenvolvimento - RUP - Processo Unificado da Rational. Esse termo é um processo que foi criado pela empresa de engenharia de software, a Rational Software Corporation, com o intuito de orientar o desenvolvimento de um programa.
+-> Mostram apenas o que o sistema faz, e não como.
+	
+Caso de Uso - representação gráfica 
+- Contem uma elipse com o nome do caso de uso no centro - NOME = VERBO + SUBSTANTIVO (indicaçõa de ação).
+- ATOR -> Constituem as entidades que interagem com o ambiente do sistema, definem um papel particular (um mesmo ator pode desenpenhar diferentes papeis), sao sempre externos ao sistema , o sistema será descrito através de vários casos de uso que sao executados por um numero de atores. REPRESENTAÇÃO GRÁFICA - Um boneco, uma clase/bloco com o estereotipo 'actor'.
+
+DIAGRAMAS DE CASOS DE USO - introduzida por Jacobson em 94 para visualização dos casos de uso
+- esse diagrama é parte da UML - Linguagem unificada de modelo - Fornecer a arquitetos de sistemas, engenheiros de software e desenvolvedores de software ferramentas de análise, design e implementação para sistemas baseados em software, bem como para a modelagem de processos de negócios e similares. 
+- mostram um conjunto de casos de uso, os atores envolvidos e os relacionamentos entre casos de uso, casos existam.
+ Um bloco com os elipses referentes aos casos de uso existentes os atores (atendentes, gerente, cliente, tempo) do lado externo ligados ao seu caso de uso.
+
+COMO ENCONTRAR ATORES? - quem usa o sistema - quem instala - quem inicia/desliga o sistema- que outros sistemas usam o sistema - quem prove informação ao sistema.
+
+COMO ENCONTRAR CASOS DE USO ? - quais são os processos de negócios elementares que deveram ser suportados pelo uso do software - que funções o ator vai querer do sistema - o sistema armazena informações - que informações atores iram criar, ler , atualizar ou apagar - o sistema precisa notoficar o ator sobre mudanças no seu estado interno - existe algum evento externo que o sistema precisa saber, que ator informa o sistema desses aventos
+
+Cenários em UML -  siginifica um  caminho através de casos de uso, uma instancia de um caso de uso, seguencia de passos que descreve uma interação, 
+EXEMPLO  (SACAR DINHEIRO ):
+ - SAQUE COM SUCESSO
+ - tentativa de saqui MAS senha incorreta
+ - tentativa de sa que MAS saldo insufuciente
+
+CASO DE USO X CENÁRIOS -> casos de uso NÃO sao cenários, mas sim um conjunto de cenários associados a execução de um processo elementar de negócio
+- cada cenário é uma instancia de um caso de uso
+- para cada caso de uso, no muinimo um cenarioo para o fluxo normar(cenário principal) e outros para cada fluxo excepcional (secundário). 
+
+TIPOS DE CASOS DE USO 
+
+-> Primário (representam os processos principais ou mais comuns (vender produto)) 
+-> Secundário - representam processo menos importantes ou mais raros (cadastrar produtos)
+-> Opcional - representam processo que podem ser ignorados ou incluidos  em futuras versões (solicitar estoque par um novo produto)
+
+FORMATO DE DESCRIÇÃO DE CASOS DE USO - 
+- Nao existe padroes na industria ou na literatura para sua formatação
+- deve se incluir informações que faclitem a comunicação entre os clientes e a equipe de desenvolvimento do sistema
+
+FORMATO DE CASO DE USO - RESUMIDO
+- descriçãso resumida em um parágrafo, geralmente do cenário de sucesso principal
+- cridos na fase inicial de requisistos
+
+FORMATO DE CASO DE USO - INTERMEDIÁRIO
+- descriçaõ informal de parágrafsos. multiplos paragráfos que cobrem varios cenários
+- podem ser usados na fase inicial de requisitos, caso haj ionteresse em maior detalhamento.
+
+FORMATO DE CASO DE USO - COMPLETO (DETALHADO ou EXPANDIDO)
+- Formato mais elaborado. todos os passso e variantes sçao descritos em detalhe
+- durante a fase de requisitos, apenas os casos de uso mais importantes devem ser escritos nesse formato
+
+ESTILO DE DESCRIÇÃO DE CASO DE USO - ESSENCIAL
+- Descrição de um processo em termos de sua motivaçã e atividades essencias
+- expressoes relativamente livres de detalhes de implementação, decisçoes de projeto, uso de tecnologias
+  
+ESTILO DE DESCRIÇÃO DE CASO DE USO - CONCRETO
+- descriçaõ de um processi em termos de seru projeto real, comprometido com tecnologias de desenvolvimento, interfaces de entrada e saida
+
+MODELÇAGEM DE CAOS DE USO - 
+LOCALIZAR ATORES E IDENTIFICAR CASOS DE USO
+OBJETIVOS
+delimitar o sistema 
+destacar os atores que irao interagir como sistema
+dewstacar casis de uso 
+PROCESSO
+identioficar atores
+identificar casos de uso
+descrever caso de uso no formato resumido
+criar diagrams de caso d uso
+
+PRIORIZAR CASO DE USO 
+OBJETIVO - definir em quais iterações os caios de uso sderao desenvolvidfos
+PROCESSO - identificar os casos d uso com mais riscos e os mais significantes
+ALOCAR OS CASIS D USO  as iteraç~eos definindiopo susas prioridades dentro de cada uma dewlas
+
+DETALHAR CAOS DE USO
+OBJETIVO - descrever o fluxo de eventos de cada caso de usop
+PROPCESSO - interagir com os usuarios atores que estao relacionados com cada um dos casos 
+descrever detalahdamente os pasos que compoe o fluxo de eventos
+revisar o detalhamento  do caso de uso como os usuarios
+refinar a descricoa de casos de uso
+
+ESTRUTURASR O MODELO DE CASO DE USO
+
+OBJETVOS - otimizar o modelo de caso de uso
+PROCESSO - identificar descrições de funcionalidades comuns
+extrais tais funcionalidades e criar um caso de uso mais específico que posssa ser usado pelos demais 
+reutilização de caso de uso - herança (generalização/especializaçaõ) - Incorporação (<<include>>) entre casos de uso
+
+
+GENERALIZAÇÃO - é um relacionamento de generalizar/especializar
+os casos de uso especializados herdam a estrutura do caso de uso generalizado
+o supertipo contem cenários mais gerais
+os subtipos contem cenários mais especificos particulares a cada um deles
+os cenarios comuns a masi de um caso de uso sao adaptados em um casoi de uso generalizado
+USADOS quando vc erstiver descrevendo compportamento semelhantes entre casos de uso, mas algum deles faz pouco mais que outro
+
+INCLUSÃO - um caso de uso incorpora explicitamente o comporrtamto de outro caso de uso, evitando assim repetições de descrição de fluxos
+USAR - quandfo houver repetiç~eos entre casos de uso e vc  desear evitar esta repeticoes
+
+
+EXTENSÃO - usado para descrever cenarios opcionais de um caso de uso
+- os casos de uso descrevem cenariso q sempre 
+###
+
+
+
+
+
+
+
+
+
+
