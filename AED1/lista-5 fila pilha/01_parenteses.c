@@ -14,6 +14,53 @@ typedef struct descritor {
     Polinomio *end;
 }Descritor;
 
+Descritor *CriaListaVazia();
+
+Polinomio *criaPolinomio(Polinomio new);
+
+bool seListaVazia(const Descritor *l);
+
+void InsereInicio (Descritor *l, Polinomio new);
+
+void insFinal (Descritor *l, Polinomio new);
+
+void printLista(Descritor *l);
+
+void BalanceParenteses(Descritor *l);
+
+// main
+
+int main () {
+
+    Polinomio polinomio;
+    Descritor *L;
+    char c;
+
+    L = CriaListaVazia();
+
+    while ((c = getchar()) != '\n') {
+        if (c != ' ') {
+            polinomio.character = c;
+            insFinal(L, polinomio);
+        }
+    }
+    BalanceParenteses (L);
+
+    Polinomio *aux = L->begin;
+    while (aux != NULL) {
+        Polinomio *temp = aux;
+        aux = aux->next;
+        free(temp);
+    }
+    free(L);
+    
+    //printLista(L);
+
+    return 0;
+}
+
+// Funcões:
+
 Descritor *CriaListaVazia(){
     Descritor *L = (Descritor *) calloc (1, sizeof(Descritor));
     L->begin = NULL;
@@ -58,7 +105,6 @@ void insFinal (Descritor *l, Polinomio new) {
     }
 }
 
-
 void printLista(Descritor *l) {
     if (!seListaVazia(l)) {
         Polinomio *aux = l->begin;
@@ -70,22 +116,27 @@ void printLista(Descritor *l) {
     }
 }
 
-int main() {
+void BalanceParenteses(Descritor *l) {
+    if (!seListaVazia(l)) {
+        int abreP = 0, fechaP = 0;
+        Polinomio *aux = l->begin;
+        while (aux != NULL) {
+    
+            if (aux->character == '(') {
+                abreP += 1;
+            }
 
-    Polinomio polinomio;
-    Descritor *L;
-    char c;
+            if (aux->character == ')') {
+                fechaP += 1;
+            }
+            aux = aux->next;
+        }
 
-    L = CriaListaVazia();
-
-    while ((c = getchar()) != '\n') {
-        if (c != ' ') {
-            polinomio.character = c;
-            insFinal(L, polinomio);
+        if (abreP == fechaP) {
+            printf ("Correta\n");
+        }
+        else {
+            printf("Incorreta\n");
         }
     }
-
-    printLista(L);
-
-    return 0;
 }
