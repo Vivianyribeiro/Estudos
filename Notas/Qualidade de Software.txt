@@ -1,0 +1,116 @@
+Qualidade -> numa escala de valore, qualidade q permite avaliar e consequentemente aprovar aceitar ou recusar algo.
+
+usa critérios de avalialiação dependentes, 
+qualiade e influenciada pelas restrições
+e dificil de definir mas facil de reconhecer
+
+DEFINIÇÃO qualidade de software -> 
+
+- A totalidade das caracteristicas de uma entidade q lhe confere a capacidade de satisfazer as necessiaddes explicitas e implicitas
+- Grau em q um conjunto de cara cteristicas inerentes satisfaz os requisitos
+
+
+PRINCIPAL OBJETOVO DA ENG. SOFTWARE
+- Produzir software de qualidade;
+
+COMO A QUALIDADE E PERCEBIDA PELO CLIENTE
+-Se atende aos requisitos especificos
+-Ausencia de defeitos
+-desempenho satisfatorio
+-baixo custo
+-desenvolvimento rápido
+-facilidae de uso
+-eficiencia nos serviços associados
+-inovação
+
+QUALIDAE DE SOFTWARE:
+
+BENEFICIOS DA QUALIDADE DE SOF,...
+- Redução de defeitos
+- Aumento da confiabilidade do produto
+- Menos esforço de retrabalho
+- Redução de custo de desenvolviemnto e manutençaõ
+- Mior indice de satisfação
+
+CUSTOS
+- Prevenção e Infra-estrutura
+	- atividades de planejamento e implementação de sistemas da qualidade
+- Custos de Avaliação
+	-verificação no processo de produção
+- Custos de falha e correçaõ
+	- custos de refazer ativiades devido a erros efetuados
+
+DESAFIOS
+- Mudança cultural nas organizações
+	- compromisso com a qlidade expressa por uma politica de qlidade
+	.alinhar aos objetivos da organozação
+	.comprometimento em atender os requisistos
+	.Melhoria continua
+	.Comunicação e entendiemnto
+- Caracteris dos projetos de software
+	- complexidade
+	- Custo focado no conhecimento e no desenviolvimento
+	- produção especifica e nao em serie
+	- imaturidade da área de eng. sof
+
+EVOLUÇÃO
+-Inicialmente focada em revisaõ do priduto final
+-Foco evolui gradativamemtne da qlidade do produto para a qualidade do processo
+-Gestao de quaalidae:proccesso de garantia da qualidade
+-Modernamente, o conceito de qualidade envolve cada vez mais a participação do cliente
+-Conceito de qualidade esta se encamenhando para um sentido holistico, incluindo tbm a preucupação com o trabalhador
+
+GERENCIAMENTO:
+
+-**Atividades coordenadas para orientar e controlar uma organização com relação a qualidade.
+-Visa assegurar q o nivel de qualiade requerido seja atingido pelo software
+	- envolve definiçã oapropriada de procedimentos e padrões de qlidade
+	-deve proporcionar uma cultura da qualidade onde esta seja vista como 	uma responsabilidade de cada um dos envolvidos
+	- Nao é apenas reduzir defeitos, mas garantir outras qualidades do 	prod.
+
+-Atividades de Gerencia da Qualidade
+	-Garantia de qualidade
+	.estabelecer procedimentos e padrões organizacionais que conduzam a um 	software de qualidade
+	-Planejamento da qualidade
+	.selecionar procedimentos e padroes especificos para um certo projeto
+	-Controle de qualidade
+	. Assegurar q os procedimentos e padrões são compridos pela equipe de 	desenvolvimento
+
+DIMENSÕES
+
+
+			TECNOLOGIA DE DESENVOLVIEMNTO
+					|
+QUALIDADE do processo -> |QUALIDADE DO PRODUTO|	<- Qualidade das pessoas
+					|
+			  CARACteristicas e restrições
+
+
+QUALIDADE DO PRODUTO
+- Atendimento as caracteristicas de qualidade para o produto
+-Perspectivas:	
+*	-&& Qualidade do serviço: é a ualidade do prduto tal como é observada pelo usuário final.
+*	&& -Qualidade da engenharia e valor agregado: é a qualide da implementaçã o do produto tal como é observada pelos desenvolvedores
+- Modelo de qualidae do produto
+	- Foram propostos varios modelos com taxonomias diversas para as 
+	- Taxonomias mais eficientes são aquelas definidas pela normas iso025010 e ISO25051:2014 complementadas pela norma iso14598 q orient as avaliação de qualidade de produto de software
+
+-caracteristicas d qlidade dee um produto de software
+	- os modelos mais referenciados para caracteristicas da qualide do produto sao aqles denidos pelas normas iso25010 e 25051:2014 complenentado  14598
+	- a norma ISO 25010 classifica os atributos de qualide em atributos de qualiade interna, atributos de qualidade externa e atributos de qualidade em uso.
+
+-QUALIDAE INTERNA E EXTERNA
+
+INTERNA >> Qualidae dso produtos internos em relação a caracterisiticas esperadas
+
+EXTERNA >> Qualidade percebida dquando o softwaere é executado em ambiente simulado
+
+-SUBCARACTERISTICAS:
+
+-Funcionalidade: ADEQUAÇÃO, ACURACIA, SEGURANCA DE ACESSO
+-confiabilidae
+- usablidade
+- eficiencia
+- manutenibilidade
+- Portabilidade
+ 

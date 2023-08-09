@@ -1,0 +1,480 @@
+* Machine Learning (ML)  https://developers.google.com/machine-learning?hl=pt-br
+
+
+
+ML - Capacita algumas tecnologias mais importantes q usamos, de apps a veiculos autonomos...
+
+ML oferece uma nova maneira de resolver problemas, responder perguntas complwexas e criar novo conteudo. pode prever clima, estimar tempo de viagem, recomendar músicas, autocompletar frases, resumir artigos e gerar imagens 
+
+EM TERMOS BÁSICOS O  ML É O PROCESSO DE TREINAMENTO DE UM SOFTWARE, CHAMANDO MODELO, PARA FAZER PREVISÕES UTEIS OU GERAR CONTEUDO DE DADOS. 
+
+
+* Aprendizado Supervisionado - 
+
+Fazem previsões depois de ver muitos dados com as respostas corretas e em seguida descobrir as conexões entre os elementos nos dados q produzem as respostas corretas; SAO SUPERVISIONADOS NO SENTIDO DE QUE UMA PESSOA FORNECE DADOS DO SISTEMA DE ML COM OS RESULTADOS CORRETOS CONHECIDOS.
+
+	REGRESSAO - Um modelo de regressao prevê um valor númerico. exemplo um modelo meteorologico q prevê a quantidade de chuva, em polegadas ou milimetros.
+
+	CLASSIFICAÇÃO - o modelo de classificação prevÊ a probabilidade de algo pertencer a uma categoria. a saida gera um valor q indica se algo pertence ou nao a uma determinada categoria. Se é spam ou nao etc...
+
+
+
+* Aprendizado Não Supervisionado - 
+
+fazem previsões por receber  dados q nao contêm respostas corretas. A meta de um modelo de aprendizado não supervisionado é identificar padrões significativos entre dados. O MODELO NÃO TEM DICAS SOBRE COMO CATEGORIZAR CADA DADO, MAS PRECISA INFERIR AS PRÓPRIAS REGRAS.
+
+	CLUSTERING (AGRUPAMENTO) - O modelo  encontra pontos de daods q demarcam agrupamentos naturais. Se difere da classificação porque as categorias nao são definidas por vc. exemplo um modelo nao supervisionado pode agrupar um conjunto de daods meteorologicos com base na temperatura , revelando segmentação q definem as estaç~eos do ano, em seguida vc pode tentar nomerar esses clusters com base na compreensão do conunto de dados.
+
+
+*Aprendizado por Reforço -
+
+Fazem previsões por meio de prêmios ou penalidades com base nas ações realizadas em um ambiente. Um sistema de aprendizado por reforço gera uma política que define a melhor estratégia para conseguir o máximo de recompensas. USADO PARA TREUINAR ROBOS A REALIZAR TAREFAS, COMO ANDAR AO REDOR DE UMA SALA, E PROGRAMS DE SOFTWARE COMO O AlphaGo (pra jogar go)
+
+
+
+*IA Generativa - 
+
+É uma classe de modelos q cria conteúdo a partir de dados de entrada do usuarios. PODE CRIAR NOVAS IMAGENS , COMPOR MUSICAS E PIADAS, RESUMIR ARTIGOS, EXPLICAR COMO EXECULTAR UMA TAREFA OU EDITAR UMA FOTO.
+COMO FUNCIONA? aprendem padrões em dados com o objetivo de produzir dados novos mas semelhantes. seguem o ritmo de > comediantes q aprendem a imuitar os outros observansdos comportamentos e estilo > artista q aprendem a pintar em um estilo específico estudando muitas pinturas nesse estilo etc
+
+Para oriduzir saidads unicas aprendem com dados de maneira não supervisionada, em q modelo aprende a imitar os dados em q é treinado. As vezes é treinado masi detalhadamente usando o aprend. supervisionado ou de reforço em dados específicps relacionadso a tarefas q o modelo pode ter q realizar(resumir artigo edittar foto)
+
+	PODE ter várias entradas e criar diversas saidas (texto imagem audio video) tbm pode criar combinações. exemplo:
+	texto para texto
+	texto para imagem
+	texto para video
+	conversao de texto em código
+	covenrsao de texto em voz
+	Imagem e texto para imagem ... 
+
+A IA generativa é uma tecnologia em rápida evolução, com novos casos de uso sendo descobertos constantemente. Por exemplo, os modelos generativos estão ajudando as empresas a refinar as imagens de produtos de comércio eletrônico removendo automaticamente os planos de fundo que causam distração ou melhorando a qualidade das imagens de baixa resolução.
+
+
+limpeza de dados https://developers.google.com/machine-learning/crash-course/representation/qualities-of-good-features?hl=pt-br
+
+
+### APRENDIZADO SUPERVISIONADO
+
+
+>>O aprendizado supervisionado usa dados históricos melhor do que o de reforço.
+
+baseia se nos seguintes conceitos principais: DADOS, MODELO, TREINAMENTO, AVALIANDO, INFERÊNCIA
+
+ - *DADOSs -
+
+ (palavras, numeros, valores de pixels, formas de onda capturados em arquivos de imagem e audio...) - imagens de gatos, preçoes de imoveis...
+
+São a força motriz do ML. 
+
+Conjuntos de dados sao compostos por exemplos individuais de FEATURES(recursos/ATRIBUTOS - valores q um modelo superv. usa para prever o rotulo) e um LABEL(rotulo - é a resposta ou o valor q qremos q o modelo preveja). 
+EXEMPLOS ROTULADOS(labelded) contem features e rótulos
+NAO ROTULADOS contem os atributos mas nenhum rotulo, deposi de criar um modelo ele prevê o rotulo as partir dos recursos(features)
+ CARACTERISTICAS do conjunto de dados - é caracterizados peLo seu tamanho(numeor de exemplos) e diversidade(abrangencia desses exemplos)BONS CONJUNTOS DE DADOS SÃO GRANDES E DIVERSIFICADOS.
+Tambem pode ser caracterizado pelo numero de atributos.
+
+Para um sistema de machine learning, um grande número de exemplos que abrangem uma variedade de casos de uso é essencial para entender os padrões subjacentes dos dados. Um modelo treinado nesse tipo de conjunto de dados tem mais chances de fazer boas previsões com base em novos dados.
+Por exemplo, um conjunto de dados pode conter 100 anos de dados, mas apenas para o mês de julho. O uso desse conjunto de dados para prever a chuva em janeiro produziria previsões ruins. Por outro lado, um conjunto de dados pode abranger apenas alguns anos, mas conter todos os meses. Esse conjunto de dados pode produzir previsões ruins porque não contém anos suficientes para explicar a variabilidade.
+ %  extra vivi
+	REFINAMENTO
+Até agora, presumimos que todos os dados usados para treinamento e teste fossem confiáveis. Na vida real, muitos exemplos em conjuntos de dados não são confiáveis devido a um ou mais dos seguintes motivos:
+
+Valores omitidos -> Por exemplo, uma pessoa se esqueceu de inserir um valor para a idade da casa.
+
+Exemplos duplicados -> Por exemplo, um servidor fez upload dos mesmos registros duas vezes por engano.
+
+Ruim -> Por exemplo, uma pessoa rotulou incorretamente uma foto de uma árvore de carvalho como um bordo.
+
+Valores de recurso inválidos -> Por exemplo, alguém digitou um dígito extra ou um termômetro escondido no sol.
+
+	** Trate seus dados com todos os cuidados que você faria com qualquer código essencial. Um bom ML depende de bons dados.**
+
+Após a detecção, você normalmente os "corrigir" maus exemplos os remove do conjunto de dados. Para detectar valores omitidos ou exemplos duplicados, escreva um programa simples. Detectar valores de recursos ou rótulos inadequados pode ser muito mais difícil.
+coletar estatísticas como as seguintes pode ajudar:
+
+Máximo e mínimo
+Média e mediana
+Desvio padrão
+
+Conheça seus dados
+Siga estas regras:
+
+Lembre-se de como você acha que seus dados devem ser.
+Verifique se os dados atendem a essas expectativas ou se você pode explicar por que eles não atendem a essas expectativas.
+Verifique se os dados de treinamento estão de acordo com outras fontes (por exemplo, painéis).
+
+
+ - *MODELOs - 
+	um modelo é o conjunto complexo de numeros q definem a relação matematica de padroes de recursos de entrada especificas a valores de rotulos de saida específicos, o modelo descobre esses padores por meio de treinamento
+
+
+
+ - *TRENAMENTO - 
+
+	para q um modelo supervisonado possa fazer previsoes  ele precisa ser treinado, fornecemos a ele um conjunto de dados com exemplos rotulados. o objetivo do modelo é desenvolver a melhor solução para prever rotulos dos atributos. O modelo encontras a melhor solução comparando o valor previsto com o valor real do rotulo. Com base na diferenca entre os valores previstos e reais, definimos como a perda(LOSS - Durante o treinamento de um modelo supervisionado , uma medida de quão longe a previsão de um modelo está de seu rótulo ), o modelo atualiza gradualmente a solução. O MODELO APRENDE A RELAÇÃO MATEMATICA ENTRE OS ATRIBUTOS E O ROTULO PARA Q ELE POSSA FAZER AS MELHORES PREVISÕES SOBRE DADOS NAO VISTOS.
+
+
+ - *AVALIANDO -
+ 	Avaliando um modelo treinado para detrminar se ele aprendeu muito bem. Quando avaliamos um modelo, usamos um conjuntp de dados rotulado. mas fornecemos ao modelo apenas os atributo do conjunto de dados. Em seguida, comparamos as previsões do modelo com os valores verdadeiros do rotulo.
+
+
+
+ _ *INFERENCIA - 
+	Quando estivermos satisfeitos com os resultados da avaliação do modelo, podemos usalo para fazer predições, chamadas de inferencias, em exemplos sem rotulos.
+
+
+
+
+#####3
+
+Bias (ou viés em português): é o erro devido à diferença entre as previsões médias e os valores corretos que estamos tentando prever (TAXA DE ERRO)
+
+loss/perda/diferenca -> É a penalidade para uma previsao ruim, ou seja, um numero q indica quao ruim foi a previsao do modelo em um unico exemplo, se a previsap for perfeita a perda sera zero. quao longe a previsao foi do identificador
+
+funcao de perda conveniente para regressao L2PERDA - para determinado exemplo tbm e chamado de erro guadratico. 
+	= quadrado da diferenca entre previsao e identificador
+ 	= (observação - previsao)²
+	= (y - y')²
+
+
+REGRAS DE ML:
+Regra 1: não tenha medo de lançar um produto sem machine learning
+
+
+
+####
+label -> é a variavel q estamos prevendo (geralmente y) identificadores - marcadores é oq estamos prevendo, o y, seja o preço futuro de algo ou o tipo de animal mostrado em uma imagem etc...
+
+recursos/features -> variaveis q descrefem nossos dados (x1,x2,x3...), recursos -> variavies de entrada, os x.
+
+exemplo -> é uma instÂncia específica de dados, x
+
+exemplo rotulado -> tem :labeled examples: {features, label}: (x,y) - usado para treinar o modelo, inclui os recursos e o rotulo
+	
+exemplo nao rotulado -> tem [features, ?] : (x, ?) - usado para fazer previsões de novos dados
+
+Modelos -> define a relaçao entre atributos e o rotulo, vc fornce exemplos do modelo rotulado e permite q o modelo aprenda gradativamente as relações entre os atributos e o rotulo.
+	treinamento - mopstrar exemplos para q seja aprendido
+	inferencia - aplicar o modelo treinado a exemplços nao rotulado (fazer as previsoes 	uteis(y))
+
+REGRESSAO x CLASSIFICAÇÃO
+
+regressao -> prevê valores numericos contínuos
+
+classificação -> prevê valores discretos - preve se algo pertence a uma determinada categoria (é spam, nao e spam, é um gato, um cachorro...)
+
+
+%%% ruidos
+
+Ruído refere-se a informações indesejadas, imprecisas ou perturbadoras presentes nos dados. No contexto do aprendizado de máquina, o ruído pode ser causado por várias razões:
+
+Erros de medição: Quando os dados são coletados a partir de fontes reais, podem ocorrer erros de medição, introduzindo informações incorretas ou imprecisas nos dados.
+
+Anomalias: Algumas amostras podem ser atípicas ou incomuns, não refletindo bem o comportamento geral dos dados. Essas amostras anômalas podem introduzir ruído nos conjuntos de dados.
+
+Dados ausentes: Se houver falhas na coleta de dados, algumas amostras podem estar faltando, criando lacunas que podem causar ruído ao analisar o conjunto de dados.
+
+Viés de amostragem: Ao coletar dados aleatórios, pode haver uma tendência de selecionar certos tipos de amostras em detrimento de outros, o que pode introduzir viés e ruído nos dados.
+
+Redundância: Como mencionado anteriormente, a redundância de dados também pode ser considerada uma forma de ruído, pois pode levar a informações repetitivas e desnecessárias.
+
+Outliers: Outliers são amostras extremamente incomuns ou discrepantes que podem distorcer a representação geral dos dados e adicionar ruído aos modelos.
+
+O ruído pode ser prejudicial para o treinamento e desempenho do modelo, pois pode causar instabilidade durante o processo de aprendizado e levar a previsões menos precisas. É por isso que a presença de ruído nos dados pode ser minimizada por meio de técnicas de pré-processamento, como limpeza de dados, tratamento de outliers, imputação de dados ausentes e redução de redundâncias.
+
+Ao mesmo tempo, como mencionado na explicação anterior, em alguns casos, uma quantidade moderada de ruído pode ser benéfica, especialmente para suavizar gradientes durante o treinamento do modelo e evitar que o modelo se torne excessivamente sensível a pequenas variações nos dados de treinamento. No entanto, um equilíbrio adequado deve ser encontrado para garantir que o ruído não prejudique o desempenho geral do modelo.
+
+
+
+%%%%%
+
+
+
+
+
+
+@@#REGRESSAO LINEAR - metodo q encontra a linha reta ou o hiperplano que melhor se encaixa em um conjunto de pontos.
+(https://developers.google.com/machine-learning/crash-course/descending-into-ml/linear-regression?hl=pt-br)
+
+Por convenção em machine learning, você escreverá a equação para um modelo assim:
+		y' = b + w1 x1
+onde:
+
+ é o rótulo previsto (uma saída esperada).
+ é o viés (a interseção em y), às vezes chamado de 
+.
+ é o peso do atributo 1. Peso é o mesmo conceito da "inclinação" 
+ na equação tradicional de uma linha.
+ é um recurso (uma entrada conhecida).
+
+&& TREINAMENT O PERDA
+	Treinar significa aprender (determinar) bons valores para todos os pesos e o vies de exemplos rotulados. no aprendizado supervisionado, um algoritmo de ml cria um modelo examinando muitos exemplos e tentando encontar um modelo que minimize a perda.processp chamado de MINIMIZAÇÃO DO RISCO EMPÍRICO,
+	Perda é a penalidade para uma previsão ruim. Ou seja, perda é um número que indica quão ruim foi a previsão do modelo em um único exemplo. Se a previsão do modelo for perfeita, a perda será zero. Caso contrário, a perda será maior
+
+O teinamento de um modelo busca encontrar um conjunrto de ponderações e tendencias com uma média de perda baixa em todos os exemplos.
+
+Perda quadrada: uma função de perda conhecida
+Os modelos de regressão linear que vamos examinar, usam uma função de perda chamada perda quadrada (também conhecida como L2perda). A perda quadrada para um único exemplo é a seguinte:
+
+o quadrado da diferenca entre o rotulo e a predição
+(observation - predition(x))²
+= (y -y')²
+
+ERRO QUADRATICO MEDIO (MSE) -> MSE = 1/n Z (y - predicao(x))²
+					 (x,y)e D
+onde:
+
+ (x,y)é um exemplo em que
+ x é o conjunto de atributos (por exemplo, chirps/minuto, idade, gênero) que o modelo usa para fazer previsões.
+ y é o rótulo do exemplo (por exemplo, temperatura).
+ prediction(x) é uma função dos pesos e vieses em combinação com o conjunto de atributos 
+.
+ D é um conjunto de dados que contém muitos exemplos rotulados, que são (x,y) 
+ pares.
+ n é o número de exemplos em D 
+.
+Embora o MSE seja comumente usado em machine learning, ele não é a única função de perda prática nem a melhor função de perda para todas as circunstâncias.
+
+REDUZIR PÉRDAS 
+
+Pra treinar um modelo precisamos de uma boa maneira de reduzir a perda dele. Uma aboradagem iterativa pe um método amplamete utilizado para reduzior a operda:
+
+ modelo de machine learning reduz a perdas de forma iterativa.
+
+O aprendizado iterativo pode lembrar você do jogo infantil "Hot and Cold" para encontrar um objeto oculto, como um dedilhado. Nesse jogo, o "objeto oculto" é o melhor modelo possível. Você começará com uma suposição selvagem ("O valor de W1 é 0.") e esperará que o sistema diga qual foi a perda. Depois, você tentará outra adivinha ("O valor de W1 é 0.5.") e verá qual é a perda. Ah, você está se preparando. Na verdade, se você jogar bem, vai ficar mais quente. O verdadeiro truque para o jogo é tentar encontrar o melhor modelo possível da maneira mais eficiente possível.
+
+Usaremos essa mesma abordagem iterativa em todo o curso "Crashing Machine Learning Crash", detalhando várias complicações, principalmente dentro dessa nuvem nublada rotulada como "quot;Model (função de previsão)". As estratégias iterativas são predominantes no aprendizado de máquina, principalmente porque são altamente escalonáveis em grandes conjuntos de dados.
+
+O "model" usa um ou mais atributos como entrada e retorna uma previsão (y') como saída. Para simplificar, considere um modelo que usa um recurso e retorna uma previsão:
+		y' = b +w1x1
+Quais valores iniciais definir para b e w1 ? Para problemas de regressão linear, descobrimos que os valores iniciais não são importantes. Podemos escolher valores aleatórios, mas vamos usar apenas os seguintes valores triviais:
+b =0
+w1 = 0
+
+Suponha que o primeiro valor do recurso seja 10. Conectar esse valor de recurso à função de previsão gera:  y' = 0+0*10 =0.
+
+A parte "Perda de computação" do diagrama é a função de perda que o modelo usará. Suponha que usemos a função de perda quadrada. A função de perda recebe dois valores de entrada:
+
+y': a previsão do modelo para atributos x
+y: o rótulo correto correspondente aos recursos x.
+Por fim, chegamos à parte "Calcular atualizações de parâmetros" do diagrama. É aqui que o sistema de machine learning examina o valor da função de perda e gera novos valores para b e w1. Por enquanto, suponha que essa caixa misteriosa elabore novos valores e, em seguida, o sistema de machine learning reavalia todos esses recursos em comparação a todos esses rótulos, produzindo um novo valor para a função de perda, o que produz novos valores de parâmetros. O aprendizado continua a iterar até que o algoritmo descubra os parâmetros do modelo com a menor perda possível. Em geral, você faz uma iteração até que a perda geral pare de mudar ou pelo menos mude de forma muito lenta. Quando isso acontece, dizemos que o modelo convergiu .
+
+
+
+
+Como podemos reduzir a perda?
+Os hiperparâmetros são as configurações usadas para ajustar como o modelo é treinado.
+O derivado de (y - y')2 em relação aos pesos e vieses nos diz como a perda muda para um determinado exemplo
+	Fácil de calcular e convexar
+Então, damos passos curtos na direção que minimize a perda
+	Chamamos isso de etapas do gradiente, mas elas são etapas de gradiente realmente 	negativas.
+	Essa estratégia é chamada de Gradiente descendenTE
+
+Inicialização de peso
+Para problemas de convex, os pesos podem começar em qualquer lugar (por exemplo, todos os 0s)
+	Convex: pense em um formato de tigela U
+	Apenas um mínimo
+Prévia: não é verdadeiro para redes neurais
+	Não convexo: pensar em uma caixa de ovos WW
+	Mais de um mínimo
+	Forte dependência dos valores iniciais
+
+
+SGD & mini gradiente de gradiente em lote
+Seria possível calcular o gradiente de todo o conjunto de dados em cada etapa, mas isso é desnecessário
+O gradiente de computação em amostras de dados pequenos funciona bem
+	Em cada etapa, receba uma nova amostra aleatória
+Gradiente descendente estocástico: um exemplo por vez
+Gradiente descendente em minilote: lotes de 10 a 1.000
+	Os gradientes de perda e em média são calculados sobre o lote
+
+** Reduzir perda: gradiente descendente
+{Reduzir perdas com gradiente descendente é um conceito importante em aprendizado de máquina e otimização de modelos. O gradiente descendente é um algoritmo de otimização usado para ajustar os parâmetros de um modelo com o objetivo de minimizar a função de perda. A ideia básica é iterativamente seguir na direção oposta ao gradiente da função de perda em relação aos parâmetros do modelo, o que leva a uma redução gradual das perdas ao longo do tempo.}
+
+	O diagrama de abordagem iterativa (Figura 1) continha uma caixa ondulada em verde chamada "Compute Updates updates." Substituímos essa poeira algorítmica por algo mais significativo.
+
+Suponha que tivéssemos o tempo e os recursos de computação para calcular a perda para todos os valores possíveis de w1. Para o tipo de problemas de regressão que estamos analisando, o gráfico de perda vs. w1
+ resultante sempre será convexo. Em outras palavras, o gráfico sempre terá uma forma de tigela
+
+Os problemas de convex têm apenas um mínimo, ou seja, apenas um lugar em que a inclinação é exatamente 0. Esse mínimo é onde a função de perda converge.
+
+Calcular a função de perda para cada valor concisível de w1 sobre todo o conjunto de dados seria uma maneira ineficiente de encontrar o ponto de convergência. Vamos examinar um mecanismo melhor, muito conhecido em machine learning, chamado de gradiente descendente.
+
+O primeiro estágio do gradiente descendente é escolher um valor inicial (um ponto de partida) para w1. O ponto de partida é pouco importante. Portanto, muitos algoritmos simplesmente definem 
+w1 como 0 ou escolhem um valor aleatório. A figura a seguir mostra que escolhemos um ponto de partida ligeiramente maior que 0:
+
+(https://developers.google.com/machine-learning/crash-course/reducing-loss/learning-rate?hl=pt-br)
+Há uma taxa de aprendizado de Goldilocks para cada problema de regressão. O valor de Cachinhos Dourados está relacionado à intensidade da função de perda. Se você souber que o gradiente da função de perda é pequeno, tente usar uma taxa de aprendizado maior com segurança. Isso compensa o pequeno gradiente e resulta em um tamanho de etapa maior.
+
+No gradiente descendente, um lote é o conjunto de exemplos usado para calcular o gradiente em uma única iteração de treinamento. Até agora, presumimos que o lote tenha sido todo o conjunto de dados.
+
+
+
+### GENERALIZAÇÃO
+
+A generalização refere-se à capacidade do modelo de se adaptar corretamente a dados novos e ainda não vistos, extraídos da mesma distribuição usada para a criação do modelo.
+
+##Generalização: Perigo de Overfitting
+
+O modelo mostrado nas Figuras 2 e 3 superajusta as peculiaridades dos dados nos quais treinou. Um modelo de overfit obtém uma perda baixa durante o treinamento, mas faz um trabalho ruim ao prever novos dados. Se um modelo se ajusta bem à amostra atual, como podemos confiar que ele fará boas previsões sobre novos dados? Como você verá mais adiante , o overfitting é causado por tornar um modelo mais complexo do que o necessário. A tensão fundamental do aprendizado de máquina está entre ajustar bem nossos dados, mas também ajustar os dados da forma mais simples possível
+
+Um modelo de aprendizado de máquina visa fazer boas previsões sobre dados novos e inéditos. Mas se você estiver construindo um modelo a partir do seu conjunto de dados, como você obteria os dados inéditos? Bem, uma maneira é dividir seu conjunto de dados em dois subconjuntos:
+
+conjunto de treinamento — um subconjunto para treinar um modelo.
+conjunto de teste — um subconjunto para testar o modelo.
+O bom desempenho no conjunto de teste é um indicador útil de bom desempenho nos novos dados em geral, assumindo que:
+
+O conjunto de teste é grande o suficiente.
+Você não trapaceia usando o mesmo conjunto de teste repetidamente.
+
+@@ 
+
+O overfitting ocorre quando um modelo tenta ajustar os dados de treinamento tão de perto que não generaliza bem para novos dados.
+
+As três suposições básicas a seguir orientam a generalização:
+
+Extraímos exemplos de forma independente e idêntica ( iid ) aleatoriamente da distribuição. Em outras palavras, os exemplos não influenciam uns aos outros. (Uma explicação alternativa: iid é uma maneira de se referir à aleatoriedade das variáveis.)
+A distribuição é estacionária ; ou seja, a distribuição não muda dentro do conjunto de dados.
+Desenhamos exemplos de partições da mesma distribuição.
+
+Se as principais suposições do ML supervisionado não forem atendidas, perderemos importantes garantias teóricas sobre nossa capacidade de prever novos dados.
+
+@@
+
+https://developers.google.com/machine-learning/crash-course/training-and-test-sets/splitting-data?hl=pt-br
+
+O módulo anterior introduziu a ideia de dividir seu conjunto de dados em dois subconjuntos:
+
+conjunto de treinamento: um subconjunto para treinar um modelo.
+conjunto de teste: um subconjunto para testar o modelo treinado.
+
+Verifique se o conjunto de teste atende às duas condições a seguir:
+
+É grande o suficiente para gerar resultados estatisticamente significativos.
+Representa o conjunto de dados como um todo. Em outras palavras, não escolha um conjunto de teste com características diferentes do conjunto de treinamento.
+
+
+Nunca treine em dados de teste. Se você estiver vendo resultados surpreendentemente bons nas suas métricas de avaliação, pode ser um sinal de que você está treinando acidentalmente no conjunto de teste. Por exemplo, a alta precisão pode indicar que os dados de teste vazaram para o conjunto de treinamento.
+
+%% 
+
+Por exemplo, considere um modelo que prevê se um e-mail é spam, usando a linha de assunto, o corpo do e-mail e o endereço de e-mail do remetente como recursos. Dividimos os dados em conjuntos de treinamento e teste, com uma divisão de 80 a 20. Após o treinamento, o modelo atinge 99% de precisão nos conjuntos de treinamento e de teste. Esperamos ter uma precisão menor no conjunto de teste. Portanto, analisamos os dados e descobrimos que muitos dos exemplos no conjunto de teste são cópias de exemplos do conjunto de treinamento (não reescrevemos entradas duplicadas para o mesmo e-mail de spam do banco de dados de entrada antes de dividir os dados). Nós, inadvertidamente, treinamos em alguns de nossos dados de teste e, como resultado, não estamos mais medindo a precisão da generalização do nosso modelo com novos dados.
+
+%%
+
+Conjunto de validação 
+
+Particionar um conjunto de dados em um conjunto de treinamento e teste permite que você avalie se um determinado modelo generalizará bem para novos dados. No entanto, usar apenas duas partições pode ser insuficiente ao fazer muitas rodadas de ajuste de hiperparâmetros.
+
+Na figura, "Ajustar No final deste fluxo de trabalho, você escolhe o modelo que funciona melhor no conjunto de teste.
+
+Dividir o conjunto de dados em dois conjuntos é uma boa ideia, mas não uma panaceia. É possível reduzir muito as chances de overfitting particionando o conjunto de dados nos três subconjuntos mostrados na figura a seguir:
+
+TREINAMENTO(70) VALIDACAO(15) TEST(15) .FIGURA 2
+
+Figura 2. Dividir um único conjunto de dados em três subconjuntos.
+
+Use o conjunto de validação para avaliar os resultados do conjunto de treinamento. Em seguida, use o conjunto de teste para verificar sua avaliação depois que o modelo tiver "passed" o conjunto de validação. A figura a seguir mostra esse novo fluxo de trabalho:
+Figura 3. Um fluxo de trabalho melhor.
+TREINE MODELO COM O GRUPO DE TREINO, AVALIE O MODELO NO GRUPODE VALIDACAO, PUXE OS MODELO DE ACORDO COM OS DADOS DE VALIDAÇÃO, LOOP, ESCOLHA O MELHOR MODELO DE VALIDACAO , CONFIRMA RESULTADOS COM O GRUPO DE TESTE
+
+Neste fluxo de trabalho aprimorado:
+
+Escolha o modelo que tem melhor desempenho no conjunto de validação.
+Verifique se o modelo está de acordo com o conjunto de teste.
+Esse fluxo de trabalho é melhor porque cria menos exposições no conjunto de teste.
+
+**DICA
+Conjuntos de teste e conjuntos de validação "desgastam" com uso repetido. Ou seja, quanto mais você usar os mesmos dados para tomar decisões sobre configurações de hiperparâmetros ou outras melhorias no modelo, menor será a confiança que você terá de que esses resultados geralmente serão generalizados para dados novos e não vistos.
+
+Se possível, é recomendável coletar mais dados para "refresh" o conjunto de testes e o conjunto de validação. Começar de novo é uma ótima redefinição.
+
+
+%%% PULEI UMA PARTE
+LIMPEZA DE DADOS
+
+Como escalonar valores de atributos
+Escalonamento significa converter valores de recursos de ponto flutuante do seu intervalo natural (por exemplo, 100 para 900) em um intervalo padrão (por exemplo, de 0 para 1 ou -1 para +1). Se um conjunto de atributos consistir em apenas um atributo, o escalonamento fornece pouco ou nenhum benefício prático. No entanto, se um conjunto de recursos consistir em vários atributos,
+## o escalonamento de atributos fornecerá os seguintes benefícios:
+ 
+  && Ajuda o gradiente descendente a convergir mais rapidamente.
+
+ && Ajuda a evitar a armadilha de "NaN," em que um número no modelo se torna um NaN (por exemplo, quando um valor excede o limite de precisão de ponto flutuante durante o treinamento) e, devido a operações matemáticas, todos os outros números no modelo também se tornam um NaN.
+ &&Ajuda o modelo a aprender os pesos apropriados para cada atributo. Sem o escalonamento de atributos, o modelo prestará muita atenção aos atributos que têm um intervalo maior.
+Não é necessário atribuir a mesma escala a todos os recursos de pontos flutuantes. Nada muito ruim vai acontecer se o Recurso A for dimensionado de -1 a +1, enquanto o Recurso B for escalonado de -3 para +3. No entanto, o modelo reagirá mal se o Recurso B for escalonado de 5000 para 100000.
+
+ ## Refinamento
+Até agora, presumimos que todos os dados usados para treinamento e teste fossem confiáveis. Na vida real, muitos exemplos em conjuntos de dados não são confiáveis devido a um ou mais dos seguintes motivos:
+
+Valores omitidos. Por exemplo, uma pessoa se esqueceu de inserir um valor para a idade da casa.
+Exemplos duplicados. Por exemplo, um servidor fez upload dos mesmos registros duas vezes por engano.
+Ruim. Por exemplo, uma pessoa rotulou incorretamente uma foto de uma árvore de carvalho como um bordo.
+Valores de recurso inválidos. Por exemplo, alguém digitou um dígito extra ou um termômetro escondido no sol.
+Após a detecção, você normalmente os "corrigir" maus exemplos os remove do conjunto de dados. Para detectar valores omitidos ou exemplos duplicados, escreva um programa simples. Detectar valores de recursos ou rótulos inadequados pode ser muito mais difícil.
+
+Além de detectar exemplos individuais ruins, você também precisa detectar dados inválidos na agregação. Os histogramas são um ótimo mecanismo para visualizar seus dados de maneira agregada. Além disso, coletar estatísticas como as seguintes pode ajudar:
+
+Máximo e mínimo
+Média e mediana
+Desvio padrão
+Considere gerar listas dos valores mais comuns para atributos discretos. Por exemplo, faça a correspondência entre o número de exemplos com country:uk e o número esperado. O language:jp precisa ser a linguagem mais comum no conjunto de dados?
+
+## Conheça seus dados
+Siga estas regras:
+
+Lembre-se de como você acha que seus dados devem ser.
+Verifique se os dados atendem a essas expectativas ou se você pode explicar por que eles não atendem a essas expectativas.
+Verifique se os dados de treinamento estão de acordo com outras fontes (por exemplo, painéis).
+Trate seus dados com todos os cuidados que você faria com qualquer código essencial. Um bom ML depende de bons dados.
+
+
+#####
+https://developers.google.com/machine-learning/crash-course/feature-crosses/encoding-nonlinearity?hl=pt-br
+
+FIG 1
+Vocês conseguem traçar uma linha que separa perfeitamente as árvores doentes das árvores saudáveis? Claro. Isso é um problema linear. A linha não será perfeita. Uma ou duas árvores doentes podem estar do lado "quo positivo", íntegro, mas sua linha será um bom preditor.
+
+Figura 2. Isso é um problema linear?
+
+Você consegue desenhar uma única linha reta que separa claramente as árvores doentes das árvores saudáveis? Não, isso não é possível. Esse problema não é linear. Qualquer linha desenhada será um preditor ruim da saúde da árvore.
+
+Para resolver o problema não linear mostrado na Figura 2, crie um cruzamento de atributos. Um cruzamento de atributos é um atributo sintético que codifica a não linearidade no espaço de atributos multiplicando dois ou mais atributos de entrada.
+
+
+#Tipos de cruzamentos de atributos
+Podemos criar muitos tipos diferentes de cruzamentos de atributos. Exemplo:
+
+[A X B]: um cruzamento de atributos formado pela multiplicação de valores de dois atributos.
+[A x B x C x D x E]: um cruzamento de atributos formado pela multiplicação de valores de cinco atributos.
+[A x A]: um cruzamento de atributos formado pelo multiplicação do valor de um único atributo por si mesmo.
+
+>> Graças ao gradiente estocástico, os modelos lineares podem ser treinados de forma eficiente. Consequentemente, complementar os modelos lineares escalonados com cruzamentos de atributos tem sido uma maneira eficiente de treinar em conjuntos de dados em grande escala.
+
+	%%Um grande conjunto de dados com exemplos de amostra aleatória provavelmente contém dados redundantes. Na verdade, a redundância se torna mais provável à medida que o tamanho do lote aumenta. Algumas redundâncias podem ser úteis para suavizar gradientes barulhentos, mas lotes enormes tendem a não transportar muito mais valor preditivo do que lotes grandes.
+
+E se pudéssemos conseguir o gradiente certo em média para muito menos computação? Ao escolher exemplos aleatoriamente do nosso conjunto de dados, poderíamos estimar (embora, com ruído) uma grande média a partir de uma muito menor. O gradiente descendente estocástico (SGD) leva essa ideia ao extremo. Ele usa apenas um único exemplo (tamanho de lote 1) por iteração. Devido a iterações suficientes, o SGD funciona, mas é muito barulhento. O termo "estocástica" indica que o exemplo que abrange cada lote é escolhido aleatoriamente.
+
+## regularização para manter a simplicidade (r L2)
+
+Regularização significa penalizar a complexidade de um modelo para reduzir o overfitting.
+
+Considere a seguinte curva de generalização, que mostra a perda para o conjunto de treinamento e o conjunto de validação em relação ao número de iterações de treinamento.
+
+Os desenvolvedores de modelos ajustam o impacto geral do termo de regularização multiplicando o valor por um escalar conhecido como lambda, também chamado de taxa de regularização. Ou seja, os desenvolvedores de modelos querem fazer o seguinte:
+A regularização de L2 tem o seguinte efeito em um modelo
+
+Encoraja valores de peso a 0 (mas não exatamente a 0)
+Encoraja a média dos pesos a 0, com uma distribuição normal (em forma de sino ou gaussiana).
+
+
+Observação: 
+
+definir lambda como zero remove a regularização completamente. Nesse caso, o treinamento se concentra exclusivamente na minimização da perda, o que representa o maior risco de overfitting possível.
+
+
+
+############
+
+REGERESSAO LOGISTICA
+
+Em vez de prever exatamente 0 ou 1, a regressão logística gera uma probabilidade - um valor entre 0 e 1, exclusivo. Por exemplo, considere um modelo de regressão logística para detecção de spam. Se o modelo inferir um valor de 0,932 em uma determinada mensagem de e-mail, isso implica uma probabilidade de 93,2% de que a mensagem de e-mail seja spam. Mais precisamente, isso significa que no limite de exemplos de treinamento infinitos , o conjunto de exemplos para o qual o modelo prevê 0,932 será realmente spam 93,2% do tempo e os 6,8% restantes 
+

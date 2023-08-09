@@ -5,7 +5,11 @@
 #define SUCESSO  1
 #define FALHA   -1
 
-struct celula {int chave; int dado; struct celula *prox;};
+struct celula {
+    int chave; 
+    int dado; 
+    struct celula *prox;    
+};
 	  
 typedef struct celula TCelula;
 void criaListaVazia(TCelula **inicio);
