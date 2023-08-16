@@ -1,0 +1,35 @@
+Listas:
+
+Implemente uma lista simplesmente encadeada em C. Inclua operações para inserção, remoção e exibição de elementos.
+
+Crie uma função para verificar se uma lista simplesmente encadeada está vazia.
+
+Filas e Pilhas (contiguidade):
+
+Implemente uma fila utilizando um array em C. Inclua operações de enfileiramento e desenfileiramento.
+
+Desenvolva uma pilha usando um array em C. Adicione funções para empilhar e desempilhar elementos.
+
+Pilhas e Filas Dinâmicas:
+
+Crie uma pilha dinâmica em C utilizando alocação de memória. Implemente as operações de empilhar e desempilhar.
+
+Implemente uma fila dinâmica em C com alocação dinâmica de memória. Adicione operações de enfileiramento e desenfileiramento.
+
+Listas Encadeadas:
+
+Construa uma lista duplamente encadeada em C. Inclua funções para inserção, remoção e exibição de elementos.
+
+Implemente uma função para inverter uma lista simplesmente encadeada.
+
+Complexidade de Algoritmo:
+
+Calcule a complexidade de tempo (notação Big O) de um algoritmo que percorre uma lista ligada e realiza uma operação para cada elemento.
+
+Determine a complexidade de tempo de um algoritmo de ordenação por seleção (selection sort) para uma lista de tamanho N.
+
+Algoritmos de Busca:
+
+Implemente uma busca sequencial em C para encontrar um elemento específico em um array.
+
+Escreva um algoritmo de busca binária em C para encontrar um elemento em um array ordenado.
