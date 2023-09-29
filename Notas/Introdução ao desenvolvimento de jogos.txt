@@ -1,0 +1,180 @@
+Etapas do Desenvolvimento - ver rami ismail blog (https://ltpf.ramiismail.com/)
+
+
+ver (https://ltpf.ramiismail.com/milestones/)
+
+
+# PESQUISA 
+##ideação - (ter ideias)
+	* foco principal da equipe sera brainstorming
+	pensar ter ideias divergentes
+	principal objetivo é falhar rapido
+	estamos testando coisas e vendo se fuimcionam
+	prototipos rapidos e sujos, rascunho de texto curtos 	e maquetes/silhuetas/esboço rapidos sao  o nome do jogo aqui. 
+	ao final da ideação deve ter se formado:
+		* objetivo:FORMAR UMA INTENCAO clara para o jogo, com 				algumas ideias sobre estilo, jofgabilidade e proposito.
+		* estrategia: "fail fast" falhar rapido - tentar rapidamente e 		testar rapidamente
+		* REcursos principais: designers, artista conceituais, engenheiros 		focados em prototipos
+		* Cronograma: imprevisivel
+## prototipagem - (testar as ideias) 
+	QUando a ideação chega a uma ideia que parece viável.
+	equipe sai do pensamento divergente e passa a ter um pensamento mais 		focado/convergente, mas nao abandone o fail fast
+	mantem oque funciona e abandona oque nao funciona
+	"a prototipagem não é uma questão de resolução de problemas, mas de 	descoberta de problemas."
+
+	'''" 
+	Objetivo da prototipagem :
+	testar a ideia e garantir que ela seja viável, versátil e possível.
+
+	Estratégia:
+	Iteração rápida, pensamento convergente.
+
+	Recursos principais :
+	Designers, artistas conceituais, engenheiros focados em protótipos
+
+	Cronograma :
+	Para uma produção menor, até várias semanas. Para jogos mais complexos, 		até dois meses.
+	"""
+	
+
+
+#PRÉ-PRODUCAO 
+	Aqui temos a transição para a produção apos a validação de que a produção 	é viavel. é estabelecido o cronograma de desenvolvimento e surge uma 	imagem clara dos requisitos q sera necessario.
+	* Fase do TUDO OU NADA para muitos projetos. tem se a maior parte das 	informações 
+## fatia vertical - 
+
+	 No Vertical Slice o objetivo principal é testar o seu ciclo de produção. Isso significa que você está envolvendo todas as partes do processo de produção e incentivando a conclusão de um ciclo completo de produção - a quantidade de conteúdo que representa depende do jogo e do contexto financeiro: em geral, você está olhando para uma sequência completa de qualidade de produção , segmento, conflito, cenário ou nível. Para isso, é fundamental que todas as partes da produção estejam sinceramente envolvidas: é preciso ficar claro onde existem pontos problemáticos no seu processo, onde a comunicação pode ser melhorada e onde existe falta de clareza.
+Meta de Fatia Vertical :
+Estabelecer, testar e melhorar o pipeline de produção, garantindo que você atinja as metas previstas, estabelecendo cronogramas.
+
+Estratégia:
+Incentivar um ciclo completo de produção em um segmento significativo que represente a experiência do jogo.
+
+Recursos principais :
+Membros experientes de todas as principais disciplinas.
+
+Linha do tempo :
+Dependendo do dimensionamento que o estúdio precisa fazer para a produção completa, isso pode levar até um quarto do tempo total de desenvolvimento.
+
+##inicio da produção - 
+
+# PRODUÇÃO
+##feature complte
+##content complete
+
+# ENCERRAMENTO 
+##release candidate
+##release Build
+
+1 - Idealização
+
+2 - Prototipo
+
+3 - Fatia Vertical
+
+4 - Inicio da Produção
+
+5 - Alpha (feature Complete)
+
+6 - Beta (Content Complete)
+
+7 - Versão Final
+
+8 - Lançamento
+
+
+
+1 - Idealização - junte suas ideias pensa em varias, nao importa q seja doida
+ 
+
+2 - Prototipo - faz um prototipo de algo, nao precisa ser top pode ser bem bosta so pra ver como ficaria
+
+3 - Fatia Vertical - serve para validar as etapas anteriores
+
+4 - Inicio da Produção - Joga tudo q tu fez ate agora fora, e comece denovo agora com de forma melhor com uma noção adquirida nos prototipos
+	aqui tu começa a criar o sistema, criar a renderização, as particulas, os efeitos visuais e sonoros etc
+
+5 - Alpha (feature Complete) - nesta parte seu jogo esta com todas as funcionalidades prontas A ESPINHA DORÇAL DO OJOGO ESTA PRONTA 
+
+6 - Beta (Content Complete) - jogo com o conteudo completo, expandir (se tu tinha criado apenas 2 classes de personagem, crias as 10 outras classes por exemplo), ta praticamnete com o jogo pronto
+
+7 - Versão Final - polir o jogo, deixar mais bonito, deixar uma transição q tava feia mais bonitinha, melhorar oq acha q precisa
+
+8 - Lançamento - onde terminamos de trabalhar, verificando se as skin estao funcionando, se tudo esta ok, validar e certificar se a versao final e valida, lança o jogo.
+
+
+=============================================================================
+
+ELEMENTOS BASICOS DE UM JOGO
+
+
+========================================
+IDENTIDADE VISUAL EM JOGOS
+
+tipos:
+plataformas 2d( tu ve as coisas como a lateral de um bolo partido) exemplo dead & cells
+
+3d (visao tridimensional-com profundidade e tal)
+
+ver jogo SuperHot - visual limpo, inimigos em vermelho
+
+...
+
+=====================================
+
+PRINCIPAIS PLATAFORMAS E TECNOLOGIAS
+ 	a melhor pra usar é a que vc consegue usar kk TODAS SAO BOAS, tudo depende de seu objetivo, se tu so quer fazer jogos
+aqui tem as 3 mais usadas e umas em seguida:
+
+1- unity
+2- unreal
+3- GODOT
+love
+libGDX - em java
+GameMaker Studio
+Monogame
+construct
+Corona Labs
+etc
+
+AGORA se tu quer trabalhar com jogos tu olha a mais usada no mercado (site abragames)
+
+
+=========================================
+LANCAMENTO E ÉTICA
+
+tu fez um jogo e agora
+
+
+Play store (Google)
+
+app store (Apple)
+
+Stem (valve)- 100 dolars pra comprar teu espaço e 30% do lucro pra valve
+
+web
+
+itch.io
+
+consoles (xbox, switch,...)
+...
+
+===================================
+
+DIREITOS AUTORAIS
+
+enquanto tu ta fazendo um jogo so pra tu,para prendizado e tal tu pode usar qualquer imagem e tal
+
+TENHA ÉTICA
+AGORA se tu tiver ganhando de alguma forma com este jogo precisa de licença pra usar as coisas de forma comercial
+
+
+====================================
+
+INTELIGENCIA ARTIFICIAL
+
+vc tem direito a usar comercialmente os dados com os quais a inteligencia artificial foi treinada?nope
+
+tenha certeza do que se pode usar ou nao
+
+SO USE SE TIVER PERIMISSAO NECESSARIA PARA TAL

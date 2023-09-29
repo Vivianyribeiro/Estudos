@@ -1,0 +1,228 @@
+Git Gitihub 
+
+guia do github readme( https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github )
+
+** Botao windows + . para emogi no readme
+
+oque é versionamento de código
+controlar as versões
+
+sistemas de versionamentos:
+
+centralizado (CVCS)-> cvs, subversion
+	VERSOENS EM um servidor central
+
+Distribuido (DVCS)-> git, mercurial 
+
+ cada banco de versão é duplicado(clonad), depois  adcionado ao principal	
+ cada clone é como um backup
+ POSSIBILITA fluxo de trabalho flexcivel
+-----------------------------------------------
+
+Git - > open source
+	ramificações e merge
+	leve e rápido
+Comandos: 
+git clone -> clona um repositório
+git commit -> grava alterações do repositorio
+git pull -> puxa as alterações que foram salvas no remoto para o repositorio local (busca e mescla)
+git push -> empurra as alterações do rep local para o remoto
+
+git status -> informa onde esta (se na main ou umabranch), se tem algum commit para fazer (alguma alteração pra subir)
+
+-------------------------------------------------
+
+GitHub -> plataforma de hospedagem de codigo para controle de versão com GIT, e colaboração
+ comunidade ativa
+ utilizado mundialmente
+ icon octocat
+
+-------------------------------------------------
+cria pc depois liga con github:
+mkdir projeto_tal
+cd projeto_tal
+git init 
+verifica se deu com cd .git
+volta com cd ..
+faz um repositorio la no github
+em seguida faz: git config remote add origin htttp....-> o tal do endereço do rep q tu criou la no github
+
+
+------------------------------
+clona repositorio:
+em tal pasta que tu quer q seja colocado
+faz: git clone http...->o tal da url do repo q tu quer clonar, se quiser alterar o nome e so acrescentar apos a url o nome q tu quer
+entra na pasta deste novo repo cd repo_clone
+faz: cd .git
+faz: cat config -> ver as info remote origin
+faz: git remote -v -> ver as url de clone
+cd .. -> volta pra pasta repo_clone
+
+---------------------------------------
+CRIAR READEME e commitar
+
+touch README.md -> touch cria um arquivo vazio
+cria o reademe na https://readme.so/pt/editor, e copie e cola no arquivo readme criado (este readme criado com touch) (abre com notas ou vscode e cola)
+agora da git add README.md
+e da um git status pra ver se deu
+da um git add .(o ponto faz ir todos- se queiser so um arquivo faz git add arquivo.tal)
+e agora temos que dar o git commit -m "criei o readme / ou commit inicial" -> na hora de commitar vai os add que fiz, oq pode ser mais de um add e tal
+
+e ai da git log pra ver os commit (quem fez e tal)
+e entao o git status, que vai informar o status da master se tem algum commit ou se a arvore ta limpa (tree clean) 
+
+obs :
+git add . (pra adicionar todos pra area de preparação para commitar)
+
+-----------------------------------------------
+IGNORE
+
+se dou echo blabla bla > .gitignore -> vai ser criado um arquivo q ira ser ignorado na hora de commitar 
+
+obs: 
+gitkeep pra reconhecer diretorios vazios(algo assim, nao entendi bem)
+
+
+------------------------------
+DESFAZENDO ALTERAÇÕES NOS REPO
+
+se deu git init na pasta errada:
+dentro da tal pasta faz : rm -rf .git
+
+se alterei e salvei o readme por exemplo mas quero a versão antes de salvar faço:
+git restore README.md
+assim a alteração e descartada, de um git status pra tu ver
+vai ter restaurado no arquivo tbm
+** entao quando for usar este comando tenha certeza que nao quer nenhumas das alterações feitas
+
+ALTERAR MENSAGEM DO ULTIMO COMMIT:
+git commit --amend -m"blablalvla"
+agora da um git log pra ver se alterou
+
+dar git commit --amend tabme da certo pois abre o editor e tu pode açterar la
+
+DESFAZER UM COMMIT: (ESSAS ALTERAÇÕES DEVEM SER FEITAS ANTES DE IR PARA O REPO REMOTO, (as de cima tbm))
+git log pra ver os storico dos commits e pegar o host(o numero grande do commit q tu quer)
+faz: git reset --soft 4df5db...(coloca o tal numero do commit) 
+neste caso ai os comits que vieram depois deste serao resetados no entando se vc der git status vai ver que eles estao la na preparação para comitar se tu quiser commitalos
+ai tu da um git add . pra pegar todas alteraç~eos e mandar pra area de preparação do git status, faz o git status se quiser ver eles, ai commita se quiser comitar, e verifica se foi com git log.
+(pode ser git reset --mixed tbm
+E quando tu quer esquecer completamente estes commits usa git reset --hard 43u5983475347645572356755...)
+
+FAZ git reflog PARA VER UM HISTORICO MAIS  DETALHADA DAS ALTERAÇÕES FEITAS NOS COMMIT
+
+--------------
+REMOVER ARQUIVOS DA AREA DE PREPARAÇÃO PRA COMMITAER
+git reset resumos/aula-01.md  (remover da pasta resumos o arquivo aula01)
+ou entao: git restore resumos/aula-01.md
+
+
+-----------------------------------------------
+ENVIAR ALTERAÇÕES P/ REPO REMOTO (PUSH)
+
+git remote add origin https://...-> aqui é o endereço do repositorio que tu quer se conectar pra dar push
+agora da um git push -u origin main(ou master*)
+
+---
+ENVIAR PELA INTERFACE DO VSCODE
+apos alterar verifica que tem naquele y de bolinha alguns numeros de alteraçõs, clica nele e clica no + dos que tu quer comitar, na caixa de texto que tem um pouco acima escreva a frase do commite e no verde pra enviar commit e push
+
+-----------------------------------------------
+RECEBER ALTERAÇÕES DO REPO REMOTO (PULL)
+apenas dê git pull na pasta do repositorio local vinculado ao remoto.
+
+---------------------------------------------------
+USAR UMA BRANCH (NAO PRINCIPAL)
+git checkout -b teste -> assim vai estar em uma branch 'teste' q aponta pra main
+tu pode ir fazendo as alterações e commites nesta teste
+
+voltar pra main:
+git checkout main
+
+ver commits de cada branch (principal ou nao):
+git branch -v
+assim da pra tu ver q por exemplo a main esta no commit 2 enquanto a branch teste ja esta no commit 3
+
+MESCLAR BRANCH MAIN COM OUTRA RAMIFICADA
+ja tendo voltado a branch main com o git checkout main
+faz: git merge teste(coloquei teste porque a branch q criei tem o nome teste)
+
+AGORA JA PODEMOS EXCLUIR A BRANCH RAMIFICADA
+faz git branch -> pra tu ver quais branch tem 
+o * ao lado do nome indica em qual branch tu esta no momneto
+Agora tu estando na main coloque: git branch -d teste (pra apagar a branch teste)
+confirme se apagou testando git branch
+
+---------------------------
+CONFLITOS DE MERGE
+
+quando tu tenta dar push da erro avisando conflito com tal arquivo
+tu da um git pull
+ai tu vai neste arquivo com conflito e deixa do modo que tu quer que fica (costuma ficar destacado onde tem o conflito no arquivo, ai tu apaga o q tu nao quiser)
+e entao dá um git add . e faz o commit 
+da um git log pra ver se este commit foi pra main
+e tenta dar push denovo pra ver se vai
+
+-------------------------------------]
+SE QUER APENAS BAIXAR ALLGO DA MAIN REMOTA PARA TUA LOCAL SEM MESCLAR
+git fetch origin main
+pra ver a diferença entre elas:
+git diff main origin/main
+
+se quiser dar merge :
+git merge origin/main 
+
+---------------------------------------
+QUANDO TU QUISER CLONAR APENAS UMA BRANCH DE UM REPOSITORIO Q TEM VARIAS BRANCH
+git clone https... --branch teste --single-branch
+(desta forma clonei a branch teste)
+
+se fiz uma alteração nesta branch localmente e nao quero criar uma nova branch mas nao quero que esta alteração recente venha junto faço assim:
+git stash (ele vai arquiva esta modificação)
+da um git stash list pra lista as alterações
+ai tu ja pode criar a tal branch q tu quer assim:
+git checkout -b branch 'branch-2'
+pra voltar pra branch q tu tava antes:
+git checkout teste
+ai da git stash list denvo pra ver as alterações listadas
+se quiser manter essas alterações feitas na tal branch 2 e excluir a alterção feita antes de ir pra branch-2: git stash pop
+mas se tu quiser manter as alterações feitas antes de ir pra branch-2(que é o q ta informado no stash{0} q é uma notificaçaõ de alteração) faz: git stash apply
+
+-------
+slides : https://academiapme-my.sharepoint.com/:p:/g/personal/renato_dio_me/EYjkgVZuUv5HsVgJUEPv1_oB_QWs8MFBY_PBQ2UAtLqucg?rtime=zDFXhKGm20g
+
+se quiser mais detalhes vai no site do git
+ e tem tbm alguns materiais de apoio no github da elidianaandrade / dio-curso-git-github
+end: https://github.com/elidianaandrade/dio-curso-git-github
+
+_____________________________________
+
+CONTRIBUIR COM UM PROJETO OPENSOURCE
+
+da um fork
+faz clone = git clone http...blablavla
+entra na pasta = cd repo-que-acabei-de-clonar
+agora conect este repositorio loca q acabou de criar com o repositorio original pra manter o repositorio local atualizado = git remote add upstream https://github.com/elidianaandrade/dio-lab-open-source.git (neste caso eu coloco o endereço do repositorio original)
+verifica no = git remote -v
+Utilize o comando = git pull upstream main = para baixar e mesclar as alterações no seu repositório local com base na branch main deste repositório original de onde você fez o fork, ou = git fetch upstream main = para baixar sem mesclar
+
+isso ate agora atualizou somente o repositorio local
+para atualizar o repo remoto click em sync fork la no github repo
+ git checkout -b feat/community/vivianyRB
+
+agora no caso da tarefa q tenho que fazer irei criar um arquivo markdown nesta branch
+posso criar este arquivo tanto na pasta normal ou no vscode ou ate mesmo na linha de comando co touch community/Vivianyribeiro.md
+
+apos alterar verifica mudancas com git status
+adiciona mudancas com git add ....
+da git status pra ver se foi
+faz commit 
+da git log pra ver se foi
+e agora faz git push origin feat/community/vivianyRB (QUE É EMPURRAR PRA BRANCH Q TU CRIOU)
+
+agora é criar um pull requeste lá no github
+
+mains info no : https://github.com/elidianaandrade/dio-lab-open-source/tree/main
+
+slides : https://academiapme-my.sharepoint.com/:p:/g/personal/renato_dio_me/EakzpKFKi1lJihVQn7sabE8BG7BzYVNs1p6rVDJanJcgdQ?rtime=gudpgbSo20g
+ 
