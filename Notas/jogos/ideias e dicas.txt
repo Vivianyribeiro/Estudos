@@ -1,0 +1,313 @@
+ver (https://ltpf.ramiismail.com/milestones/) desenvolvimento de jogos;
+
+<<<
+
+# tutoriais dicas:
+
+https://www.youtube.com/watch?v=9YWpLbOHt6o   => Dininho
+https://www.youtube.com/watch?v=tuRUWoyCsAM  => ponto e virgula
+https://lospec.com/palette-list   => paleta de cores
+https://blog.studiominiboss.com/pixelart     => guia studio miniboss **
+
+
+# para fazer arte: 
+
+https://www.piskelapp.com/      => piskel
+https://www.pixilart.com/draw?ref=home-page  => pixilart
+
+
+# obs dicas:
+
+limitar a area de trabalho a (32x32 ou 16z16 ou 8x8)
+
+3 - 2 - 1 - 2 - 3
+
+use referencia
+
+limite de 32 cores pra paleta (geralmente 16 a 32 cores para iniciantes)
+
+
+# Qual tamnho usar:
+
+preste a tencao na Proporsao
+
+
+>>>
+
+** DICA: nao adianta fazer algo muito bonito, oque importa é variedade de abilidades q tu tem (jogo vampire Survivors)
+
+dica: buscar comentarios de internautas em jogos semelhantes ao seu, vai na steam pega os jogso mais bem avaliados no genero do seu e verifica os comentarios
+
+defina seu PUBLICO-ALVO
+(qual e o tipo dominante de jogador / oque o jogador busca com teu jogo / que jogos eles jogam atualmente / qual faixa etaria / em qual dispositivo eles preferem jogar )
+
+BENCHMARKS (concorrentes)
+(jogo 1 / jogo 2 / jogo 3 ...)
+
+APRENDIZADO E OPORTUNIDADES - analizando outros jogs, seus proprios e experiencia do time
+( experiencia do seu time / mapeamento de oportunidades em reviews / expandir uma mecanica ja desenvolvida em outro jogo / utilização de assets para diminuir o trabalho / expandir a sua serie ou seu bundle de jogos / aproveitar um genero pouco explorado / aproveitar o hype de algum assunto )
+
+OQUE E ESSES JOGO
+# CORE GAME LOOP (simplificado - qual o loop do jogo - qual seria fluxo loop que ele segue)
+ex : matar monstro -> receber tesouro -> comprar equipamentos -> loop
+
+ex. mario: iniciar mapa - > lide com os inimigos ou evite -> salveo refem no castelo -> loop
+
+LOOPS SECUNDARIOS (nao é obrigatorio mas ajuda se tiver)
+-> -> -> ..
+
+
+CONSTRUÇÃO DO HIGH CONCEPT
+( qual e o  objetivo do jogador / quais os desafios principais / qual a premissa da narrativa / qual e a plataforma do jogo / qual o genero do jogo / como ocorre a progressao-do jogador- durante o jogo / quais sao os modos de jogo - gravidade foi invertida , concluir fase em tempo especifico, etc - / qual o nome do jogo)
+
+MECANICAS PRINCIPAIS
+(juntar itens para criar outros / resolver conflitos entre personagens / coletaveis especiais / mover pecas do tabuleiro / missoes / progressoes / niveis / ranking / limite de tempo / limite de turno / mudanca de contexto / aumento gradual de dificuldade / etc)
+
+PREMISSAS estabeleça sua proprias premissas, exemplo:
+
+premissa 1
+(ser divertido mesmo sem ter inimigos / ser estrategio, porem leve e simples / ser desafiador e favorecer o replay)
+ 
+premissa 2
+
+ser diveritdo em sessoes de 3 min / dar sensação de poder crescente ao jogador / permitir o compartilhar os mapas personalizados ...
+
+ELEVATOR PITCH
+ser capaz de descrever seu jogo em 30 segundos, ou na descrição curta da steam
+
+
+
+** obs jogo whorer -> cada vez q tu joga pode pegar um objetivo diferente
+
+<<<
+jogos para pc fraco
+
+Blalsphemous
+Brawlhalla
+
+
+DOCUMENTARIOS PARA VER DEPOIS
+
+- A era do video game
+- Indie Game THE movie
+- GDLK
+
+
+SITES COM ASSETS GRATUITOS
+
+- gamedevmarket.net **
+-opengameart.org
+-itch.io
+- kenney.nl
+
+>>>
+
+
+
+JOGOS - ideias:
+
+bloco persegue algo que foge e cria plataformas durante a fuga para atrasar o bloco (lembrei de coiote querendo pegar Papa-Léguas) (pra nao ficar algo impossivel podemso adicionar experiencia ao papa- leguas, tipo, no inicio o papa leguas tem pouca experiencia entao nao sera tao dificil de pegalo, mas quando for mais experiente sera mais dificil, porem vamos buffar o coiote para dar certo);
+
+smiles - facelandia
+
+PROFISSIONAL DE TI - (CC, IA, SI, ES) Com intenção de expor didaticamente as diferença entre esses pricipais
+ o usuariuo escolhe um caminho a seguir, e passar por objetivos que tem uma taxa maior para seguir seu objetivo ~
+passa por debates em dialogos comuns que ouvimos em area de ti (formata meu pc por favor?)
+
+
+COMO FAZER DINHEIRO (se baseia nas dicas de " o homem mais rico da babilonia")
+ensinar a como fazer dinheiro
+
+
+PATINAR NOS ANEIS DE SATURNO, pulo pra marte, colossau-gigant, aliens, virar destruidor de planetas ou heroi/salvador
+
+
+IDEIA PROPAGANDA DA DRAW
+sombra de MULHER da realeza NEGRA focando no brinco e indo para outro cenario a partir do brinco
+ 
+
+
+<<<
+
+Etapas do Desenvolvimento - ver rami ismail blog (https://ltpf.ramiismail.com/)
+
+
+ver (https://ltpf.ramiismail.com/milestones/)
+
+
+# PESQUISA 
+##ideação - (ter ideias)
+	* foco principal da equipe sera brainstorming
+	pensar ter ideias divergentes
+	principal objetivo é falhar rapido
+	estamos testando coisas e vendo se fuimcionam
+	prototipos rapidos e sujos, rascunho de texto curtos 	e maquetes/silhuetas/esboço rapidos sao  o nome do jogo aqui. 
+	ao final da ideação deve ter se formado:
+		* objetivo:FORMAR UMA INTENCAO clara para o jogo, com 				algumas ideias sobre estilo, jofgabilidade e proposito.
+		* estrategia: "fail fast" falhar rapido - tentar rapidamente e 		testar rapidamente
+		* REcursos principais: designers, artista conceituais, engenheiros 		focados em prototipos
+		* Cronograma: imprevisivel
+## prototipagem - (testar as ideias) 
+	QUando a ideação chega a uma ideia que parece viável.
+	equipe sai do pensamento divergente e passa a ter um pensamento mais 		focado/convergente, mas nao abandone o fail fast
+	mantem oque funciona e abandona oque nao funciona
+	"a prototipagem não é uma questão de resolução de problemas, mas de 	descoberta de problemas."
+
+	'''" 
+	Objetivo da prototipagem :
+	testar a ideia e garantir que ela seja viável, versátil e possível.
+
+	Estratégia:
+	Iteração rápida, pensamento convergente.
+
+	Recursos principais :
+	Designers, artistas conceituais, engenheiros focados em protótipos
+
+	Cronograma :
+	Para uma produção menor, até várias semanas. Para jogos mais complexos, 		até dois meses.
+	"""
+	
+
+
+#PRÉ-PRODUCAO 
+	Aqui temos a transição para a produção apos a validação de que a produção 	é viavel. é estabelecido o cronograma de desenvolvimento e surge uma 	imagem clara dos requisitos q sera necessario.
+	* Fase do TUDO OU NADA para muitos projetos. tem se a maior parte das 	informações 
+## fatia vertical - 
+
+	 No Vertical Slice o objetivo principal é testar o seu ciclo de produção. Isso significa que você está envolvendo todas as partes do processo de produção e incentivando a conclusão de um ciclo completo de produção - a quantidade de conteúdo que representa depende do jogo e do contexto financeiro: em geral, você está olhando para uma sequência completa de qualidade de produção , segmento, conflito, cenário ou nível. Para isso, é fundamental que todas as partes da produção estejam sinceramente envolvidas: é preciso ficar claro onde existem pontos problemáticos no seu processo, onde a comunicação pode ser melhorada e onde existe falta de clareza.
+Meta de Fatia Vertical :
+Estabelecer, testar e melhorar o pipeline de produção, garantindo que você atinja as metas previstas, estabelecendo cronogramas.
+
+Estratégia:
+Incentivar um ciclo completo de produção em um segmento significativo que represente a experiência do jogo.
+
+Recursos principais :
+Membros experientes de todas as principais disciplinas.
+
+Linha do tempo :
+Dependendo do dimensionamento que o estúdio precisa fazer para a produção completa, isso pode levar até um quarto do tempo total de desenvolvimento.
+
+##inicio da produção - 
+
+# PRODUÇÃO
+##feature complte
+##content complete
+
+# ENCERRAMENTO 
+##release candidate
+##release Build
+
+1 - Idealização
+
+2 - Prototipo
+
+3 - Fatia Vertical
+
+4 - Inicio da Produção
+
+5 - Alpha (feature Complete)
+
+6 - Beta (Content Complete)
+
+7 - Versão Final
+
+8 - Lançamento
+
+
+
+1 - Idealização - junte suas ideias pensa em varias, nao importa q seja doida
+ 
+
+2 - Prototipo - faz um prototipo de algo, nao precisa ser top pode ser bem bosta so pra ver como ficaria
+
+3 - Fatia Vertical - serve para validar as etapas anteriores
+
+4 - Inicio da Produção - Joga tudo q tu fez ate agora fora, e comece denovo agora com de forma melhor com uma noção adquirida nos prototipos
+	aqui tu começa a criar o sistema, criar a renderização, as particulas, os efeitos visuais e sonoros etc
+
+5 - Alpha (feature Complete) - nesta parte seu jogo esta com todas as funcionalidades prontas A ESPINHA DORÇAL DO OJOGO ESTA PRONTA 
+
+6 - Beta (Content Complete) - jogo com o conteudo completo, expandir (se tu tinha criado apenas 2 classes de personagem, crias as 10 outras classes por exemplo), ta praticamnete com o jogo pronto
+
+7 - Versão Final - polir o jogo, deixar mais bonito, deixar uma transição q tava feia mais bonitinha, melhorar oq acha q precisa
+
+8 - Lançamento - onde terminamos de trabalhar, verificando se as skin estao funcionando, se tudo esta ok, validar e certificar se a versao final e valida, lança o jogo.
+
+
+=============================================================================
+
+ELEMENTOS BASICOS DE UM JOGO
+
+
+========================================
+IDENTIDADE VISUAL EM JOGOS
+
+tipos:
+plataformas 2d( tu ve as coisas como a lateral de um bolo partido) exemplo dead & cells
+
+3d (visao tridimensional-com profundidade e tal)
+
+ver jogo SuperHot - visual limpo, inimigos em vermelho
+
+...
+
+=====================================
+
+PRINCIPAIS PLATAFORMAS E TECNOLOGIAS
+ 	a melhor pra usar é a que vc consegue usar kk TODAS SAO BOAS, tudo depende de seu objetivo, se tu so quer fazer jogos
+aqui tem as 3 mais usadas e umas em seguida:
+
+1- unity
+2- unreal
+3- GODOT
+love
+libGDX - em java
+GameMaker Studio
+Monogame
+construct
+Corona Labs
+etc
+
+AGORA se tu quer trabalhar com jogos tu olha a mais usada no mercado (site abragames)
+
+
+=========================================
+LANCAMENTO E ÉTICA
+
+tu fez um jogo e agora
+
+
+Play store (Google)
+
+app store (Apple)
+
+Stem (valve)- 100 dolars pra comprar teu espaço e 30% do lucro pra valve
+
+web
+
+itch.io
+
+consoles (xbox, switch,...)
+...
+
+===================================
+
+DIREITOS AUTORAIS
+
+enquanto tu ta fazendo um jogo so pra tu,para prendizado e tal tu pode usar qualquer imagem e tal
+
+TENHA ÉTICA
+AGORA se tu tiver ganhando de alguma forma com este jogo precisa de licença pra usar as coisas de forma comercial
+
+
+====================================
+
+INTELIGENCIA ARTIFICIAL
+
+vc tem direito a usar comercialmente os dados com os quais a inteligencia artificial foi treinada?nope
+
+tenha certeza do que se pode usar ou nao
+
+SO USE SE TIVER PERIMISSAO NECESSARIA PARA TAL
+
+>>>
